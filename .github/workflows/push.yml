@@ -46,9 +46,10 @@ jobs:
         run: |
           mkdir temp_pack
           rsync -Rr pack/ temp_pack
-          cd temp_pack
-          find . -type f -execdir mv {} . \;
+          find temp_pack -type f -execdir mv {} . \;
           zip -r test.zip *
+          rm -rf temp_pack
+        
 
 
 
