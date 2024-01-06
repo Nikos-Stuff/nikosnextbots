@@ -40,9 +40,15 @@ jobs:
       
 
       # Runs a single command using the runners shell
-      - name: Prepare the file
-        run: zip -r -j -D test.zip pack/
-
+     # - name: Prepare the file
+     #   run: zip -r -j -D test.zip pack/
+      - name: Pack & Prepare file
+        run: |
+          mkdir temp_pack
+          rsync -Rr pack/ temp_pack
+          cd temp_pack
+          find . -type f -execdir mv {} . \;
+          zip -r test.zip *
 
 
 
