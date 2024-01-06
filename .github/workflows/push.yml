@@ -34,8 +34,8 @@ jobs:
       - name: Zip the file
         run: zip -r test.zip VibeCraft_nextbots
         
-      - name: Prepare to upload
-        uses: deka0106/upload-to-dropbox@v2.0.0
+   #   - name: Prepare to upload
+    #    uses: deka0106/upload-to-dropbox@v2.0.0
 
       - name: Upload to dropbox
         uses: deka0106/upload-to-dropbox@v2
