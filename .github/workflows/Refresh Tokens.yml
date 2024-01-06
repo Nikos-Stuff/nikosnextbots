@@ -15,13 +15,13 @@ jobs:
 
       - name: Obtain Dropbox Access Token
         run: |
-          AUTHORIZATION_CODE=$(curl -X POST https://www.dropbox.com/oauth2/authorize \
+          AUTHORIZATION_CODE=$(curl -v -X POST https://www.dropbox.com/oauth2/authorize \
             --data "response_type=code" \
             --data "client_id=${{ secrets.DROPBOX_APP_KEY }}" \
             --data "redirect_uri=http://localhost" \
             | grep -oP '(?<=code=)[^&]+')
 
-          ACCESS_TOKEN=$(curl -X POST https://api.dropbox.com/oauth2/token \
+          ACCESS_TOKEN=$(curl -v -X POST https://api.dropbox.com/oauth2/token \
             --data "grant_type=authorization_code" \
             --data "code=$AUTHORIZATION_CODE" \
             --data "client_id=${{ secrets.DROPBOX_APP_KEY }}" \
