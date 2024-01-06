@@ -43,8 +43,8 @@ jobs:
           curl -X POST https://content.dropboxapi.com/2/files/upload \
               --header "Authorization: Bearer ${{ secrets.DROPBOX_ACCESS_TOKEN }}" \
               --header "Content-Type: application/octet-stream" \
-              --header "Dropbox-API-Arg: {\"path\": \"/\",\"mode\": \"overwrite\",\"autorename\": true,\"mute\": false}" \
-              --data-binary @resource-pack.zip
+              --header "Dropbox-API-Arg: {\"path\": \"/test.zip\",\"mode\": \"overwrite\",\"autorename\": true,\"mute\": false}" \
+              --data-binary @test.zip
         env:
           DROPBOX_ACCESS_TOKEN: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
           
