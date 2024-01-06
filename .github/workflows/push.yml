@@ -37,9 +37,9 @@ jobs:
    #   - name: Prepare to upload
     #    uses: deka0106/upload-to-dropbox@v2.0.0
 
-      - name: Upload to dropbox
-      - uses: intersecato/dropbox-upload@v1.0.0
+      - name: Upload to Dropbox
+        uses: rensatsu/deploy-to-dropbox@master
         with:
           DROPBOX_ACCESS_TOKEN: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
-          DROPBOX_DESTINATION_PATH_PREFIX: "/"
-          GLOB: "test.zip"
+          GLOB: dist/*
+          FILE_WRITE_MODE: overwrite
