@@ -1,5 +1,5 @@
 ![Preview Image](https://cdn.discordapp.com/attachments/1079841488365686854/1186730327264198666/n_maintitle.png?ex=65a6c4be&is=65944fbe&hm=2ae5af54dcc94b1d1ca449d9eb3d9e784bcc2cdad42666ce182228c3bccbdb79&)
-<div style="text-align: center;" markdown="1">  Texturepack. </div>
+Texturepack for our server - Niko's Nextbots
 
 ## Description
 
@@ -32,8 +32,9 @@ You also need to use unicode characters from [here](https://unicode.bayashi.net/
 
 Please use the .ogg stereo or mono based on your need. For example:
 
--- For a sound effect that plays use stereo
--- For a nextbot sounds use mono
+- For a sound effect that plays use stereo
+
+- For a nextbot sounds use mono
 
 After everything done. Don't forget to add your sound to [sounds.json](https://github.com/Nik0-0/nikosnextbotspack/blob/main/pack/assets/vibecraft/sounds.json)!
 
