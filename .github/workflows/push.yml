@@ -45,7 +45,7 @@ jobs:
       - name: Pack & Prepare file
         run: |
          cd pack
-         zip -r ../test.zip *
+         zip -r ../nikosnextbots_pack.zip *
         
 
 
@@ -62,8 +62,8 @@ jobs:
           curl -X POST https://content.dropboxapi.com/2/files/upload \
               --header "Authorization: Bearer ${{ secrets.DROPBOX_ACCESS_TOKEN }}" \
               --header "Content-Type: application/octet-stream" \
-              --header "Dropbox-API-Arg: {\"path\": \"/test.zip\",\"mode\": \"overwrite\",\"autorename\": true,\"mute\": false}" \
-              --data-binary @test.zip
+              --header "Dropbox-API-Arg: {\"path\": \"/nikosnextbots_pack.zip\",\"mode\": \"overwrite\",\"autorename\": true,\"mute\": false}" \
+              --data-binary @nikosnextbots_pack.zip
         env:
           DROPBOX_ACCESS_TOKEN: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
 
