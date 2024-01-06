@@ -1,32 +1,47 @@
-name: Refresh Tokens
+name: Generate Dropbox Access Token
 
 on:
   push:
     branches:
-      - main
+      - main  # Change this to your main branch
 
 jobs:
-  obtain_token:
+  generate-token:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Obtain Dropbox Access Token
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8  # Change this to your desired Python version
+
+      - name: Install Dependencies
         run: |
-          AUTHORIZATION_CODE=$(curl -v -X POST https://www.dropbox.com/oauth2/authorize \
-            --data "response_type=code" \
-            --data "client_id=${{ secrets.DROPBOX_APP_KEY }}" \
-            --data "redirect_uri=http://localhost" \
-            | grep -oP '(?<=code=)[^&]+')
+          python -m pip install --upgrade pip
+          pip install dropbox
 
-          ACCESS_TOKEN=$(curl -v -X POST https://api.dropbox.com/oauth2/token \
-            --data "grant_type=authorization_code" \
-            --data "code=$AUTHORIZATION_CODE" \
-            --data "client_id=${{ secrets.DROPBOX_APP_KEY }}" \
-            --data "client_secret=${{ secrets.DROPBOX_APP_SECRET }}" \
-            --data "redirect_uri=http://localhost" \
-            | jq -r .access_token)
+      - name: Generate Access Token
+        run: |
+          python - <<EOF
+          import dropbox
 
-          echo "DROPBOX_ACCESS_TOKEN=$ACCESS_TOKEN" >> $GITHUB_ENV
+          app_key = '${{ secrets.DROPBOX_APP_KEY }}'
+          app_secret = '${{ secrets.DROPBOX_APP_SECRET }}'
+
+          auth_flow = dropbox.DropboxOAuth2FlowNoRedirect(app_key, app_secret)
+          authorize_url = auth_flow.start()
+
+          print(f'Authorize your app by visiting: {authorize_url}')
+
+          auth_code = input('Enter the authorization code: ')
+
+          access_token, user_id = auth_flow.finish(auth_code)
+
+          print(f'::set-output name=DROPBOX_ACCESS_TOKEN::{access_token}')
+          EOF
+        env:
+          DROPBOX_APP_KEY: ${{ secrets.DROPBOX_APP_KEY }}
+          DROPBOX_APP_SECRET: ${{ secrets.DROPBOX_APP_SECRET }}
