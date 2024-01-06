@@ -41,7 +41,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Prepare the file
-        run: zip -r test.zip pack/.
+        run: zip -r -j test.zip pack/
         
    #   - name: Prepare to upload
     #    uses: deka0106/upload-to-dropbox@v2.0.0
