@@ -1,0 +1,1667 @@
+{
+  "providers": [
+     {
+      "type": "bitmap",
+      "file": "vibecraft:effects/static/image00.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "⓿"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:effects/static/image01.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "➊"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:effects/static/image02.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "➋"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:effects/static/image03.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "➌"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:effects/static/image04.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "➍"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:effects/static/image05.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "➎"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:effects/static/image06.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "➏"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:effects/static/image07.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "➐"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:effects/static/image08.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "➑"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:effects/static/image09.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "➒"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:effects/static/image10.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "🅐"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:effects/static/image11.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "🅑"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:effects/static/image12.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "🅒"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:effects/static/image13.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "🅓"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:effects/static/image14.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "🅔"
+      ]
+    },
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 
+     {
+      "type": "bitmap",
+      "file": "vibecraft:gui/menu/image00.png",
+      "ascent": 50,
+      "height": 100,
+      "chars": [
+        "౹"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:gui/menu/image01.png",
+      "ascent": 50,
+      "height": 100,
+      "chars": [
+        "੨"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:gui/menu/image02.png",
+      "ascent": 50,
+      "height": 100,
+      "chars": [
+        "੩"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:gui/menu/image03.png",
+      "ascent": 50,
+      "height": 100,
+      "chars": [
+        "੫"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:gui/menu/image04.png",
+      "ascent": 50,
+      "height": 100,
+      "chars": [
+        "Ƽ"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:gui/menu/image05.png",
+      "ascent": 50,
+      "height": 100,
+      "chars": [
+        "Ϭ"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:gui/menu/image06.png",
+      "ascent": 50,
+      "height": 100,
+      "chars": [
+        "Դ"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:gui/menu/image07.png",
+      "ascent": 50,
+      "height": 100,
+      "chars": [
+        "੪"
+      ]
+    },
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:gui/countdown/5.png",
+      "ascent": 50,
+      "height": 100,
+      "chars": [
+        "𝟻"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:gui/countdown/4.png",
+      "ascent": 50,
+      "height": 100,
+      "chars": [
+        "𝟺"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:gui/countdown/3.png",
+      "ascent": 50,
+      "height": 100,
+      "chars": [
+        "𝟹"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:gui/countdown/2.png",
+      "ascent": 50,
+      "height": 100,
+      "chars": [
+        "𝟸"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:gui/countdown/1.png",
+      "ascent": 50,
+      "height": 100,
+      "chars": [
+        "𝟷"
+      ]
+    },
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+     {
+	  "type": "bitmap",
+      "file": "vibecraft:gui/saferoom.png",
+      "ascent": 40,
+      "height": 65,
+      "chars": [
+        "🟢"
+      ]
+    },
+     {
+	  "type": "bitmap",
+      "file": "vibecraft:gui/point.png",
+      "ascent": 7,
+      "height": 7,
+      "chars": [
+        "✨"
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+     {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/pj/pj1.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "🅕"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/pj/pj2.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "🅖"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/pj/pj3.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "🅗"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/pj/pj4.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "🅘"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/pj/pj5.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "🅙"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/pj/pj6.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "🅚"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/pj/pj7.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "🅛"
+      ]
+    },
+     {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/pj/pj8.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "🅜"
+      ]
+    },
+
+
+
+
+
+
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/osc.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "ӟ"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/toob.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "🟠"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/sariel.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "🧿"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/nuke.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "Ԏ"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/amogus.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "ԏ"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/flash.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "Ԑ"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/winrar.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "҂"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/smile_ghost.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "😁"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/oh_hell_nah.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "🫥"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/idiot/idiot_w.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "⚪"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/idiot/idiot_b.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "⚫"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/sans_cry.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "🔵"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/metal_pipe.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "😀"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/meem.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "🚑"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/darkness.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "◼"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/jet.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "✈"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/intruder.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "Ӝ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/bear.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "ӿ"
+      ]
+    },
+	
+	
+	
+	
+	
+	
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/nope.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "🚷"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/noob.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "👶"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/observer.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "㊃"
+      ]
+    },
+	
+	
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/benny/benny.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "💀"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/benny/benny_0.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "ǟ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/benny/benny_1.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "ɮ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/benny/benny_2.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "ƈ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/benny/benny_3.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "ɖ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/benny/benny_4.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "ɛ"
+      ]
+    },
+	
+	
+	
+	
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/racoon/racoon_a.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "🦝"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/racoon/racoon_b.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "🧆"
+      ]
+    },	
+	
+	
+	
+	
+	
+	
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/fazmug.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "🪣"
+      ]
+    },	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    {
+      "type": "bitmap",
+      "file": "vibecraft:effects/fredmug_j/image00.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "қ"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:effects/fredmug_j/image01.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "Ҝ"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:effects/fredmug_j/image02.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "ҝ"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:effects/fredmug_j/image03.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "Ҟ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:effects/fredmug_j/image04.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "ҟ"
+      ]
+    },
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:events/angry_munci/1.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "⬛"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:events/angry_munci/2.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "Ҡ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:events/angry_munci/3.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "ҡ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:events/angry_munci/4.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "Ң"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:events/angry_munci/5.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "ң"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:events/angry_munci/6.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "Ҥ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:events/angry_munci/7.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "ҥ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:events/angry_munci/8.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "Ҧ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:events/angry_munci/9.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "ҧ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:events/angry_munci/10.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "Ҩ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:events/angry_munci/11.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "ҩ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:events/angry_munci/12.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "Ҫ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:events/angry_munci/13.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "ҫ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:events/angry_munci/14.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "Ҭ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:events/angry_munci/15.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "ҭ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:events/angry_munci/16.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "Ұ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:events/angry_munci/17.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "ұ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:events/angry_munci/18.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "Ҳ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:events/angry_munci/19.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "ҳ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:events/angry_munci/20.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "Ҵ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:events/angry_munci/21.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "ҵ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:events/angry_munci/22.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        "Ҷ"
+      ]
+    },
+	
+	
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/events/angry_munci.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "Һ"
+      ]
+    },
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/donot.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "Ҽ"
+      ]
+    },
+	
+	
+	
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/bear5.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "ҽ"
+      ]
+    },
+	
+	
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/fan.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "💨"
+      ]
+    },
+	
+	
+	 
+	
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/smurf_cat.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "🍄"
+      ]
+    },
+	
+	
+	
+	
+	
+	
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/blabber/blabber.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "Ӂ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/blabber/blabber2.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "ӂ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/blabber/blabber3.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "Ӄ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/blabber/blabber4.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "ӄ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/blabber/blabber5.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "Ӆ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/blabber/blabber6.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "ӆ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/blabber/blabber7.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "Ӈ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/blabber/blabber8.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "Ӊ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/blabber/blabber9.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "Ӟ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/blabber/blabber10.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "Ӌ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/blabber/blabber11.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "ӌ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/blabber/blabber12.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "Ӎ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/blabber/blabber13.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "ӎ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/blabber/blabber14.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "Ӑ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/blabber/blabber15.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "ӛ"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/chilly.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "🥶"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/little_gerry.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "😽"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/subspace_tripmine.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "Հ"
+      ]
+    },
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/boykisser/boykisser_1.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "Ր"
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/boykisser/boykisser_2.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "Ց"
+      ]
+    },
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/freezing.png",
+      "ascent": 9,
+      "height": 9,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/burning.png",
+      "ascent": -12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/normal.png",
+      "ascent": -10,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/fulldrop.png",
+      "ascent": -16,
+      "height": 9,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/burning.png",
+      "ascent": -12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/freezing.png",
+      "ascent": -12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/burningview.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/freezingview.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/blankspace.png",
+      "ascent": 16,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/halfdrop.png",
+      "ascent": -16,
+      "height": 9,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/emptydrop.png",
+      "ascent": -16,
+      "height": 9,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/parasites_fulldrop.png",
+      "ascent": -16,
+      "height": 9,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/parasites_halfdrop.png",
+      "ascent": -16,
+      "height": 9,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/parasites_fulldrop.png",
+      "ascent": -6,
+      "height": 9,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/parasites_halfdrop.png",
+      "ascent": -6,
+      "height": 9,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/6.png",
+      "ascent": -12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/7.png",
+      "ascent": -12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/8.png",
+      "ascent": -12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/9.png",
+      "ascent": -12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/10.png",
+      "ascent": -12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/11.png",
+      "ascent": -12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/12.png",
+      "ascent": -12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/13.png",
+      "ascent": -12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/14.png",
+      "ascent": -12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/15.png",
+      "ascent": -12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/16.png",
+      "ascent": -12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/17.png",
+      "ascent": -12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/18.png",
+      "ascent": -12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/19.png",
+      "ascent": -12,
+      "height": 16,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/fire_vignette1.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/fire_vignette2.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/fire_vignette3.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/fire_vignette4.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/fire_vignette5.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/halfdrop.png",
+      "ascent": -6,
+      "height": 9,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/emptydrop.png",
+      "ascent": -6,
+      "height": 9,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/fulldrop.png",
+      "ascent": -6,
+      "height": 9,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/blankspace2.png",
+      "ascent": -200,
+      "height": 1,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/youtube.png",
+      "ascent": 9,
+      "height": 12,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/ice_vignette1.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/ice_vignette2.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/ice_vignette3.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/ice_vignette4.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "realisticsurvival:actionbar/toughasnails/ice_vignette5.png",
+      "ascent": 150,
+      "height": 300,
+      "chars": [
+        ""
+      ]
+    }
+  ]
+}

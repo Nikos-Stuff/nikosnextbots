@@ -1,0 +1,451 @@
+{
+  "menu": {
+    "sounds": [
+      "vibecraft:menu"]
+	},
+  "menu_h": {
+    "sounds": [
+      "vibecraft:menu_h"]
+	},
+  "saferoom": {
+    "sounds": [
+      "vibecraft:saferoom"]
+	},
+  "boom": {
+    "sounds": [
+      "vibecraft:boom"]
+	},
+  "heal": {
+    "sounds": [
+      "vibecraft:heal"]
+	},
+  "chase": {
+    "sounds": [
+      "vibecraft:chase"]
+	},
+  "metal_pipe": {
+    "sounds": [
+      "vibecraft:nextbots/metal_pipe/metal_pipe"]
+	},
+  "toob": {
+    "sounds": [
+      "vibecraft:nextbots/toob/uaa", "vibecraft:nextbots/toob/auu"]
+	},
+  "crying_sans": {
+    "sounds": [
+      "vibecraft:nextbots/crying_sans/crying_sans"]
+	},
+  "crying_sans_j": {
+    "sounds": [
+      "vibecraft:nextbots/crying_sans/crying_sans_j"]
+	},
+  "pjb": {
+    "sounds": [
+      "vibecraft:nextbots/pj/pjb"]
+	},
+  "pjb_j": {
+    "sounds": [
+      "vibecraft:nextbots/pj/pjb_j"]
+	},
+  "nuke": {
+    "sounds": [
+      "vibecraft:nextbots/nuke/nuke"]
+	},
+  "nuke_j": {
+    "sounds": [
+      "vibecraft:nextbots/nuke/nuke_j"]
+	},
+  "flash": {
+    "sounds": [
+      "vibecraft:nextbots/flash/flash"]
+	},
+  "flash_j": {
+    "sounds": [
+      "vibecraft:nextbots/flash/flash_j"]
+	},
+  "idiot": {
+    "sounds": [
+      "vibecraft:nextbots/idiot/idiot"]
+	},
+  "idiot_j": {
+    "sounds": [
+      "vibecraft:nextbots/idiot/idiot_j"]
+	},
+  "smile_ghost": {
+    "sounds": [
+      "vibecraft:nextbots/smile_ghost/smile_ghost"]
+	},
+  "smile_ghost_j": {
+    "sounds": [
+      "vibecraft:nextbots/smile_ghost/smile_ghost_j"]
+	},
+  "smile_ghost_p": {
+    "sounds": [
+      "vibecraft:nextbots/smile_ghost/smile_ghost_p"]
+	},
+  "loading": {
+    "sounds": [
+      "vibecraft:loading"]
+	},
+  "possession": {
+    "sounds": [
+      "vibecraft:possession"]
+	},
+  "play": {
+    "sounds": [
+      "vibecraft:play"]
+	},
+  "possession_intro": {
+    "sounds": [
+      "vibecraft:possession_intro"]
+	},
+  "oh_hell_nah": {
+    "sounds": [
+      "vibecraft:nextbots/ohn/oh_hell_nah"]
+	},
+  "points": {
+    "sounds": [
+      "vibecraft:points"]
+	},
+  "countdown": {
+    "sounds": [
+      "vibecraft:countdown"]
+	},
+  "wavgun": {
+    "sounds": [
+      "vibecraft:wavgun"]
+	},
+  "wavgun_b": {
+    "sounds": [
+      "vibecraft:wavgun_b"]
+	},
+  "ded": {
+    "sounds": [
+      "vibecraft:ded/d1", "vibecraft:ded/d2", "vibecraft:ded/d3", "vibecraft:ded/d4"]
+	},
+  "video_game_lobby": {
+    "sounds": [
+      "vibecraft:lobby/video_game_lobby"]
+	},
+  "thoughtbody_lobby": {
+    "sounds": [
+      "vibecraft:lobby/thoughtbody_lobby"]
+	},
+  "sherbet_lobby": {
+    "sounds": [
+      "vibecraft:lobby/sherbet_lobby"]
+	},
+  "pluggnb_lobby": {
+    "sounds": [
+      "vibecraft:lobby/pluggnb_lobby"]
+	},
+  "nextbob_lobby": {
+    "sounds": [
+      "vibecraft:lobby/nextbob_lobby"]
+	},
+  "lucid_lobby": {
+    "sounds": [
+      "vibecraft:lobby/lucid_lobby"]
+	},
+  "littlebig_lobby": {
+    "sounds": [
+      "vibecraft:lobby/littlebig_lobby"]
+	},
+  "nostalgia_lobby": {
+    "sounds": [
+      "vibecraft:lobby/nostalgia_lobby"]
+	},
+  "delta_lobby": {
+    "sounds": [
+      "vibecraft:lobby/delta_lobby"]
+	},
+  "chill_lobby": {
+    "sounds": [
+      "vibecraft:lobby/chill_lobby"]
+	},
+  "bee_lobby": {
+    "sounds": [
+      "vibecraft:lobby/bee_lobby"]
+	},
+  "asteries_lobby": {
+    "sounds": [
+      "vibecraft:lobby/asteries_lobby"]
+	},
+  "meem": {
+    "sounds": [
+      "vibecraft:nextbots/meem/meem"]
+	},
+  "meem_j": {
+    "sounds": [
+      "vibecraft:nextbots/meem/meem_j"]
+	},
+  "nope": {
+    "sounds": [
+      "vibecraft:nextbots/nope/nope"]
+	},
+  "nope_j": {
+    "sounds": [
+      "vibecraft:nextbots/nope/nope_j"]
+	},
+  "noob": {
+    "sounds": [
+      "vibecraft:nextbots/noob/noob"]
+	},
+  "noob_j": {
+    "sounds": [
+      "vibecraft:nextbots/noob/noob_j"]
+	},
+  "observer": {
+    "sounds": [
+      "vibecraft:nextbots/observer/observer"]
+	},
+  "observer_j": {
+    "sounds": [
+      "vibecraft:nextbots/observer/observer_j"]
+	},
+  "benny": {
+    "sounds": [
+      "vibecraft:nextbots/benny/benny"]
+	},
+  "benny_j": {
+    "sounds": [
+      "vibecraft:nextbots/benny/benny_j"]
+	},
+  "nn_mall_ambient": {
+    "sounds": [
+      "vibecraft:ambient/nn_mall_ambient"]
+	},
+  "racoon": {
+    "sounds": [
+      "vibecraft:nextbots/racoon/racoon"]
+	},
+  "racoon_j": {
+    "sounds": [
+      "vibecraft:nextbots/racoon/racoon_j"]
+	},
+  "fazmug": {
+    "sounds": [
+      "vibecraft:nextbots/fazmug/fazmug"]
+	},
+  "fazmug_j": {
+    "sounds": [
+      "vibecraft:nextbots/fazmug/fazmug_j"]
+	},
+  "angry_munci": {
+    "sounds": [
+      "vibecraft:events/angry_munci"]
+	},
+  "bloodmoon": {
+    "sounds": [
+      "vibecraft:events/bloodmoon"]
+	},
+  "blackout": {
+    "sounds": [
+      "vibecraft:events/blackout"]
+	},
+  "angry_munci_a": {
+    "sounds": [
+      "vibecraft:nextbots/angry_munci/angry_munci_a"]
+	},
+  "angry_munci_j": {
+    "sounds": [
+      "vibecraft:nextbots/angry_munci/angry_munci_j"]
+	},
+  "donot": {
+    "sounds": [
+      "vibecraft:nextbots/donot/donot"]
+	},
+  "donot_j": {
+    "sounds": [
+      "vibecraft:nextbots/donot/donot_j"]
+	},
+  "bear5": {
+    "sounds": [
+      "vibecraft:nextbots/bear5/bear5"]
+	},
+  "bear5_j": {
+    "sounds": [
+      "vibecraft:nextbots/bear5/bear5_j"]
+	},
+  "blabber": {
+    "sounds": [
+      "vibecraft:nextbots/blabber/blabber"]
+	},
+  "blabber_j": {
+    "sounds": [
+      "vibecraft:nextbots/blabber/blabber_j"]
+	},
+  "chilly": {
+    "sounds": [
+      "vibecraft:nextbots/chilly/chilly"]
+	},
+  "smurf_cat": {
+    "sounds": [
+      "vibecraft:nextbots/smurf_cat/smurf_cat"]
+	},
+  "shop": {
+    "sounds": [
+      "vibecraft:shop"]
+	},
+  "club": {
+    "sounds": [
+      "vibecraft:club"]
+	},
+  "checkout": {
+    "sounds": [
+      "vibecraft:effects/checkout"]
+	},
+  "wavgun_end": {
+    "sounds": [
+      "vibecraft:effects/wavgun_end"]
+	},
+  "level_up": {
+    "sounds": [
+      "vibecraft:effects/level_up"]
+	},
+  "item_bought": {
+    "sounds": [
+      "vibecraft:effects/item_bought"]
+	},
+  "item_bought_alt": {
+    "sounds": [
+      "vibecraft:effects/item_bought_alt"]
+	},
+  "reward_unlocked": {
+    "sounds": [
+      "vibecraft:effects/reward_unlocked"]
+	},
+  "darkness": {
+    "sounds": [
+      "vibecraft:nextbots/darkness/darkness"]
+	},
+  "darkness_j": {
+    "sounds": [
+      "vibecraft:nextbots/darkness/darkness_j"]
+	},
+  "intruder": {
+    "sounds": [
+      "vibecraft:nextbots/intruder/intruder"]
+	},
+  "intruder_j": {
+    "sounds": [
+      "vibecraft:nextbots/intruder/intruder_j"]
+	},
+  "jet": {
+    "sounds": [
+      "vibecraft:nextbots/jet/jet"]
+	},
+  "jet_j": {
+    "sounds": [
+      "vibecraft:nextbots/jet/jet_j"]
+	},
+  "bear": {
+    "sounds": [
+      "vibecraft:nextbots/bear/bear"]
+	},
+  "bear_j": {
+    "sounds": [
+      "vibecraft:nextbots/bear/bear_j"]
+	},
+  "little_gerry": {
+    "sounds": [
+      "vibecraft:nextbots/little_gerry/little_gerry"]
+	},
+  "winrar": {
+    "sounds": [
+      "vibecraft:nextbots/winrar/winrar"]
+	},
+  "fan": {
+    "sounds": [
+      "vibecraft:nextbots/fan/fan"]
+	},
+  "boykisser": {
+    "sounds": [
+      "vibecraft:nextbots/boykisser/boykisser"]
+	},
+  "subspace_tripmine": {
+    "sounds": [
+      "vibecraft:nextbots/subspace_tripmine/subspace_tripmine"]
+	},	
+  "subspace_tripmine_j": {
+    "sounds": [
+      "vibecraft:nextbots/subspace_tripmine/subspace_tripmine_j"]
+	},		
+  "osc": {
+    "sounds": [
+      "vibecraft:nextbots/osc/osc"]
+	},
+  "osc_j": {
+    "sounds": [
+      "vibecraft:nextbots/osc/osc_j"]
+	},
+	
+	
+	
+  "chiptunes": {
+    "sounds": [
+      "vibecraft:round_end/chiptunes"]
+	},
+  "back_to_chronos": {
+    "sounds": [
+      "vibecraft:round_end/back_to_chronos"]
+	},
+  "i_know": {
+    "sounds": [
+      "vibecraft:round_end/i_know"]
+	},
+  "crystals": {
+    "sounds": [
+      "vibecraft:round_end/crystals"]
+	},
+	
+	
+	
+  "outbreak_end": {
+    "sounds": [
+      "vibecraft:effects/outbreak_end"]
+	},
+  "outbreak": {
+    "sounds": [
+      "vibecraft:outbreak"]
+	},
+	
+	
+	
+	
+	
+	
+	
+  "smug_dance": {
+    "sounds": [
+      "vibecraft:emotes/smug_dance"]
+	},
+  "penguin_dance": {
+    "sounds": [
+      "vibecraft:emotes/penguin_dance"]
+	},
+  "drlivesey_dance": {
+    "sounds": [
+      "vibecraft:emotes/drlivesey_dance"]
+	},
+  "kill_sound_alt": {
+    "sounds": [
+      "vibecraft:kill_sound_alt"]
+	},
+  "kill_sound": {
+    "sounds": [
+      "vibecraft:kill_sound"]
+	},
+  "top": {
+    "sounds": [
+      "vibecraft:top"]
+	},
+  "newzone": {
+    "sounds": [
+      "vibecraft:newzone"]
+	},
+  "lights_on": {
+    "sounds": [
+      "vibecraft:lights_on"]
+	}
+}
