@@ -31,8 +31,10 @@ You also need to use unicode characters from [here](https://unicode.bayashi.net/
 - [Sounds](https://github.com/Nik0-0/nikosnextbotspack/tree/main/pack/assets/vibecraft/sounds)
 
 Please use the .ogg stereo or mono based on your need. For example:
+
 -- For a sound effect that plays use stereo
 -- For a nextbot sounds use mono
+
 After everything done. Don't forget to add your sound to [sounds.json](https://github.com/Nik0-0/nikosnextbotspack/blob/main/pack/assets/vibecraft/sounds.json)!
 
 *Note: Place your file in the correct folder. Don't make a mess!*
