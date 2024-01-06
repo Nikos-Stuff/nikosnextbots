@@ -34,9 +34,13 @@ jobs:
       - name: Zip the file
         run: zip -r test.zip VibeCraft_nextbots
         
-      - name: Deploy to Dropbox
-        uses: aTable/deploy-to-dropbox@v1.0.7
-     # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Build should be published...
+      - name: Prepare to upload
+        uses: deka0106/upload-to-dropbox@v2.0.0
+
+      - name: Upload to dropbox
+        uses: deka0106/upload-to-dropbox@v2
+        with:
+          dropbox_access_token: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
+          src: test.zip
+          dest: /
+          mode: overwrite
