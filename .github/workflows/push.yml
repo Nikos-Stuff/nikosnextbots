@@ -44,11 +44,8 @@ jobs:
      #   run: zip -r -j -D test.zip pack/
       - name: Pack & Prepare file
         run: |
-          mkdir temp_pack
-          rsync -Rr pack/ temp_pack
-          find temp_pack -type f -execdir mv {} . \;
-          zip -r test.zip *
-          rm -rf temp_pack
+         cd pack
+         zip -r ../test.zip *
         
 
 
