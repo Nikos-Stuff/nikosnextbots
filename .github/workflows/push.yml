@@ -33,6 +33,15 @@ jobs:
           make
           sudo make install
 
+      - name: Setup MinIO
+        run: |
+          wget https://dl.min.io/client/mc/release/linux-amd64/mc
+          chmod +x mc
+          sudo mv mc /usr/local/bin/
+
+      - name: Set Up MinIO Configuration
+        run: |
+          mc alias set myminio https://mcapi.nikodaproot.pl/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
           
 
             
@@ -57,15 +66,9 @@ jobs:
       
 
 
-      - name: Upload to Dropbox
+      - name: Upload to Host
         run: |
-          curl -X POST https://content.dropboxapi.com/2/files/upload \
-              --header "Authorization: Bearer ${{ secrets.DROPBOX_ACCESS_TOKEN }}" \
-              --header "Content-Type: application/octet-stream" \
-              --header "Dropbox-API-Arg: {\"path\": \"/nikosnextbots_pack.zip\",\"mode\": \"overwrite\",\"autorename\": true,\"mute\": false}" \
-              --data-binary @nikosnextbots_pack.zip
-        env:
-          DROPBOX_ACCESS_TOKEN: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
+         mc cp nikosnextbots_pack.zip myminio/nnb/
 
 
 
