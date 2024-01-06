@@ -25,13 +25,16 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       
+      - name: Setup RCON connection
+        run: sudo apt-get install mcrcon
+      
 
             
 
       
 
       # Runs a single command using the runners shell
-      - name: Zip the file
+      - name: Prepare the file
         run: zip -r test.zip VibeCraft_nextbots
         
    #   - name: Prepare to upload
@@ -47,4 +50,12 @@ jobs:
               --data-binary @test.zip
         env:
           DROPBOX_ACCESS_TOKEN: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
+
+
+
+      - name: Import Texturepack
+        run: mcrcon -H ${{ secrets.RCON_IP }} -P ${{ secrets.RCON_PORT }} -p ${{ secrets.RCON_PASSWORD }} "forcepack reload"
+
+
+          
           
