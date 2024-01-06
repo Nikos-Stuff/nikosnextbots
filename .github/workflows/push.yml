@@ -43,7 +43,7 @@ jobs:
         uses: whalemare/action-dropbox@v1.0.0
         with:
     # Dropbox access token. Create new one at: https://www.dropbox.com/developers/apps
-         accessToken: ${{secrets.DROPBOX_ACCESS_TOKEN}}
+         accessToken: sl.BtKu021mXuJ4u2rBl3F2hqCU5KQqlTp7ZEZTVXfgW9xT0Z4AfBz9Vyli0Hiu6jSiGaknxon6SyKuCNixOdloJfnUxmpy3XxaylvsYOq_1UDOJAAAM1go-hMs4w2HsLh4BkXfXDTt6e6Z
     # glob pattern for file (ex. src/**/*)
          pattern: publish/* # optional, default is default value if applicable
     # path to specific file (ex. src/main.ts)
