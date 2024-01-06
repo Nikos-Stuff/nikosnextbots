@@ -1,0 +1,32 @@
+name: Refresh Tokens
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  obtain_token:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Obtain Dropbox Access Token
+        run: |
+          AUTHORIZATION_CODE=$(curl -X POST https://www.dropbox.com/oauth2/authorize \
+            --data "response_type=code" \
+            --data "client_id=${{ secrets.DROPBOX_APP_KEY }}" \
+            --data "redirect_uri=http://localhost" \
+            | grep -oP '(?<=code=)[^&]+')
+
+          ACCESS_TOKEN=$(curl -X POST https://api.dropbox.com/oauth2/token \
+            --data "grant_type=authorization_code" \
+            --data "code=$AUTHORIZATION_CODE" \
+            --data "client_id=${{ secrets.DROPBOX_APP_KEY }}" \
+            --data "client_secret=${{ secrets.DROPBOX_APP_SECRET }}" \
+            --data "redirect_uri=http://localhost" \
+            | jq -r .access_token)
+
+          echo "DROPBOX_ACCESS_TOKEN=$ACCESS_TOKEN" >> $GITHUB_ENV
