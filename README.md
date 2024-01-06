@@ -1,5 +1,6 @@
 ![Preview Image](https://cdn.discordapp.com/attachments/1079841488365686854/1186730327264198666/n_maintitle.png?ex=65a6c4be&is=65944fbe&hm=2ae5af54dcc94b1d1ca449d9eb3d9e784bcc2cdad42666ce182228c3bccbdb79&)
 Texturepack for our server - Niko's Nextbots
+### **Main branch has limited access. Please use testing branch**
 
 ## Description
 
@@ -64,8 +65,11 @@ If you encounter any issues or have suggestions, please open an issue on the [Is
 
 ## Terms
 You're not allowed to directly download and copy our hard work. Please respect that....
+
 But you can:
+
 -- Use our mechanic / way of implementing bots to minecraft (in the [font .json file](https://github.com/Nik0-0/nikosnextbotspack/blob/main/pack/assets/minecraft/font/default.json))
+
 -- Contact me on discord and ask for help to make something similar.
 
     All Rights Reserved - Niko's Stuff Team
