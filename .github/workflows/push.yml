@@ -43,7 +43,7 @@ jobs:
      # - name: Prepare the file
      #   run: zip -r -j -D test.zip pack/
       - name: Pack & Prepare file
-        run:
+        run: |
           mkdir temp_pack
           rsync -Rr pack/ temp_pack
           cd temp_pack
