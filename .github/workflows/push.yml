@@ -41,5 +41,5 @@ jobs:
         uses: rensatsu/deploy-to-dropbox@master
         with:
           DROPBOX_ACCESS_TOKEN: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
-          GLOB: dist/*
+          GLOB: /*
           FILE_WRITE_MODE: overwrite
