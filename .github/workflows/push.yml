@@ -32,14 +32,22 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Zip the file
-        run: zip -r test.zip VibeCraft_nextbots
+        run: zip -r publish/test.zip VibeCraft_nextbots
         
    #   - name: Prepare to upload
     #    uses: deka0106/upload-to-dropbox@v2.0.0
 
-      - name: Upload to Dropbox
-        uses: rensatsu/deploy-to-dropbox@master
+      - name: Dropbox Uploader
+  # You may pin to the exact commit or the version.
+  # uses: whalemare/action-dropbox@cdf61122bd57666ca3ec5f61b82b7b8d28315b18
+        uses: whalemare/action-dropbox@v1.0.0
         with:
-          DROPBOX_ACCESS_TOKEN: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
-          GLOB: /*
-          FILE_WRITE_MODE: overwrite
+    # Dropbox access token. Create new one at: https://www.dropbox.com/developers/apps
+         accessToken: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
+    # glob pattern for file (ex. src/**/*)
+         pattern: publish/* # optional, default is default value if applicable
+    # path to specific file (ex. src/main.ts)
+         file: publish/* # optional
+    # Dropbox destination path for uploading. Must be started from /". (ex. "/actions", "/actions/main.ts")
+         destination: / # optional
+          
