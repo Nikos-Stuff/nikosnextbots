@@ -64,6 +64,7 @@ If you encounter any issues or have suggestions, please open an issue on the [Is
 
 
 ## Terms
+
 You're not allowed to directly download and copy our hard work. Please respect that....
 
 But you can:
