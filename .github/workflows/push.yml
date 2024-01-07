@@ -72,7 +72,8 @@ jobs:
 
 
 
-
+      - name: Import Texturepack
+        run: mcrcon -H ${{ secrets.RCON_IP }} -P ${{ secrets.RCON_PORT }} -p ${{ secrets.RCON_PASSWORD }} "forcepack reload"
 
 
 # Testing
@@ -81,25 +82,9 @@ jobs:
         with:
           upload_url: https://uploads.github.com/repos/${{ github.repository }}/releases/${{ github.run_number }}/assets{?name,label}
           asset_path: ./nikosnextbots_pack.zip
-          asset_name: Release
+          asset_name: nikosnextbots_pack.zip
           asset_content_type: application/zip
 
-
-
-
-
-
-
-
-
-
-
-         
-
-
-
-      - name: Import Texturepack
-        run: mcrcon -H ${{ secrets.RCON_IP }} -P ${{ secrets.RCON_PORT }} -p ${{ secrets.RCON_PASSWORD }} "forcepack reload"
 
 
           
