@@ -30,15 +30,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       
-      - name: Setup RCON connection
-        run: |
-          sudo apt-get install build-essential
-          git clone https://github.com/Tiiffi/mcrcon.git
-          cd mcrcon
-          make
-          sudo make install
-
-
       - name: Setup MinIO
         run: |
           wget https://dl.min.io/client/mc/release/linux-amd64/mc
@@ -62,15 +53,10 @@ jobs:
          mc cp nikosnextbots_pack.zip myminio/nnb/
 
 
-      - name: Import Texturepack
-        run: mcrcon -H ${{ secrets.RCON_IP }} -P ${{ secrets.RCON_PORT }} -p ${{ secrets.RCON_PASSWORD }} "forcepack reload"
-
-
 
 
   # Build the sharders pack
   build_sharders:
-    needs: build_main
     runs-on: ubuntu-latest
 
 
@@ -79,15 +65,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       
-      - name: Setup RCON connection
-        run: |
-          sudo apt-get install build-essential
-          git clone https://github.com/Tiiffi/mcrcon.git
-          cd mcrcon
-          make
-          sudo make install
-
-
       - name: Setup MinIO
         run: |
           wget https://dl.min.io/client/mc/release/linux-amd64/mc
@@ -110,6 +87,24 @@ jobs:
         run: |
          mc cp nikosnextbots_sharders.zip myminio/nnb/
 
+
+  push_texturepack:
+    runs-on: ubuntu-latest
+    needs: [build_main, build_sharders]
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+
+      - name: Setup RCON connection
+        run: |
+          sudo apt-get install build-essential
+          git clone https://github.com/Tiiffi/mcrcon.git
+          cd mcrcon
+          make
+          sudo make install
 
       - name: Import Texturepack
         run: mcrcon -H ${{ secrets.RCON_IP }} -P ${{ secrets.RCON_PORT }} -p ${{ secrets.RCON_PASSWORD }} "forcepack reload"
