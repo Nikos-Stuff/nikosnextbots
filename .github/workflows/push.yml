@@ -80,7 +80,7 @@ jobs:
 
 
       - name: Fetch Tags
-        run: echo ::set-output name=TAG::$(git describe --tags `git rev-list --tags --max-count=1`)
+        run: echo "TAG=$(git describe --tags `git rev-list --tags --max-count=1`)" >> $GITHUB_ENV
 
         
       - name: Create Release
@@ -89,8 +89,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ steps.get_latest_tag.outputs.TAG }}
-          release_name: Release v${{ github.run_number }}
+          tag_name: ${{ env.TAG }}
+          release_name: ${{ env.TAG }} - v${{ github.run_number }}
           draft: false
           prerelease: false
 
