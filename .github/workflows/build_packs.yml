@@ -33,9 +33,8 @@ jobs:
 
       - name: Setup MinIO
         run: |
-         docker run --rm -v $(pwd):/workspace -w /workspace minio/mc:latest \
-           cp https://dl.min.io/client/mc/release/linux-amd64/mc /workspace/mc
-           mc alias set myminio https://mcapi.nikodaproot.pl/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
+         docker run --rm -v $(pwd):/workspace -w /workspace minio/mc:latest
+         mc alias set myminio https://mcapi.nikodaproot.pl/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
 
 
           
