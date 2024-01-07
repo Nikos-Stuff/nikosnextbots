@@ -80,8 +80,12 @@ jobs:
 
 
       - name: Fetch Tags
-        run: echo "TAG=$(git describe --tags `git rev-list --tags --max-count=1`)" >> $GITHUB_ENV
-
+        # run: echo "TAG=$(git describe --tags ``)" >> $GITHUB_ENV
+        run: |
+         echo git describe --tags
+         echo git rev-list --tags --max-count=1
+         
+           
         
       - name: Create Release
         id: create_release
@@ -89,8 +93,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ env.TAG }}
-          release_name: ${{ env.TAG }} - v${{ github.run_number }}
+          tag_name: Stable
+          release_name: Stable - v${{ github.run_number }}
           draft: false
           prerelease: false
 
