@@ -88,6 +88,63 @@ jobs:
          mc cp nikosnextbots_sharders.zip myminio/nnb/
 
 
+
+
+
+
+
+
+
+# Custom texture pack - contains experimental changes / latest chagnes from txt-testing branch.
+  build_custom:
+    runs-on: ubuntu-latest
+    needs: build_main
+    if: github.ref == 'refs/heads/txt-testing'
+
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+      
+      - name: Setup MinIO
+        run: |
+          wget https://dl.min.io/client/mc/release/linux-amd64/mc
+          chmod +x mc
+          sudo mv mc /usr/local/bin/
+
+
+      - name: Set Up MinIO Configuration
+        run: |
+          mc alias set myminio https://mcapi.nikodaproot.pl/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
+
+
+      - name: Prepare File
+        run: |
+         cd custom
+         zip -r ../nikosnextbots_custom.zip *
+
+
+      - name: Upload to Host
+        run: |
+         mc cp nikosnextbots_custom.zip myminio/nnb/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   push_texturepack:
     runs-on: ubuntu-latest
     needs: [build_main, build_sharders]
