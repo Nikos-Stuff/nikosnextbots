@@ -14,7 +14,13 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
+
+
+
+
+
+
+  # Build the root pack
   build_main:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -60,5 +66,49 @@ jobs:
         run: mcrcon -H ${{ secrets.RCON_IP }} -P ${{ secrets.RCON_PORT }} -p ${{ secrets.RCON_PASSWORD }} "forcepack reload"
 
 
-          
-          
+
+
+  # Build the sharders pack
+  build_sharders:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+      
+      - name: Setup RCON connection
+        run: |
+          sudo apt-get install build-essential
+          git clone https://github.com/Tiiffi/mcrcon.git
+          cd mcrcon
+          make
+          sudo make install
+
+
+      - name: Setup MinIO
+        run: |
+          wget https://dl.min.io/client/mc/release/linux-amd64/mc
+          chmod +x mc
+          sudo mv mc /usr/local/bin/
+
+
+      - name: Set Up MinIO Configuration
+        run: |
+          mc alias set myminio https://mcapi.nikodaproot.pl/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
+
+
+      - name: Prepare File
+        run: |
+         cd sharders
+         zip -r ../nikosnextbots_sharders.zip *
+
+
+      - name: Upload to Host
+        run: |
+         mc cp nikosnextbots_sharders.zip myminio/nnb/
+
+
+      - name: Import Texturepack
+        run: mcrcon -H ${{ secrets.RCON_IP }} -P ${{ secrets.RCON_PORT }} -p ${{ secrets.RCON_PASSWORD }} "forcepack reload"
