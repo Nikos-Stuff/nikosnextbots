@@ -45,8 +45,8 @@ jobs:
         uses: actions/cache@v3
         with:
           path: |
-            .github/dep # Try to improve build times because why not 
-          key: ${{ runner.os }}-dependencies-${{ hashFiles('.github/dep') }}
+            .github/cache # Try to improve build times because why not 
+          key: ${{ runner.os }}-dependencies-${{ hashFiles('.github/cache') }}
 
 
 
