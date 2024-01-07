@@ -50,11 +50,11 @@ We welcome contributions to improve and expand this texture pack. If you'd like 
 1. Fork the repository to your GitHub account.
 2. Clone the forked repository to your local machine:
    ```sh
-   git clone https://github.com/Nik0-0/nikosnextbotspack.git
+   git clone https://github.com/Nik0-0/nikosnextbots.git
    ```
-4. Create a new branch for your changes based on the `testing` branch:
+4. Create a new branch for your changes based on the `txt-testing` branch:
    ```sh
-   git checkout -b testing/your-changes
+   git checkout -b txt-testing/your-changes
    ```
 6. Make your modifications and improvements.
 
@@ -65,7 +65,7 @@ We welcome contributions to improve and expand this texture pack. If you'd like 
    ```
 5. Push your branch to your forked repository:
    ```sh
-   git push origin testing/your-changes
+   git push origin txt-testing/your-changes
    ```
 8. Open a pull request on our [Pull Requests](https://github.com/Nik0-0/nikosnextbotspack/pulls) page.
 
