@@ -76,39 +76,5 @@ jobs:
         run: mcrcon -H ${{ secrets.RCON_IP }} -P ${{ secrets.RCON_PORT }} -p ${{ secrets.RCON_PASSWORD }} "forcepack reload"
 
 
-# Testing
-
-
-  #    - name: Fetch Tags
-    #    run: echo "TAG=$(git describe --tags ``)" >> $GITHUB_ENV
-       # run: |
-      #   echo git describe --tags
-       #  echo git rev-list --tags --max-count=1
-         
-           
-        
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: Stable-${{ github.run_number }}
-          release_name: Release - v${{ github.run_number }}
-          draft: false
-          prerelease: false
-
-      - name: Upload Release Asset
-        id: upload-release-asset
-        uses: actions/upload-release-asset@v1
-        env:
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: nikosnextbots_pack.zip
-          asset_name: nikosnextbots_pack.zip
-          asset_content_type: application/zip
-
-
           
           
