@@ -1,12 +1,12 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Build Pack(s)
 
 # Controls when the workflow will run - only when modifying pack
 on:
   push:
     paths:
-      - 'pack/**'
+      - 'main/**'
 
 
   # Allows you to run this workflow manually from the Actions tab
@@ -15,7 +15,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  build_main:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -32,43 +32,28 @@ jobs:
           make
           sudo make install
 
+
       - name: Setup MinIO
         run: |
           wget https://dl.min.io/client/mc/release/linux-amd64/mc
           chmod +x mc
           sudo mv mc /usr/local/bin/
 
+
       - name: Set Up MinIO Configuration
         run: |
           mc alias set myminio https://mcapi.nikodaproot.pl/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
-          
 
-            
 
-      
-
-      # Runs a single command using the runners shell
-     # - name: Prepare the file
-     #   run: zip -r -j -D test.zip pack/
-      - name: Pack & Prepare file
+      - name: Prepare File
         run: |
-         cd pack
+         cd main
          zip -r ../nikosnextbots_pack.zip *
-        
-
-
-
-
-
-
-
-      
 
 
       - name: Upload to Host
         run: |
          mc cp nikosnextbots_pack.zip myminio/nnb/
-
 
 
       - name: Import Texturepack
