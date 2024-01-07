@@ -75,6 +75,7 @@ jobs:
 
       - name: Upload to Host
         run: |
+         echo "::add-path::/usr/local/bin/"
          mc cp nikosnextbots_pack.zip myminio/nnb/
 
 
@@ -101,6 +102,7 @@ jobs:
 
       - name: Upload to Host
         run: |
+         echo "::add-path::/usr/local/bin/"
          mc cp nikosnextbots_sharders.zip myminio/nnb/
 
 
