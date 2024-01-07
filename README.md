@@ -1,6 +1,7 @@
 ![Preview Image](https://cdn.discordapp.com/attachments/1079841488365686854/1186730327264198666/n_maintitle.png?ex=65a6c4be&is=65944fbe&hm=2ae5af54dcc94b1d1ca449d9eb3d9e784bcc2cdad42666ce182228c3bccbdb79&)
-Texturepack for our server - Niko's Nextbots
-### **Main branch has limited access. Please use testing branch**
+<p align="center">Texturepack for our server - Niko's Nextbots</p>
+
+### **<p align="center">Main branch has limited access. Please use testing branch</p>**
 
 ## Description
 
@@ -47,14 +48,26 @@ We welcome contributions to improve and expand this texture pack. If you'd like 
 
 ### Getting Started 
 1. Fork the repository to your GitHub account.
-2. Clone the forked repository to your local machine: `git clone https://github.com/Nik0-0/nikosnextbotspack.git`.
-3. Create a new branch for your changes based on the `testing` branch: `git checkout -b testing/your-changes`
-4. Make your modifications and improvements.
+2. Clone the forked repository to your local machine:
+   ```sh
+   git clone https://github.com/Nik0-0/nikosnextbotspack.git
+   ```
+4. Create a new branch for your changes based on the `testing` branch:
+   ```sh
+   git checkout -b testing/your-changes
+   ```
+6. Make your modifications and improvements.
 
 ### Submitting Changes 
-1. Commit your changes: `git commit -m 'Add your meaningful commit message'`.
-2. Push your branch to your forked repository: `git push origin testing/your-changes`.
-3. Open a pull request on our [Pull Requests](https://github.com/Nik0-0/nikosnextbotspack/pulls) page.
+1. Commit your changes:
+   ```sh
+   git commit -m 'Add your meaningful commit message'
+   ```
+5. Push your branch to your forked repository:
+   ```sh
+   git push origin testing/your-changes
+   ```
+8. Open a pull request on our [Pull Requests](https://github.com/Nik0-0/nikosnextbotspack/pulls) page.
 
 ## Issues
 
