@@ -77,6 +77,12 @@ jobs:
 
 
 # Testing
+
+
+      - name: Fetch Tags
+        run: git fetch --tags
+
+        
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
