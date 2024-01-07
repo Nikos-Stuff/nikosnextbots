@@ -98,7 +98,7 @@ jobs:
 # Custom texture pack - contains experimental changes / latest chagnes from txt-testing branch.
   build_custom:
     runs-on: ubuntu-latest
-    needs: build_main
+    needs: [build_main, build_sharders]
     if: github.ref == 'refs/heads/txt-testing'
 
 
@@ -147,7 +147,7 @@ jobs:
 
   push_texturepack:
     runs-on: ubuntu-latest
-    needs: [build_custom, build_main, build_sharders]
+    needs: [build_main, build_sharders]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
