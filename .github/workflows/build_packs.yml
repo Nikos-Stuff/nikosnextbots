@@ -36,7 +36,7 @@ jobs:
           wget https://dl.min.io/client/mc/release/linux-amd64/mc
           chmod +x mc
           sudo mv mc /usr/local/bin/
-          sudo -n mv mc /usr/local/bin/mc
+          sudo -n mv mc /usr/local/bin/
 
       - name: Set Up MinIO Configuration
         run: |
@@ -73,7 +73,7 @@ jobs:
 
       - name: Upload to Host
         run: |
-         sudo -n mv mc /usr/local/bin/mc
+         sudo -n mv mc /usr/local/bin/
          mc cp nikosnextbots_pack.zip myminio/nnb/
 
 
@@ -100,7 +100,7 @@ jobs:
 
       - name: Upload to Host
         run: |
-         sudo -n mv mc /usr/local/bin/mc
+         sudo -n mv mc /usr/local/bin/
          mc cp nikosnextbots_sharders.zip myminio/nnb/
 
 
