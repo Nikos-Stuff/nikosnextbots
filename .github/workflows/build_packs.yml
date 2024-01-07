@@ -34,6 +34,7 @@ jobs:
       - name: Setup MinIO
         run: |
          docker run --rm -v $(pwd):/workspace -w /workspace minio/mc:latest
+        continue-on-error: true
       - name: Run MinIO
         run: mc alias set myminio https://mcapi.nikodaproot.pl/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
 
