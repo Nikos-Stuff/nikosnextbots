@@ -148,7 +148,7 @@ jobs:
 # Custom texture pack - contains experimental changes / latest chagnes from txt-testing branch.
   build_custom:
     runs-on: ubuntu-latest
-    needs: [validate_custom,build_main, build_sharders]
+    needs: [validate_custom]
     if: github.ref == 'refs/heads/txt-testing'
 
 
