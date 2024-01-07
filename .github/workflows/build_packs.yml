@@ -17,6 +17,55 @@ on:
 jobs:
 
 
+# Check the main folder for .json syntax / overall errors
+  validate_main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Validate JSON Files - Main
+        run: |
+          cd main
+          for file in $(find . -type f -name "*.json"); do
+            jq empty "$file" >/dev/null || (echo "Error in JSON file: $file" && exit 1)
+          done
+
+
+
+
+# Check the sharders folder for .json syntax / overall errors
+  validate_sharders:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Validate JSON Files - Main
+        run: |
+          cd sharders
+          for file in $(find . -type f -name "*.json"); do
+            jq empty "$file" >/dev/null || (echo "Error in JSON file: $file" && exit 1)
+          done
+
+
+# Check the custom folder for .json syntax / overall errors
+  validate_custom:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/txt-testing'
+    steps:
+      - uses: actions/checkout@v3
+      - name: Validate JSON Files - Main
+        run: |
+          cd custom
+          for file in $(find . -type f -name "*.json"); do
+            jq empty "$file" >/dev/null || (echo "Error in JSON file: $file" && exit 1)
+          done
+
+
+
+
+
+# -----------------------------------------
+# Build pack
+# -----------------------------------------
+
 
 
 
@@ -24,7 +73,7 @@ jobs:
   # Build the root pack
   build_main:
     runs-on: ubuntu-latest
-
+    needs: [validate_main]
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -58,6 +107,7 @@ jobs:
   # Build the sharders pack
   build_sharders:
     runs-on: ubuntu-latest
+    needs: [validate_sharders]
 
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -98,7 +148,7 @@ jobs:
 # Custom texture pack - contains experimental changes / latest chagnes from txt-testing branch.
   build_custom:
     runs-on: ubuntu-latest
-    needs: build_main
+    needs: [validate_custom]
     if: github.ref == 'refs/heads/txt-testing'
 
 
@@ -124,12 +174,15 @@ jobs:
          cd custom
          zip -r ../nikosnextbots_custom.zip *
 
+ # For now testing pack will be not uploaded to the host.
+ #     - name: Upload to Host
+ #       run: |
+ #        mc cp nikosnextbots_custom.zip myminio/nnb/
 
-      - name: Upload to Host
-        run: |
-         mc cp nikosnextbots_custom.zip myminio/nnb/
-
-
+      - uses: actions/upload-artifact@v4
+        with:
+         name: untested_custom_pack
+         path: nikosnextbots_custom.zip
 
 
 
