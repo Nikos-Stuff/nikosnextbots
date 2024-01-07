@@ -33,11 +33,8 @@ jobs:
 
       - name: Setup MinIO
         run: |
-          wget https://dl.min.io/client/mc/release/linux-amd64/mc
-          chmod +x mc
-      - name: Finish Setup
-        run: |
-          sudo mv mc /usr/local/bin/
+          docker run --rm -v $(pwd):/workspace -w /workspace minio/mc:latest \
+            cp https://dl.min.io/client/mc/release/linux-amd64/mc /workspace/mc
 
       - name: Set Up MinIO Configuration
         run: |
