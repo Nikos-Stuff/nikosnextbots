@@ -1,6 +1,7 @@
 ![Preview Image](https://cdn.discordapp.com/attachments/1079841488365686854/1186730327264198666/n_maintitle.png?ex=65a6c4be&is=65944fbe&hm=2ae5af54dcc94b1d1ca449d9eb3d9e784bcc2cdad42666ce182228c3bccbdb79&)
 <center>Texturepack for our server - Niko's Nextbots</center>
-### **<center>TMain branch has limited access. Please use testing branch</center>**
+
+### **<center>Main branch has limited access. Please use testing branch</center>**
 
 ## Description
 
