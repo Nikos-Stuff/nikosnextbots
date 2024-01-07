@@ -4,9 +4,9 @@ name: Check JSON Files
 
 on:
   push:
-    branches: [ "txt-main" ]
+    branches: [ "txt-testing" ]
   pull_request:
-    branches: [ "txt-main" ]
+    branches: [ "txt-testing" ]
 
   workflow_dispatch:
 
