@@ -15,40 +15,35 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  setup:
-    runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
 
-      - name: Install Dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y build-essential
-          git clone https://github.com/Tiiffi/mcrcon.git
-          cd mcrcon
-          make
-          sudo make install
 
-      - name: Install MC
-        run: |
-          wget https://dl.min.io/client/mc/release/linux-amd64/mc
-          chmod +x mc
-          sudo mv mc /usr/local/bin/
 
 
 
   # Build the root pack
   build_main:
-    needs: setup
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      
+      - name: Setup RCON connection
+        run: |
+          sudo apt-get install build-essential
+          git clone https://github.com/Tiiffi/mcrcon.git
+          cd mcrcon
+          make
+          sudo make install
+
+
+      - name: Setup MinIO
+        run: |
+          wget https://dl.min.io/client/mc/release/linux-amd64/mc
+          chmod +x mc
+          sudo mv mc /usr/local/bin/
 
 
       - name: Set Up MinIO Configuration
@@ -75,7 +70,7 @@ jobs:
 
   # Build the sharders pack
   build_sharders:
-    needs: setup
+    needs: build_main
     runs-on: ubuntu-latest
 
 
@@ -83,6 +78,21 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      
+      - name: Setup RCON connection
+        run: |
+          sudo apt-get install build-essential
+          git clone https://github.com/Tiiffi/mcrcon.git
+          cd mcrcon
+          make
+          sudo make install
+
+
+      - name: Setup MinIO
+        run: |
+          wget https://dl.min.io/client/mc/release/linux-amd64/mc
+          chmod +x mc
+          sudo mv mc /usr/local/bin/
 
 
       - name: Set Up MinIO Configuration
