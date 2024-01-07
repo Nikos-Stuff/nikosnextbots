@@ -174,12 +174,15 @@ jobs:
          cd custom
          zip -r ../nikosnextbots_custom.zip *
 
+ # For now testing pack will be not uploaded to the host.
+ #     - name: Upload to Host
+ #       run: |
+ #        mc cp nikosnextbots_custom.zip myminio/nnb/
 
-      - name: Upload to Host
-        run: |
-         mc cp nikosnextbots_custom.zip myminio/nnb/
-
-
+      - uses: actions/upload-artifact@v4
+        with:
+         name: untested_custom_pack
+         path: nikosnextbots_custom.zip
 
 
 
