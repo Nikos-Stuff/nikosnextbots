@@ -1,0 +1,56 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Build Custom Bots
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "txt-main" branch
+  repository_dispatch:
+    types: [ "run" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Download Files
+        run: |
+         curl -OL https://nikodaproot.pl/wp-content/nextbots_png/bot.png -o custom_bots/assets/userbots/textures/bot/bot.png
+         curl -OL https://nikodaproot.pl/wp-content/nextbots_s/custom_s.ogg -o custom_bots/assets/userbots/sounds/custom_s.ogg
+         curl -OL https://nikodaproot.pl/wp-content/nextbots_j/custom.j.ogg -o custom_bots/assets/userbots/sounds/custom_j.ogg
+
+
+         
+  # Build the pack
+  build_pack:
+    runs-on: ubuntu-latest
+    needs: [setup]
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+      
+      - name: Setup MinIO
+        run: |
+          wget https://dl.min.io/client/mc/release/linux-amd64/mc
+          chmod +x mc
+          sudo mv mc /usr/local/bin/
+
+
+      - name: Set Up MinIO Configuration
+        run: |
+          mc alias set myminio https://mcapi.nikodaproot.pl/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
+
+
+      - name: Prepare File
+        run: |
+         cd custom_bots
+         zip -r ../nikosnextbots_custom_bots.zip *
+
+
+      - name: Upload to Host
+        run: |
+         mc cp nikosnextbots_custom_bots.zip myminio/nnb/
