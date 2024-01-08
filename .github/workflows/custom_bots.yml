@@ -6,7 +6,7 @@ name: Build Custom Bots
 on:
   # Triggers the workflow on push or pull request events but only for the "txt-main" branch
   repository_dispatch:
-    types: [ "run" ]
+    types: [ "build-bot" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
