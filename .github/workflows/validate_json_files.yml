@@ -3,15 +3,12 @@
 name: Check JSON Files
 
 on:
-  push:
-    branches: [ "txt-testing" ]
-  pull_request:
-    branches: [ "txt-testing" ]
+#  push:
+#    branches: [ "txt-testing" ]
+#  pull_request:
+#    branches: [ "txt-testing" ]
   repository_dispatch:
     types: [ "run" ]
-
-  workflow_dispatch:
-
 jobs:
   validate_main:
     runs-on: ubuntu-latest
