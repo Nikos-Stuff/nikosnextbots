@@ -2,7 +2,7 @@
   "providers": [
 	{
       "type": "bitmap",
-      "file": "userbots:bot/bot/bot.png",
+      "file": "userbots:bot/bot.png",
       "ascent": -12,
       "height": 26,
       "chars": [
