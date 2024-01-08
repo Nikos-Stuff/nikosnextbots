@@ -8,8 +8,7 @@ on:
   pull_request:
     branches: [ "txt-testing" ]
   repository_dispatch:
-    types:
-      - run
+    types: [ "run" ]
 
   workflow_dispatch:
 
