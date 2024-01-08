@@ -12,8 +12,9 @@ on:
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
-  setup:
+jobs: 
+  # Build the pack
+  build_pack:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -22,16 +23,6 @@ jobs:
          curl -OL https://nikodaproot.pl/wp-content/nextbots_png/bot.png -o custom_bots/assets/userbots/textures/bot/bot.png
          curl -OL https://nikodaproot.pl/wp-content/nextbots_s/custom_s.ogg -o custom_bots/assets/userbots/sounds/custom_s.ogg
          curl -OL https://nikodaproot.pl/wp-content/nextbots_j/custom.j.ogg -o custom_bots/assets/userbots/sounds/custom_j.ogg
-
-
-         
-  # Build the pack
-  build_pack:
-    runs-on: ubuntu-latest
-    needs: [setup]
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
       
       - name: Setup MinIO
         run: |
