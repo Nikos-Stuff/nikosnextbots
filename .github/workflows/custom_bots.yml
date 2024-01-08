@@ -20,9 +20,9 @@ jobs:
       - uses: actions/checkout@v3
       - name: Download Files
         run: |
-         curl -OL https://nikodaproot.pl/wp-content/nextbots_png/bot.png -o custom_bots/assets/userbots/textures/bot/bot.png
-         curl -OL https://nikodaproot.pl/wp-content/nextbots_s/custom_s.ogg -o custom_bots/assets/userbots/sounds/custom_s.ogg
-         curl -OL https://nikodaproot.pl/wp-content/nextbots_j/custom.j.ogg -o custom_bots/assets/userbots/sounds/custom_j.ogg
+         curl -L https://nikodaproot.pl/wp-content/nextbots_png/bot.png -o custom_bots/assets/userbots/textures/bot/bot.png
+         curl -L https://nikodaproot.pl/wp-content/nextbots_s/custom_s.ogg -o custom_bots/assets/userbots/sounds/custom_s.ogg
+         curl -L https://nikodaproot.pl/wp-content/nextbots_j/custom.j.ogg -o custom_bots/assets/userbots/sounds/custom_j.ogg
       
       - name: Setup MinIO
         run: |
