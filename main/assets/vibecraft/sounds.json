@@ -35,6 +35,10 @@
     "sounds": [
       "vibecraft:nextbots/crying_sans/crying_sans"]
 	},
+  "dragon": {
+    "sounds": [
+      "vibecraft:nextbots/dragon/dragon"]
+	},
   "crying_sans_j": {
     "sounds": [
       "vibecraft:nextbots/crying_sans/crying_sans_j"]
