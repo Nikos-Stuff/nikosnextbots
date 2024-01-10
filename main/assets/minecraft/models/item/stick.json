@@ -9,6 +9,12 @@
         "custom_model_data": 1
       },
       "model": "item/dragon/dragon_anim"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2
+      },
+      "model": "item/toob/toob_anim"
     }
   ]
 }
