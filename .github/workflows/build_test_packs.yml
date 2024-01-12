@@ -1,0 +1,228 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Build Test Pack(s)
+
+# Controls when the workflow will run - only when modifying pack
+on:
+  push:
+    paths:
+      - 'main/**'
+      - 'sharders/**'
+      - 'custom/**'
+
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+
+
+# Check the main folder for .json syntax / overall errors
+  validate_main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Validate JSON Files - Main
+        run: |
+          cd main
+          for file in $(find . -type f -name "*.json"); do
+            jq empty "$file" >/dev/null || (echo "Error in JSON file: $file" && exit 1)
+          done
+
+
+
+
+# Check the sharders folder for .json syntax / overall errors
+  validate_sharders:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Validate JSON Files - Main
+        run: |
+          cd sharders
+          for file in $(find . -type f -name "*.json"); do
+            jq empty "$file" >/dev/null || (echo "Error in JSON file: $file" && exit 1)
+          done
+
+
+# Check the custom folder for .json syntax / overall errors
+  validate_custom:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/txt-testing'
+    steps:
+      - uses: actions/checkout@v3
+      - name: Validate JSON Files - Main
+        run: |
+          cd custom
+          for file in $(find . -type f -name "*.json"); do
+            jq empty "$file" >/dev/null || (echo "Error in JSON file: $file" && exit 1)
+          done
+
+
+
+
+
+# -----------------------------------------
+# Build pack
+# -----------------------------------------
+
+
+
+
+
+  # Build the root pack
+  build_main:
+    runs-on: ubuntu-latest
+    needs: [validate_main]
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+      
+      - name: Setup MinIO
+        run: |
+          wget https://dl.min.io/client/mc/release/linux-amd64/mc
+          chmod +x mc
+          sudo mv mc /usr/local/bin/
+
+
+      - name: Set Up MinIO Configuration
+        run: |
+          mc alias set myminio https://mcapi.nikodaproot.pl/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
+
+
+      - name: Prepare File
+        run: |
+         cd main
+         zip -r ../nikosnextbots_pack.zip *
+
+# skip host upload - avoid conflict
+ #     - name: Upload to Host
+ #       run: |
+ #        mc cp nikosnextbots_pack.zip myminio/nnb/
+      - uses: actions/upload-artifact@v4
+        with:
+         name: untested_main_pack
+         path: nikosnextbots_pack.zip
+
+
+
+  # Build the sharders pack
+  build_sharders:
+    runs-on: ubuntu-latest
+    needs: [validate_sharders]
+
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+      
+      - name: Setup MinIO
+        run: |
+          wget https://dl.min.io/client/mc/release/linux-amd64/mc
+          chmod +x mc
+          sudo mv mc /usr/local/bin/
+
+
+      - name: Set Up MinIO Configuration
+        run: |
+          mc alias set myminio https://mcapi.nikodaproot.pl/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
+
+
+      - name: Prepare File
+        run: |
+         cd sharders
+         zip -r ../nikosnextbots_sharders.zip *
+
+# skip host upload - avoid conflict
+   #   - name: Upload to Host
+   #     run: |
+   #      mc cp nikosnextbots_sharders.zip myminio/nnb/
+      - uses: actions/upload-artifact@v4
+        with:
+         name: untested_sharders_pack
+         path: nikosnextbots_sharders.zip
+
+
+
+
+
+
+
+
+
+# Custom texture pack - contains experimental changes / latest chagnes from txt-testing branch.
+  build_custom:
+    runs-on: ubuntu-latest
+    needs: [validate_custom]
+    if: github.ref == 'refs/heads/txt-testing'
+
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+      
+      - name: Setup MinIO
+        run: |
+          wget https://dl.min.io/client/mc/release/linux-amd64/mc
+          chmod +x mc
+          sudo mv mc /usr/local/bin/
+
+
+      - name: Set Up MinIO Configuration
+        run: |
+          mc alias set myminio https://mcapi.nikodaproot.pl/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
+
+
+      - name: Prepare File
+        run: |
+         cd custom
+         zip -r ../nikosnextbots_custom.zip *
+
+ # For now testing pack will be not uploaded to the host.
+ #     - name: Upload to Host
+ #       run: |
+ #        mc cp nikosnextbots_custom.zip myminio/nnb/
+
+      - uses: actions/upload-artifact@v4
+        with:
+         name: untested_custom_pack
+         path: nikosnextbots_custom.zip
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#  push_texturepack:
+#    runs-on: ubuntu-latest
+#    needs: [build_main, build_sharders]
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+#    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+#      - uses: actions/checkout@v3
+
+
+#      - name: Setup RCON connection
+#        run: |
+#          sudo apt-get install build-essential
+#          git clone https://github.com/Tiiffi/mcrcon.git
+#          cd mcrcon
+#          make
+#          sudo make install
+
+#      - name: Import Texturepack
+#        run: mcrcon -H ${{ secrets.RCON_IP }} -P ${{ secrets.RCON_PORT }} -p ${{ secrets.RCON_PASSWORD }} "forcepack reload"
