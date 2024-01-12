@@ -2,7 +2,7 @@
   "menu": {
     "sounds": [
       "vibecraft:menu"]
-	},
+	},	
   "menu_h": {
     "sounds": [
       "vibecraft:menu_h"]
@@ -34,6 +34,10 @@
   "crying_sans": {
     "sounds": [
       "vibecraft:nextbots/crying_sans/crying_sans"]
+	},
+  "dragon": {
+    "sounds": [
+      "vibecraft:nextbots/dragon/dragon"]
 	},
   "crying_sans_j": {
     "sounds": [
@@ -215,6 +219,22 @@
     "sounds": [
       "vibecraft:ambient/nn_mall_ambient"]
 	},
+  "nn_camberturn_ambient": {
+    "sounds": [
+      "vibecraft:ambient/nn_camberturn_ambient"]
+	},
+  "nn_crossroads_ambient": {
+    "sounds": [
+      "vibecraft:ambient/nn_crossroads_ambient"]
+	},
+  "nn_port_ambient": {
+    "sounds": [
+      "vibecraft:ambient/nn_port_ambient"]
+	},
+  "nn_russia_ambient": {
+    "sounds": [
+      "vibecraft:ambient/nn_russia_ambient"]
+	},
   "racoon": {
     "sounds": [
       "vibecraft:nextbots/racoon/racoon"]
@@ -274,6 +294,14 @@
   "blabber_j": {
     "sounds": [
       "vibecraft:nextbots/blabber/blabber_j"]
+	},
+  "carter": {
+    "sounds": [
+      "vibecraft:nextbots/carter/carter"]
+	},
+  "carter_j": {
+    "sounds": [
+      "vibecraft:nextbots/carter/carter_j"]
 	},
   "chilly": {
     "sounds": [
