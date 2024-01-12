@@ -295,6 +295,14 @@
     "sounds": [
       "vibecraft:nextbots/blabber/blabber_j"]
 	},
+  "carter": {
+    "sounds": [
+      "vibecraft:nextbots/carter/carter"]
+	},
+  "carter_j": {
+    "sounds": [
+      "vibecraft:nextbots/carter/carter_j"]
+	},
   "chilly": {
     "sounds": [
       "vibecraft:nextbots/chilly/chilly"]

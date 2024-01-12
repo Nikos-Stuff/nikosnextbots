@@ -392,7 +392,15 @@
 
 
 
-
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/carter.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "Ҿ"
+      ]
+    },
     {
       "type": "bitmap",
       "file": "vibecraft:nextbots/osc.png",
