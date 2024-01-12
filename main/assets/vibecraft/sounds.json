@@ -219,6 +219,22 @@
     "sounds": [
       "vibecraft:ambient/nn_mall_ambient"]
 	},
+  "nn_camberturn_ambient": {
+    "sounds": [
+      "vibecraft:ambient/nn_camberturn_ambient"]
+	},
+  "nn_crossroads_ambient": {
+    "sounds": [
+      "vibecraft:ambient/nn_crossroads_ambient"]
+	},
+  "nn_port_ambient": {
+    "sounds": [
+      "vibecraft:ambient/nn_port_ambient"]
+	},
+  "nn_russia_ambient": {
+    "sounds": [
+      "vibecraft:ambient/nn_russia_ambient"]
+	},
   "racoon": {
     "sounds": [
       "vibecraft:nextbots/racoon/racoon"]
