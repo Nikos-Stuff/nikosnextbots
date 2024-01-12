@@ -97,11 +97,14 @@ jobs:
          cd main
          zip -r ../nikosnextbots_pack.zip *
 
-
-      - name: Upload to Host
-        run: |
-         mc cp nikosnextbots_pack.zip myminio/nnb/
-
+# skip host upload - avoid conflict
+ #     - name: Upload to Host
+ #       run: |
+ #        mc cp nikosnextbots_pack.zip myminio/nnb/
+      - uses: actions/upload-artifact@v4
+        with:
+         name: untested_main_pack
+         path: nikosnextbots_pack.zip
 
 
 
@@ -133,10 +136,14 @@ jobs:
          cd sharders
          zip -r ../nikosnextbots_sharders.zip *
 
-
-      - name: Upload to Host
-        run: |
-         mc cp nikosnextbots_sharders.zip myminio/nnb/
+# skip host upload - avoid conflict
+   #   - name: Upload to Host
+   #     run: |
+   #      mc cp nikosnextbots_sharders.zip myminio/nnb/
+      - uses: actions/upload-artifact@v4
+        with:
+         name: untested_sharders_pack
+         path: nikosnextbots_sharders.zip
 
 
 
@@ -199,23 +206,23 @@ jobs:
 
 
 
-  push_texturepack:
-    runs-on: ubuntu-latest
-    needs: [build_main, build_sharders]
+#  push_texturepack:
+#    runs-on: ubuntu-latest
+#    needs: [build_main, build_sharders]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
+#    steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+#      - uses: actions/checkout@v3
 
 
-      - name: Setup RCON connection
-        run: |
-          sudo apt-get install build-essential
-          git clone https://github.com/Tiiffi/mcrcon.git
-          cd mcrcon
-          make
-          sudo make install
+#      - name: Setup RCON connection
+#        run: |
+#          sudo apt-get install build-essential
+#          git clone https://github.com/Tiiffi/mcrcon.git
+#          cd mcrcon
+#          make
+#          sudo make install
 
-      - name: Import Texturepack
-        run: mcrcon -H ${{ secrets.RCON_IP }} -P ${{ secrets.RCON_PORT }} -p ${{ secrets.RCON_PASSWORD }} "forcepack reload"
+#      - name: Import Texturepack
+#        run: mcrcon -H ${{ secrets.RCON_IP }} -P ${{ secrets.RCON_PORT }} -p ${{ secrets.RCON_PASSWORD }} "forcepack reload"
