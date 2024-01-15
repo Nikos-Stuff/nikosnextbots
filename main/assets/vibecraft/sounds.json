@@ -411,6 +411,14 @@
     "sounds": [
       "vibecraft:nextbots/osc/osc_j"]
 	},
+  "shroom": {
+    "sounds": [
+      "vibecraft:nextbots/shroom/shroom"]
+	},
+  "shroom_j": {
+    "sounds": [
+      "vibecraft:nextbots/shroom/shroom_j"]
+	},
 	
 	
 	

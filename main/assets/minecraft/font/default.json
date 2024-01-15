@@ -391,7 +391,15 @@
 
 
 
-
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/shroom.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
     {
       "type": "bitmap",
       "file": "vibecraft:nextbots/carter.png",
