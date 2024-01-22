@@ -60,6 +60,20 @@ jobs:
 
 
 
+# Check the cosmetics folder for .json syntax / overall errors
+  validate_cosmetics:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/txt-testing'
+    steps:
+      - uses: actions/checkout@v3
+      - name: Validate JSON Files - Cosmetics
+        run: |
+          cd cosmetics
+          for file in $(find . -type f -name "*.json"); do
+            jq empty "$file" >/dev/null || (echo "Error in JSON file: $file" && exit 1)
+          done
+
+
 
 
 # -----------------------------------------
@@ -136,6 +150,47 @@ jobs:
       - name: Upload to Host
         run: |
          mc cp nikosnextbots_sharders.zip myminio/nnb/
+
+
+
+
+
+
+  # Build the cosmetics pack
+  build_cosmetics:
+    runs-on: ubuntu-latest
+    needs: [validate_sharders]
+
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+      
+      - name: Setup MinIO
+        run: |
+          wget https://dl.min.io/client/mc/release/linux-amd64/mc
+          chmod +x mc
+          sudo mv mc /usr/local/bin/
+
+
+      - name: Set Up MinIO Configuration
+        run: |
+          mc alias set myminio https://mcapi.nikodaproot.pl/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
+
+
+      - name: Prepare File
+        run: |
+         cd cosmetics
+         zip -r ../nikosnextbots_cosmetics.zip *
+
+
+      - name: Upload to Host
+        run: |
+         mc cp nikosnextbots_cosmetics.zip myminio/nnb/
+
+
+
 
 
 
