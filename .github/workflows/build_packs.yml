@@ -22,7 +22,7 @@ jobs:
   validate_main:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Validate JSON Files - Main
         run: |
           cd main
@@ -37,8 +37,8 @@ jobs:
   validate_sharders:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Validate JSON Files - Main
+      - uses: actions/checkout@v4
+      - name: Validate JSON Files - Sharders
         run: |
           cd sharders
           for file in $(find . -type f -name "*.json"); do
@@ -51,8 +51,8 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/txt-testing'
     steps:
-      - uses: actions/checkout@v3
-      - name: Validate JSON Files - Main
+      - uses: actions/checkout@v4
+      - name: Validate JSON Files - Testing
         run: |
           cd custom
           for file in $(find . -type f -name "*.json"); do
@@ -64,9 +64,8 @@ jobs:
 # Check the cosmetics folder for .json syntax / overall errors
   validate_cosmetics:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/txt-testing'
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Validate JSON Files - Cosmetics
         run: |
           cd cosmetics
@@ -92,7 +91,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       
       - name: Setup MinIO
         run: |
@@ -128,7 +127,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       
       - name: Setup MinIO
         run: |
@@ -160,13 +159,13 @@ jobs:
   # Build the cosmetics pack
   build_cosmetics:
     runs-on: ubuntu-latest
-    needs: [validate_sharders]
+    needs: [validate_cosmetics]
 
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       
       - name: Setup MinIO
         run: |
@@ -211,7 +210,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       
       - name: Setup MinIO
         run: |
@@ -256,12 +255,12 @@ jobs:
 
   push_texturepack:
     runs-on: ubuntu-latest
-    needs: [build_main, build_sharders]
+    needs: [build_main, build_sharders, build_cosmetics]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
 
       - name: Setup RCON connection
