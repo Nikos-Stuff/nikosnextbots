@@ -1,0 +1,14 @@
+{
+ "parent": "item/generated",
+ "textures": {
+  "layer0": "item/carved_pumpkin"
+ },
+ 
+ "overrides": [
+  {"predicate": {"custom_model_data":1}, "model": "block/custom/model"},
+  {"predicate": {"custom_model_data":2}, "model": "block/custom/santahat"},
+  {"predicate": {"custom_model_data":3}, "model": "block/custom/crown"},
+  {"predicate": {"custom_model_data":4}, "model": "block/custom/tophat"},
+  {"predicate": {"custom_model_data":5}, "model": "block/custom/blacktophat"}
+ ]
+}
