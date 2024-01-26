@@ -3,7 +3,7 @@
 name: Check JSON Files
 
 on:
-#  pull_request:
+  pull_request:
 #    branches: [ "txt-main" ]
   workflow_dispatch:
 
@@ -11,7 +11,7 @@ jobs:
   validate_main:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Validate JSON Files - Main
         run: |
           cd main
@@ -25,7 +25,7 @@ jobs:
   validate_sharders:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         # Check sharders folder  
       - name: Validate JSON Files - Sharders
         run: |
@@ -40,7 +40,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/txt-testing'
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         # Check sharders folder  
       - name: Validate JSON Files - Custom
         run: |
@@ -53,7 +53,7 @@ jobs:
   validate_cosmetics:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         # Check sharders folder  
       - name: Validate JSON Files - Custom
         run: |
