@@ -3,8 +3,8 @@
 name: Check JSON Files
 
 on:
-  pull_request:
-    branches: [ "txt-main" ]
+#  pull_request:
+#    branches: [ "txt-main" ]
   workflow_dispatch:
 
 jobs:
