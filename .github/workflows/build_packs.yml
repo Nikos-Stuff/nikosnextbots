@@ -2,7 +2,7 @@
 
 name: Build Pack(s)
 
-# Controls when the workflow will run - only when modifying pack
+# Controls when the workflow will run - only when modifying pack or pushing changes etc
 on:
   push:
     branches:
