@@ -3,10 +3,8 @@
 name: Check JSON Files
 
 on:
-  push:
-    branches: [ "txt-testing" ]
   pull_request:
-    branches: [ "txt-testing" ]
+    branches: [ "txt-main" ]
   workflow_dispatch:
 
 jobs:
@@ -47,6 +45,19 @@ jobs:
       - name: Validate JSON Files - Custom
         run: |
           cd custom
+          for file in $(find . -type f -name "*.json"); do
+            jq empty "$file" >/dev/null || (echo "Error in JSON file: $file" && exit 1)
+          done
+
+
+  validate_cosmetics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        # Check sharders folder  
+      - name: Validate JSON Files - Custom
+        run: |
+          cd cosmetics
           for file in $(find . -type f -name "*.json"); do
             jq empty "$file" >/dev/null || (echo "Error in JSON file: $file" && exit 1)
           done
