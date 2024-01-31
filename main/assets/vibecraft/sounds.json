@@ -459,6 +459,28 @@
 	
 	
 	
+  "s_chase": {
+    "sounds": [
+      "vibecraft:nextbots/sariel/s_chase"]
+	},
+  "s_cpath": {
+    "sounds": [
+      "vibecraft:nextbots/sariel/s_cpath"]
+	},
+  "s_path": {
+    "sounds": [
+      "vibecraft:nextbots/sariel/s_path"]
+	},
+  "s_scream": {
+    "sounds": [
+      "vibecraft:nextbots/sariel/s_scream"]
+	},
+	
+	
+	
+	
+	
+	
 	
   "smug_dance": {
     "sounds": [
