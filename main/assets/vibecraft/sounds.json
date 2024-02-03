@@ -419,6 +419,14 @@
     "sounds": [
       "vibecraft:nextbots/shroom/shroom_j"]
 	},
+  "grumbo": {
+    "sounds": [
+      "vibecraft:nextbots/grumbo/grumbo"]
+	},
+  "grumbo_j": {
+    "sounds": [
+      "vibecraft:nextbots/grumbo/grumbo_j"]
+	},
 	
 	
 	
@@ -475,6 +483,7 @@
     "sounds": [
       "vibecraft:nextbots/sariel/s_scream"]
 	},
+	
 	
 	
 	
