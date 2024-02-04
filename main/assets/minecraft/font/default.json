@@ -607,6 +607,15 @@
         ""
       ]
     },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/mohu.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
 	
 	
 	
