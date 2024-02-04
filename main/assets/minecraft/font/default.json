@@ -580,7 +580,15 @@
         "ԟ"
       ]
     },
-	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/giggle.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        "Ԡ"
+      ]
+    },
 	
 	
 	

@@ -427,7 +427,14 @@
     "sounds": [
       "vibecraft:nextbots/grumbo/grumbo_j"]
 	},
-	
+  "giggle": {
+    "sounds": [
+      "vibecraft:nextbots/giggle/giggle"]
+	},
+  "giggle_j": {
+    "sounds": [
+      "vibecraft:nextbots/giggle/giggle_j"]
+	},
 	
 	
   "chiptunes": {
