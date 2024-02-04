@@ -616,6 +616,15 @@
         ""
       ]
     },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/jack.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
 	
 	
 	

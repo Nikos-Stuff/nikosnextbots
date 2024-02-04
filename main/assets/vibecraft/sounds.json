@@ -451,6 +451,10 @@
     "sounds": [
       "vibecraft:nextbots/leorio/leorio"]
 	},
+  "jack": {
+    "sounds": [
+      "vibecraft:nextbots/jack/jack"]
+	},
 	
 	
 	
