@@ -573,7 +573,7 @@
 	},
   "quickshop": {
     "sounds": [
-      "vibecraft:quickshop"]
+      "vibecraft:effects/quickshop"]
 	},
   "newzone": {
     "sounds": [
