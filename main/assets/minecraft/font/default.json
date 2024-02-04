@@ -589,7 +589,15 @@
         "Ԡ"
       ]
     },
-	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/rei.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
 	
 	
 	
