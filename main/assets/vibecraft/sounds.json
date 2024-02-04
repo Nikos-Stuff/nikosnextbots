@@ -455,6 +455,14 @@
     "sounds": [
       "vibecraft:nextbots/jack/jack"]
 	},
+  "unfortunate": {
+    "sounds": [
+      "vibecraft:nextbots/unfortunate/unfortunate"]
+	},
+  "unfortunate_j": {
+    "sounds": [
+      "vibecraft:nextbots/unfortunate/unfortunate_j"]
+	},
 	
 	
 	
