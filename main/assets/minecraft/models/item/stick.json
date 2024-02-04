@@ -15,6 +15,12 @@
         "custom_model_data": 2
       },
       "model": "item/toob/toob_anim"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3
+      },
+      "model": "item/icosahedron/icosahedron_anim"
     }
   ]
 }

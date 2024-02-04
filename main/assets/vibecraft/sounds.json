@@ -439,6 +439,14 @@
     "sounds": [
       "vibecraft:nextbots/rei/rei"]
 	},
+  "icosahedron": {
+    "sounds": [
+      "vibecraft:nextbots/icosahedron/icosahedron"]
+	},
+  "icosahedron": {
+    "sounds": [
+      "vibecraft:nextbots/icosahedron/icosahedron_j"]
+	},
 	
 	
 	
