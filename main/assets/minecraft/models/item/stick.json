@@ -21,6 +21,12 @@
         "custom_model_data": 3
       },
       "model": "item/icosahedron/icosahedron_anim"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 4
+      },
+      "model": "item/lolguy/lolguy_anim"
     }
   ]
 }

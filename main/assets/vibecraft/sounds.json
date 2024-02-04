@@ -463,6 +463,14 @@
     "sounds": [
       "vibecraft:nextbots/unfortunate/unfortunate_j"]
 	},
+  "lolguy_j": {
+    "sounds": [
+      "vibecraft:nextbots/lolguy/lolguy_j"]
+	},
+  "lolguy": {
+    "sounds": [
+      "vibecraft:nextbots/lolguy/lolguy"]
+	},
 	
 	
 	
