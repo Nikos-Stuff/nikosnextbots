@@ -447,6 +447,10 @@
     "sounds": [
       "vibecraft:nextbots/icosahedron/icosahedron_j"]
 	},
+  "leorio": {
+    "sounds": [
+      "vibecraft:nextbots/leorio/leorio"]
+	},
 	
 	
 	

@@ -598,6 +598,15 @@
         ""
       ]
     },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/leorio.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
 	
 	
 	
