@@ -27,7 +27,7 @@
 	
   "options.graphics.fabulous.tooltip": "§aAdvanced§r: Enable screen shake effects & more. §c(INCOMPATIBLE WITH SODIUM)",
   "options.graphics.fabulous": "§aAdvanced",
-  "options.graphics.fancy.tooltip": "Fancy graphics balances performance and quality for the majority of machines.\nWeather, clouds, screen shake and particles may not appear behind translucent blocks or water.",
+  "options.graphics.fancy.tooltip": "Fancy graphics balances performance and quality for the majority of machines.\nHides screen sharders (like screen shake) and other effects.",
   "options.graphics.fancy": "§bFancy",
   "options.graphics.fast.tooltip": "Super Fast graphics reduces the amount of visible rain and snow.\nTransparency effects are disabled for various blocks such as leaves.",
   "options.graphics.fast": "§eSuper Fast"
