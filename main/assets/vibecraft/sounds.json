@@ -179,6 +179,10 @@
     "sounds": [
       "vibecraft:lobby/asteries_lobby"]
 	},
+  "seal_the_deal_lobby": {
+    "sounds": [
+      "vibecraft:lobby/seal_the_deal"]
+	},
   "meem": {
     "sounds": [
       "vibecraft:nextbots/meem/meem"]
