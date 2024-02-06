@@ -20,5 +20,15 @@
     "soundCategory.player": "Players",
     "soundCategory.record": "Jukebox/Note Blocks",
     "soundCategory.voice": "Voice/Speech",
-    "soundCategory.weather": "Sound Effects"
+    "soundCategory.weather": "Sound Effects",
+	
+	
+	
+	
+  "options.graphics.fabulous.tooltip": "§aAdvanced§r: Enable screen shake effects & more. §c(INCOMPATIBLE WITH SODIUM)",
+  "options.graphics.fabulous": "§aReimagined",
+  "options.graphics.fancy.tooltip": "Fancy graphics balances performance and quality for the majority of machines.\nWeather, clouds, and particles may not appear behind translucent blocks or water.",
+  "options.graphics.fancy": "§bFancy",
+  "options.graphics.fast.tooltip": "Fast graphics reduces the amount of visible rain and snow.\nTransparency effects are disabled for various blocks such as leaves.",
+  "options.graphics.fast": "§eFast"
 }
