@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/button_inventory",
   "textures": {
-    "texture": "block/null.png"
+    "texture": "block/button.png"
   }
 }
