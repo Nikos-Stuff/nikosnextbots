@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/green_concrete"
+},
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "item/buygui/yes"
+    }
+  ]
+}
