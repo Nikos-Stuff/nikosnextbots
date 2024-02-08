@@ -1,5 +1,7 @@
 {
   "parent": "minecraft:block/green_concrete"
+  "textures": {
+    "layer0": "block/green_concrete"
   },
   "overrides": [
     {
