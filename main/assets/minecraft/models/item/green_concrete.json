@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/green_concrete"
-},
+  },
   "overrides": [
     {
       "predicate": {
