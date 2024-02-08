@@ -1,5 +1,6 @@
 {
   "providers": [
+     {"type": "bitmap", "file": "minecraft:guis/pixel.png","ascent": -2000,"height": -3,"chars": ["七"]},
      {
       "type": "bitmap",
       "file": "vibecraft:effects/static/image00.png",
@@ -303,6 +304,15 @@
       "height": 7,
       "chars": [
         "✨"
+      ]
+    },
+     {
+	  "type": "bitmap",
+      "file": "vibecraft:gui/events.png",
+      "ascent": 13,
+      "height": 138,
+      "chars": [
+        ""
       ]
     },
 
