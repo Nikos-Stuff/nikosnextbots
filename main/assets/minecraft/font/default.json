@@ -1455,11 +1455,69 @@
     },
 	
 	
-	
-	
-	
-	
-	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/boba.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/squewe.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/ccat.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/smiler.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/inhabitant.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/leoret.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/dread.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
 	
 	
 	
