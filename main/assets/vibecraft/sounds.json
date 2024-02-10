@@ -119,6 +119,10 @@
     "sounds": [
       "vibecraft:countdown"]
 	},
+	
+	
+	
+	
   "wavgun": {
     "sounds": [
       "vibecraft:wavgun"]
@@ -127,6 +131,22 @@
     "sounds": [
       "vibecraft:wavgun_b"]
 	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
   "ded": {
     "sounds": [
       "vibecraft:ded/d1", "vibecraft:ded/d2", "vibecraft:ded/d3", "vibecraft:ded/d4"]
@@ -335,6 +355,43 @@
     "sounds": [
       "vibecraft:effects/wavgun_end"]
 	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+  "shotgun_wavgun_end": {
+    "sounds": [
+      "vibecraft:wavgun_skins/shotgun/effects/wavgun_end"]
+	},
+  "shotgun_wavgun": {
+    "sounds": [
+      "vibecraft:wavgun_skins/shotgun/wavgun"]
+	},
+  "shotgun_wavgun_b": {
+    "sounds": [
+      "vibecraft:wavgun_skins/shotgun/wavgun_b"]
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
   "level_up": {
     "sounds": [
       "vibecraft:effects/level_up"]
