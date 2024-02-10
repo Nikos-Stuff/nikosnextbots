@@ -477,6 +477,73 @@
 	},
 	
 	
+  "leoret": {
+    "sounds": [
+      "vibecraft:nextbots/leoret/leoret"]
+    },
+  "leoret_j": {
+    "sounds": [
+      "vibecraft:nextbots/leoret/leoret_j"]
+    },
+  "dread": {
+    "sounds": [
+      "vibecraft:nextbots/dread/dread"]
+    },
+  "dread_j": {
+    "sounds": [
+      "vibecraft:nextbots/dread/dread_j"]
+    },
+  "boba": {
+    "sounds": [
+      "vibecraft:nextbots/boba/boba"]
+    },
+  "boba_j": {
+    "sounds": [
+      "vibecraft:nextbots/boba/boba_j"]
+    },
+  "mrl": {
+    "sounds": [
+      "vibecraft:nextbots/mrl/mrl"]
+    },
+  "mrl_j": {
+    "sounds": [
+      "vibecraft:nextbots/mrl/mrl_j"]
+    },
+  "ccat": {
+    "sounds": [
+      "vibecraft:nextbots/ccat/ccat"]
+    },
+  "ccat_j": {
+    "sounds": [
+      "vibecraft:nextbots/ccat/ccat_j"]
+    },
+  "inhabitant": {
+    "sounds": [
+      "vibecraft:nextbots/inhabitant/inhabitant"]
+    },
+  "inhabitant_j": {
+    "sounds": [
+      "vibecraft:nextbots/inhabitant/inhabitant_j"]
+    },
+  "smiler": {
+    "sounds": [
+      "vibecraft:nextbots/smiler/smiler"]
+    },
+  "smiler_j": {
+    "sounds": [
+      "vibecraft:nextbots/smiler/smiler_j"]
+    },
+  "andy": {
+    "sounds": [
+      "vibecraft:nextbots/andy/andy"]
+    },
+  "andy_j": {
+    "sounds": [
+      "vibecraft:nextbots/andy/andy_j"]
+    },
+
+	
+	
 	
 	
 	
