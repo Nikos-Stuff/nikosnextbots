@@ -1518,8 +1518,24 @@
         ""
       ]
     },
-	
-	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/andy/andy_1.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/andy/andy_2.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
 	
 	
 	

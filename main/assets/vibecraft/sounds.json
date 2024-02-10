@@ -541,7 +541,14 @@
     "sounds": [
       "vibecraft:nextbots/andy/andy_j"]
     },
-
+  "squewe": {
+    "sounds": [
+      "vibecraft:nextbots/squewe/squewe"]
+    },
+  "squewe_j": {
+    "sounds": [
+      "vibecraft:nextbots/squewe/squewe_j"]
+    },
 	
 	
 	
