@@ -72,7 +72,7 @@ jobs:
   
       - name: Prepare File
         run: |
-         cd nnb_possessions
+         cd nnb_vote_system
          zip -r ../nnb_vote_system.zip *
 
 
