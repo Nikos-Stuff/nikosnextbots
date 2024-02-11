@@ -102,7 +102,7 @@ execute if entity @a[scores={nn_possesion=5},tag=!nextbot_timeout] run tag @a[sc
 execute at @a[tag=smile_ghost_z] run tp @e[tag=smile_ghost] ~ ~2 ~
 
 #> Screen effects tag
-tag @a[tag=smile_ghost_z] add n_nextbot
+tag @a[tag=smile_ghost_z] add s_nextbot
 
 
 
