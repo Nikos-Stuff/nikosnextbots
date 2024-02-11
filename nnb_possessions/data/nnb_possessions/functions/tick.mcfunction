@@ -18,4 +18,4 @@ function nnb_possessions:timer
 scoreboard players set @a nn_possession_effect 100000
 execute as @a[tag=nextbot_timeout] run summon minecraft:lightning_bolt ~ ~ ~
 
-schedule function nnb_possessions:tick 1t
+schedule function nnb_possessions:tick
