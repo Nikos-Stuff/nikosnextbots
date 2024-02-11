@@ -46,16 +46,15 @@ jobs:
 
 
       - name: Upload to Server
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        uses: appleboy/scp-action@v0.3.0
         with:
-          server: ${{ secrets.SFTP_SERVER }}
+          host: ${{ secrets.SFTP_SERVER }}
           username: ${{ secrets.SFTP_USERNAME }}
           password: ${{ secrets.SFTP_PASSWORD }}
-          protocol: 'sftp'
           port: 2022
-          local-dir: .
-          remote-dir: /world/datapacks
-          include: 'nnb_possessions.zip'
+          source: nnb_possessions.zip
+          target: /world/datapacks
+
 
   # Build the voting system
   build_voting_sys:
@@ -75,16 +74,14 @@ jobs:
 
 
       - name: Upload to Server
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        uses: appleboy/scp-action@v0.3.0
         with:
-          server: ${{ secrets.SFTP_SERVER }}
+          host: ${{ secrets.SFTP_SERVER }}
           username: ${{ secrets.SFTP_USERNAME }}
           password: ${{ secrets.SFTP_PASSWORD }}
-          protocol: 'sftp'
           port: 2022
-          local-dir: .
-          remote-dir: /world/datapacks
-          include: 'nnb_vote_system.zip'
+          source: nnb_vote_system.zip
+          target: /world/datapacks
 
 
 
@@ -118,4 +115,4 @@ jobs:
           sudo make install
 
       - name: Import Texturepack
-        run: mcrcon -H ${{ secrets.RCON_IP }} -P ${{ secrets.RCON_PORT }} -p ${{ secrets.RCON_PASSWORD }} "forcepack reload"
+        run: mcrcon -H ${{ secrets.ARCADE_RCON_IP }} -P ${{ secrets.ARCADE_RCON_PORT }} -p ${{ secrets.ARCADE_RCON_PASSWORD }} "minecraft:reload"
