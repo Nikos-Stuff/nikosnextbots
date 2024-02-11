@@ -101,7 +101,7 @@ jobs:
 
 
 
-  push_texturepack:
+  push_datapack:
     runs-on: ubuntu-latest
     needs: [build_possessions_sys, build_vote_sys]
 
