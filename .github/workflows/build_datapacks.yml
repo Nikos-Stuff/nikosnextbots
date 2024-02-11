@@ -45,14 +45,16 @@ jobs:
          zip -r ../nnb_possessions.zip *
 
 
-      - name: Upload to Server
-        uses: appleboy/ssh-action@master
+      - name: Deploy file
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          host: ${{ secrets.SFTP_SERVER }}
-          username: ${{ secrets.SFTP_USERNAME }}
-          password: ${{ secrets.SFTP_PASSWORD }}
-          script: |
-            lftp -e "set sftp:auto-confirm yes; put -O /world/datapacks nnb_possessions.zip; exit;" sftp://${{ secrets.SFTP_SERVER }}:2022 -u ${{ secrets.SFTP_USERNAME }},${{ secrets.SFTP_PASSWORD }}
+            username: ${{ secrets.SFTP_USERNAME }}
+            server: ${{ secrets.SFTP_SERVER }}
+            port: 2022
+            local_path: './nnb_possessions.zip'
+            remote_path: '/world/datapacks/'
+            sftp_only: true
+            password: ${{ secrets.SFTP_PASSWORD }}
 
 
 
