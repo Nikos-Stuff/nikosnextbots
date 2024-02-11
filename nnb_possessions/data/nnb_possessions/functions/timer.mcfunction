@@ -1,5 +1,5 @@
 #> Tick miliseconds
-execute ats @a[tag=nextbot] run scoreboard players remove @s nn_possesion_msec 1
+execute as @a[tag=nextbot] run scoreboard players remove @s nn_possesion_msec 1
 
 #> Manage seconds
 execute as @a[tag=nextbot] if score @s nn_possesion_msec <= 0 nn_possesion_msec run function nnb_possessions:timer/sec
