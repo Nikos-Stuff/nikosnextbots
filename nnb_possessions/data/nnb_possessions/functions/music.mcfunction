@@ -7,4 +7,4 @@ execute if score beat nn_possession_effect >= reset nn_beat run function nnb_pos
 
 #> Music
 scoreboard players add @a[tag=nextbot] nn_possession_effect 1
-execute as @a[tag=nextbot] if score @s nn_possession_effect >= loop nn_beat run function nnb_possessions:music/possession
+execute at @a[tag=nextbot] if score @p nn_possession_effect >= loop nn_beat run function nnb_possessions:music/possession
