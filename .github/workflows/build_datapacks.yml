@@ -45,9 +45,15 @@ jobs:
 
       - name: Run Python Script
         run: |
-          python templates/generate_nbb_possessions.py > nnb_possessions/data/nnb_possessions/functions/assign.mcfunction 2>/dev/null
+          python templates/generate_nbb_possessions.py > updated_list.txt 2>/dev/null
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Archive Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-file
+          path: updated_list.txt
   
       - name: Prepare File
         run: |
