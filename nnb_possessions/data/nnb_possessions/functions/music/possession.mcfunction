@@ -1,4 +1,4 @@
-scoreboard players set @s nn_possession_effect 0
+scoreboard players set @p nn_possession_effect 0
 
 #> Normal
 execute as @a[tag=n_nextbot] run playsound vibecraft:possession master @s ~ ~ ~ 1 
