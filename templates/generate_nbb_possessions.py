@@ -1,5 +1,5 @@
 original_list = [
-    "metalic_pipe", "toob", "crying_sans", "pbj", "smile_ghost", "idiot", "ohl", "meem", "nope",
+    "metal_pipe", "toob", "crying_sans", "pbj", "smile_ghost", "idiot", "ohl", "meem", "nope",
     "noob", "observer", "benny", "racoon", "fazmug", "donot", "bear5", "blabber",
     "chilly", "smurf_cat", "intruder", "jet", "darkness", "bear", "litlle_gerry",
     "winrar", "fan", "boykisser", "subspace_tripmine", "nothing", "nuke", "flash", "osc",
