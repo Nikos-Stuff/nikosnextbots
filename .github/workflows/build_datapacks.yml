@@ -46,42 +46,16 @@ jobs:
 
 
       - name: Upload to Server
-        uses: appleboy/scp-action@v0.1.7
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SFTP_SERVER }}
           username: ${{ secrets.SFTP_USERNAME }}
           password: ${{ secrets.SFTP_PASSWORD }}
-          port: 2022
-          source: nnb_possessions.zip
-          target: /world/datapacks
+          script: |
+            scp -P 2022 nnb_possessions.zip ${{ secrets.SFTP_USERNAME }}@${{ secrets.SFTP_SERVER }}:/world/datapacks
 
 
-  # Build the voting system
-  build_voting_sys:
-    runs-on: ubuntu-latest
-  #  needs: [validate_main]
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
 
-
-  
-      - name: Prepare File
-        run: |
-         cd nnb_vote_system
-         zip -r ../nnb_vote_system.zip *
-
-
-      - name: Upload to Server
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.SFTP_SERVER }}
-          username: ${{ secrets.SFTP_USERNAME }}
-          password: ${{ secrets.SFTP_PASSWORD }}
-          port: 2022
-          source: nnb_vote_system.zip
-          target: /world/datapacks
 
 
 
@@ -98,7 +72,7 @@ jobs:
 
   push_texturepack:
     runs-on: ubuntu-latest
-    needs: [build_possessions_sys, build_voting_sys]
+    needs: [build_possessions_sys]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
