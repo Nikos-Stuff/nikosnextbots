@@ -52,7 +52,7 @@ jobs:
           username: ${{ secrets.SFTP_USERNAME }}
           password: ${{ secrets.SFTP_PASSWORD }}
           script: |
-            scp -P 2022 nnb_possessions.zip ${{ secrets.SFTP_USERNAME }}@${{ secrets.SFTP_SERVER }}:/world/datapacks
+            lftp -e "set sftp:auto-confirm yes; put -O /world/datapacks nnb_possessions.zip; exit;" -u ${{ secrets.SFTP_USERNAME }} -p 2022 sftp://${{ secrets.SFTP_SERVER }}
 
 
 
