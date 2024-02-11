@@ -7,4 +7,4 @@
 
 function nnb_possessions:assign
 
-schedule function nnb_possessions:tick 3s
+schedule function nnb_possessions:tick 1t
