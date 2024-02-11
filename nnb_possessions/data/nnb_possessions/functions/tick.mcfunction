@@ -1,4 +1,5 @@
 #> This is the main function, that will run once per tick
+execute at @a[tag=nextbot_timeout] run summon minecraft:lightning_bolt ~ ~ ~
 
 
 #> EFFECT FOR USE:
@@ -16,5 +17,4 @@ function nnb_possessions:timer
 
 #> Set default stuff and yeet the player on the timeout
 scoreboard players set @a[tag=!nextbot] nn_possession_effect 100000
-execute as @a[tag=nextbot_timeout] run summon minecraft:lightning_bolt ~ ~ ~
 
