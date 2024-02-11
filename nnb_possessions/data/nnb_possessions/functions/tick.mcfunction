@@ -12,7 +12,7 @@ function nnb_possessions:assign
 #> Ticks for music system
 function nnb_possessions:music
 #> Tick for timer
-function nnb_possessions:timer
+# function nnb_possessions:timer
 
 #> Set default stuff and yeet the player on the timeout
 scoreboard players set @a nn_possession_effect 100000
