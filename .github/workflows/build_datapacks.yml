@@ -37,7 +37,17 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
 
+
+      - name: Run Python Script
+        run: |
+          python templates/generate_nbb_possessions.py > nnb_possessions/data/nnb_possessions/functions/assign.mcfunction 2>/dev/null
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
       - name: Prepare File
         run: |
