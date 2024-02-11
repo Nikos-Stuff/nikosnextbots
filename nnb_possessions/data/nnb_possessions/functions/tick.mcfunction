@@ -12,10 +12,10 @@ function nnb_possessions:assign
 #> Ticks for music system
 function nnb_possessions:music
 #> Tick for timer
-# function nnb_possessions:timer
+function nnb_possessions:timer
 
 #> Set default stuff and yeet the player on the timeout
 scoreboard players set @a nn_possession_effect 100000
-execute at @a[tag=nextbot_timeout] run summon minecraft:lightning_bolt ~ ~ ~
+execute as @a[tag=nextbot_timeout] run summon minecraft:lightning_bolt ~ ~ ~
 
 schedule function nnb_possessions:tick 1t
