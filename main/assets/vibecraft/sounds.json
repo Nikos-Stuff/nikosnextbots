@@ -99,6 +99,10 @@
     "sounds": [
       "vibecraft:possession"]
 	},
+  "possession_bside": {
+    "sounds": [
+      "vibecraft:possession_bside"]
+	},
   "play": {
     "sounds": [
       "vibecraft:play"]
