@@ -1,6 +1,7 @@
-[![Build:](https://github.com/Nik0-0/nikosnextbotspack/actions/workflows/build_packs.yml/badge.svg?branch=main)](https://github.com/Nik0-0/nikosnextbotspack/actions/workflows/build_packs.yml)
+[![Build:](https://github.com/Nikos-Stuff/nikosnextbots/actions/workflows/build_packs.yml/badge.svg?branch=main)](https://github.com/Nikos-Stuff/nikosnextbots/actions/workflows/build_packs.yml)
 
-![Preview Image](https://cdn.discordapp.com/attachments/1079841488365686854/1186730327264198666/n_maintitle.png?ex=65a6c4be&is=65944fbe&hm=2ae5af54dcc94b1d1ca449d9eb3d9e784bcc2cdad42666ce182228c3bccbdb79&)
+![Preview Image](https://cdn.discordapp.com/attachments/1079841488365686854
+/1186730327264198666/n_maintitle.png?ex=65a6c4be&is=65944fbe&hm=2ae5af54dcc94b1d1ca449d9eb3d9e784bcc2cdad42666ce182228c3bccbdb79&)
 <p align="center">Texturepack & Datapacks for our server - Niko's Nextbots</p>
 
 
@@ -16,22 +17,22 @@ This used to be a part of the "VibeCraft" server. That's why the folder is named
 ### Pack Structure
 Most important folders:
 
-- [Nextbots Textures](https://github.com/Nik0-0/nikosnextbotspack/tree/txt-main/main/assets/vibecraft/textures/nextbots)
+- [Nextbots Textures](https://github.com/Nikos-Stuff/nikosnextbots/tree/main/main/assets/vibecraft/textures/nextbots)
 
-Used for nextbot textures / animations. [Remember that you need to also implement it in the font file!](https://github.com/Nik0-0/nikosnextbotspack/blob/main/main/assets/minecraft/font/default.json)
+Used for nextbot textures / animations. [Remember that you need to also implement it in the font file!](https://github.com/Nikos-Stuff/nikosnextbots/blob/main/main/assets/minecraft/font/default.json)
 You also need to use unicode characters from [here](https://unicode.bayashi.net/?page=1900). (Make sure that they're not used already)
 
 *Note: 256 x 256 .png format required. For animated bots please create a new folder and place frames inside (max 5 frames)*
 
-- [Events Textures](https://github.com/Nik0-0/nikosnextbotspack/tree/main/main/assets/vibecraft/textures/events)
+- [Events Textures](https://github.com/Nikos-Stuff/nikosnextbots/tree/main/main/assets/vibecraft/textures/events)
  
 Used for full screen events like angry munci etc.
-[Remember that you need to also implement it in the font file!](https://github.com/Nik0-0/nikosnextbotspack/blob/main/main/assets/minecraft/font/default.json)
+[Remember that you need to also implement it in the font file!](https://github.com/Nikos-Stuff/nikosnextbots/blob/main/main/assets/minecraft/font/default.json)
 You also need to use unicode characters from [here](https://unicode.bayashi.net/?page=1900). (Make sure that they're not used already)
 
 *Note: 256 x 256 .png format required. Create a new folder and place the images inside (max 5 frames for animation)*
 
-- [Sounds](https://github.com/Nik0-0/nikosnextbotspack/tree/main/main/assets/vibecraft/sounds)
+- [Sounds](https://github.com/Nikos-Stuff/nikosnextbots/tree/main/main/assets/vibecraft/sounds)
 
 Please use the .ogg stereo or mono based on your need. For example:
 
@@ -39,7 +40,7 @@ Please use the .ogg stereo or mono based on your need. For example:
 
 - For a nextbot sounds use mono
 
-After everything done. Don't forget to add your sound to [sounds.json](https://github.com/Nik0-0/nikosnextbotspack/blob/main/main/assets/vibecraft/sounds.json)!
+After everything done. Don't forget to add your sound to [sounds.json](https://github.com/Nikos-Stuff/nikosnextbots/blob/main/main/assets/vibecraft/sounds.json)!
 
 *Note: Place your file in the correct folder. Don't make a mess!*
 
@@ -68,11 +69,11 @@ We welcome contributions to improve and expand this texture pack. If you'd like 
    ```sh
    git push origin testing/your-changes
    ```
-8. Open a pull request on our [Pull Requests](https://github.com/Nik0-0/nikosnextbotspack/pulls) page.
+8. Open a pull request on our [Pull Requests](https://github.com/Nikos-Stuff/nikosnextbots/pulls) page.
 
 ## Issues
 
-If you encounter any issues or have suggestions, please open an issue on the [Issues](https://github.com/Nik0-0/nikosnextbotspack/issues) page.
+If you encounter any issues or have suggestions, please open an issue on the [Issues](https://github.com/Nikos-Stuff/nikosnextbots/issues) page.
 
 
 
