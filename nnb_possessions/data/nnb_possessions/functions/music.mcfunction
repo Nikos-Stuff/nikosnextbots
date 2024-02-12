@@ -7,4 +7,7 @@ execute if score beat nn_possession_effect >= reset nn_beat run function nnb_pos
 
 #> Music
 scoreboard players add @a[tag=nextbot] nn_possession_effect 1
-execute at @a[tag=nextbot] if score @p nn_possession_effect >= loop nn_beat run function nnb_possessions:music/possession
+#> Set the lenght based on tag
+scoreboard players set @a[tag=n_nextbot] nn_beat_r 3760
+scoreboard players set @a[tag=b_nextbot] nn_beat_r 6100
+execute at @a[tag=nextbot] if score @p nn_possession_effect >= @p nn_beat_r run function nnb_possessions:music/possession
