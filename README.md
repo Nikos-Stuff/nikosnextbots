@@ -83,7 +83,7 @@ You're not allowed to directly download and copy our hard work. Please respect t
 
 But you can:
 
--- Use our mechanic / way of implementing bots to minecraft (in the [font .json file](https://github.com/Nik0-0/nikosnextbotspack/blob/main/main/assets/minecraft/font/default.json))
+-- Use our mechanic / way of implementing bots to minecraft. I mean that's just a silly blocky game anyways. 
 
 -- Contact me on discord and ask for help to make something similar.
 
