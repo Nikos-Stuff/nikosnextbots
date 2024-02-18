@@ -9,6 +9,7 @@
   {"predicate": {"custom_model_data":2}, "model": "block/custom/santahat"},
   {"predicate": {"custom_model_data":3}, "model": "block/custom/crown"},
   {"predicate": {"custom_model_data":4}, "model": "block/custom/tophat"},
-  {"predicate": {"custom_model_data":5}, "model": "block/custom/blacktophat"}
+  {"predicate": {"custom_model_data":5}, "model": "block/custom/blacktophat"},
+  {"predicate": {"custom_model_data":6}, "model": "block/custom/3d_virtual_shades"}
  ]
 }
