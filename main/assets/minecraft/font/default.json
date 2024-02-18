@@ -1536,7 +1536,15 @@
         ""
       ]
     },
-	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/catnap.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
 	
 	
 	

@@ -610,6 +610,18 @@
     "sounds": [
       "vibecraft:nextbots/squewe/squewe_j"]
     },
+  "catnap": {
+    "sounds": [
+      "vibecraft:nextbots/catnap/catnap"]
+    },
+  "catnap_j": {
+    "sounds": [
+      "vibecraft:nextbots/catnap/catnap_j"]
+    },
+  "catnap_gaz": {
+    "sounds": [
+      "vibecraft:nextbots/catnap/catnap_gaz"]
+    },
 	
 	
 	
