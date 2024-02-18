@@ -6,7 +6,7 @@ name: Build Pack(s)
 on:
   push:
     branches:
-      - txt-main
+      - main
     paths:
       - 'main/**'
       - 'sharders/**'
