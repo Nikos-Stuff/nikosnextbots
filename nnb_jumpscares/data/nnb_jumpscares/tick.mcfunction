@@ -1,2 +1,4 @@
 #> Tick tag system
-function nb_jumpscares:root
+function nnb_jumpscares:root
+
+schedule function nnb_jumpscares:tick 5t

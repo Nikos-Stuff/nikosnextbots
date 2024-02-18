@@ -1,5 +1,5 @@
 #> This function will run on datapack loading
 
-tellraw @a {"text":"Jumpscare Loaded"}
+tellraw @a {"text":"Jumpscares Loaded"}
 
-schedule function nb_jumpscares:tick 1s
+function nnb_jumpscares:tick
