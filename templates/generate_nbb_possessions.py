@@ -5,7 +5,7 @@ original_list = [
     "winrar", "fan", "boykisser", "subspace_tripmine", "nothing", "nuke", "flash", "osc",
     "cb", "dragon", "carter", "shroom", "grumbo", "giggle", "rei", "ico", "leorio",
     "mochu", "jack", "unfortunate", "lolguy", "smiler", "boba", "squewe", "ccat",
-    "andy", "inhabitant", "leoret", "dread"
+    "andy", "inhabitant", "leoret", "dread", "catnap"
 ]
 
 # Generate the updated command block setup
