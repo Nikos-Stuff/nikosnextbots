@@ -6,7 +6,7 @@ name: Build Datapacks
 on:
   push:
     branches:
-      - txt-main
+      - main
     paths:
       - 'nnb_possessions/**'
       - 'nnb_vote_system/**'
