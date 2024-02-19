@@ -17,10 +17,10 @@ scoreboard players set @a[scores={nn_jumpscare=3..}] nn_jumpscare 0
 
 
 #> Check the score and kill the player if the jumpscare played
-execute as @a[scores={nn_jumpscare_run=40..}] run kill @s
-execute as @a[scores={nn_jumpscare_run=40..}] run function nnb_jumpscares:removetags
-execute as @a[scores={nn_jumpscare_run=40..}] run scoreboard players set @s nn_jumpscare 0
-execute as @a[scores={nn_jumpscare_run=40..}] run scoreboard players set @s nn_jumpscare_run 0
+execute at @a[scores={nn_jumpscare_run=40..}] run kill @p
+execute at @a[scores={nn_jumpscare_run=40..}] run function nnb_jumpscares:removetags
+execute at @a[scores={nn_jumpscare_run=40..}] run scoreboard players set @p nn_jumpscare 0
+execute at @a[scores={nn_jumpscare_run=40..}] run scoreboard players set @p nn_jumpscare_run 0
 
 #> Example for metal pipe
 # Each nextbot will have its own scoreboard command - in that way i will have more freedom to make each bot more fun
