@@ -1,5 +1,5 @@
 #> pbj
-title @a[tag=pbj_d] times 0 50 50
+title @a[tag=pbj_d] times 0 50 20
 execute as @a[tag=pbj_d] if score @s nn_jumpscare matches 1 run title @s title {"text":"   "}
 execute as @a[tag=pbj_d] if score @s nn_jumpscare matches 2 run title @s title {"text":""}
 execute as @a[tag=pbj_d] if score @s nn_jumpscare matches 3 run title @s title {"text":"  "}
