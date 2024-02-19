@@ -80,7 +80,7 @@ tag @a[tag=ico_d] remove ico_d
 
 tag @a[tag=leorio_d] remove leorio_d
 
-tag @a[tag=mochu_d] remove mochu_d
+tag @a[tag=mohu_d] remove mohu_d
 
 tag @a[tag=jack_d] remove jack_d
 
