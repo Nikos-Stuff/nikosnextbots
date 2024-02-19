@@ -318,3 +318,9 @@ jobs:
 
       - name: Import Texturepack
         run: mcrcon -H ${{ secrets.RCON_IP }} -P ${{ secrets.RCON_PORT }} -p ${{ secrets.RCON_PASSWORD }} "forcepack reload"
+      - name: Send notify to all servers
+       # Arcade
+        run: |
+         mcrcon -H ${{ secrets.ARCADE_RCON_IP }} -P ${{ secrets.ARCADE_RCON_PORT }} -p ${{ secrets.ARCADE_RCON_PASSWORD }} <<EOF
+         tellraw @a {"text":"Texturepack has been updated! Please rejoin to see new stuff!","color":"red"}
+         EOF
