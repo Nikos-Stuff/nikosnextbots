@@ -46,7 +46,7 @@ jobs:
 
       - name: Run Python Script
         run: |
-          python templates/generate_nbb_possessions.py > updated_list.txt 2>/dev/null
+          python templates/generate_nnb_possessions.py > updated_list.txt 2>/dev/null
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -117,7 +117,7 @@ jobs:
   
       - name: Prepare File
         run: |
-         cd nnb_vote_system
+         cd nnb_jumpscares
          zip -r ../nnb_jumpscares.zip *
 
 
