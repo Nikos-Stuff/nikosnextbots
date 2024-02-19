@@ -12,7 +12,7 @@
 
 #> Tick the main function with all of the diffrent titles
 function nnb_jumpscares:titles
-scoreboard players set @a[scores={nn_jumpscare=4..}] nn_jumpscare 1
+scoreboard players set @a[scores={nn_jumpscare=4..}] nn_jumpscare 0
 
 
 #> Check the score and kill the player if the jumpscare played
