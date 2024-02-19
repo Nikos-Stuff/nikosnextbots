@@ -117,7 +117,7 @@ jobs:
   
       - name: Prepare File
         run: |
-         cd nnb_vote_system
+         cd nnb_jumpscares
          zip -r ../nnb_jumpscares.zip *
 
 
