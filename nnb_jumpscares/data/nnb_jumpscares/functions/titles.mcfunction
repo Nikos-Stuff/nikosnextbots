@@ -8,7 +8,7 @@ execute as @a[tag=pbj_d] if score @s nn_jumpscare matches 3 run scoreboard playe
 
 #> shroom
 title @a[tag=shroom_d] times 0 50 20
-execute as @a[tag=shroom_d] if score @s nn_jumpscare matches 1 run title @s title {"text":"  ","color":"red"}
+execute as @a[tag=shroom_d] if score @s nn_jumpscare matches 1 run title @s title {"text":" ","color":"red"}
 execute as @a[tag=shroom_d] if score @s nn_jumpscare matches 2 run title @s title {"text":"    "}
 execute as @a[tag=shroom_d] if score @s nn_jumpscare matches 3 run title @s title {"text":"","color":"red"}
 execute as @a[tag=shroom_d] if score @s nn_jumpscare matches 3 run scoreboard players add @s nn_jumpscare_run 10
@@ -72,7 +72,7 @@ execute as @a[tag=flash_d] if score @s nn_jumpscare matches 3 run scoreboard pla
 
 #> winrar
 title @a[tag=winrar_d] times 0 50 20
-execute as @a[tag=winrar_d] if score @s nn_jumpscare matches 1 run title @s title {"text":"   ","color":"red"}
+execute as @a[tag=winrar_d] if score @s nn_jumpscare matches 1 run title @s title {"text":" ","color":"red"}
 execute as @a[tag=winrar_d] if score @s nn_jumpscare matches 2 run title @s title {"text":"    "}
 execute as @a[tag=winrar_d] if score @s nn_jumpscare matches 3 run title @s title {"text":"","color":"red"}
 execute as @a[tag=winrar_d] if score @s nn_jumpscare matches 3 run scoreboard players add @s nn_jumpscare_run 10
@@ -112,7 +112,7 @@ execute as @a[tag=crying_sans_d] if score @s nn_jumpscare matches 3 run scoreboa
 
 #> metal_pipe
 title @a[tag=metal_pipe_d] times 0 50 20
-execute as @a[tag=metal_pipe_d] if score @s nn_jumpscare matches 1 run title @s title {"text":"    ","color":"red"}
+execute as @a[tag=metal_pipe_d] if score @s nn_jumpscare matches 1 run title @s title {"text":" ","color":"red"}
 execute as @a[tag=metal_pipe_d] if score @s nn_jumpscare matches 2 run title @s title {"text":"    "}
 execute as @a[tag=metal_pipe_d] if score @s nn_jumpscare matches 3 run title @s title {"text":"","color":"red"}
 execute as @a[tag=metal_pipe_d] if score @s nn_jumpscare matches 3 run scoreboard players add @s nn_jumpscare_run 10
@@ -152,7 +152,7 @@ execute as @a[tag=intruder_d] if score @s nn_jumpscare matches 3 run scoreboard 
 
 #> bear
 title @a[tag=bear_d] times 0 50 20
-execute as @a[tag=bear_d] if score @s nn_jumpscare matches 1 run title @s title {"text":"    ","color":"red"}
+execute as @a[tag=bear_d] if score @s nn_jumpscare matches 1 run title @s title {"text":" ","color":"red"}
 execute as @a[tag=bear_d] if score @s nn_jumpscare matches 2 run title @s title {"text":"    "}
 execute as @a[tag=bear_d] if score @s nn_jumpscare matches 3 run title @s title {"text":"","color":"red"}
 execute as @a[tag=bear_d] if score @s nn_jumpscare matches 3 run scoreboard players add @s nn_jumpscare_run 10
@@ -200,7 +200,7 @@ execute as @a[tag=mohu_d] if score @s nn_jumpscare matches 3 run scoreboard play
 
 #> jack
 title @a[tag=jack_d] times 0 50 20
-execute as @a[tag=jack_d] if score @s nn_jumpscare matches 1 run title @s title {"text":"  ","color":"red"}
+execute as @a[tag=jack_d] if score @s nn_jumpscare matches 1 run title @s title {"text":" ","color":"red"}
 execute as @a[tag=jack_d] if score @s nn_jumpscare matches 2 run title @s title {"text":"    "}
 execute as @a[tag=jack_d] if score @s nn_jumpscare matches 3 run title @s title {"text":"","color":"red"}
 execute as @a[tag=jack_d] if score @s nn_jumpscare matches 3 run scoreboard players add @s nn_jumpscare_run 10
@@ -216,7 +216,7 @@ execute as @a[tag=unfortunate_d] if score @s nn_jumpscare matches 3 run scoreboa
 
 #> nope
 title @a[tag=nope_d] times 0 50 20
-execute as @a[tag=nope_d] if score @s nn_jumpscare matches 1 run title @s title {"text":"     ","color":"red"}
+execute as @a[tag=nope_d] if score @s nn_jumpscare matches 1 run title @s title {"text":" ","color":"red"}
 execute as @a[tag=nope_d] if score @s nn_jumpscare matches 2 run title @s title {"text":"    "}
 execute as @a[tag=nope_d] if score @s nn_jumpscare matches 3 run title @s title {"text":"","color":"red"}
 execute as @a[tag=nope_d] if score @s nn_jumpscare matches 3 run scoreboard players add @s nn_jumpscare_run 10
@@ -256,7 +256,7 @@ execute as @a[tag=racoon_d] if score @s nn_jumpscare matches 3 run scoreboard pl
 
 #> fazmug
 title @a[tag=fazmug_d] times 0 50 20
-execute as @a[tag=fazmug_d] if score @s nn_jumpscare matches 1 run title @s title {"text":"  ","color":"red"}
+execute as @a[tag=fazmug_d] if score @s nn_jumpscare matches 1 run title @s title {"text":" ","color":"red"}
 execute as @a[tag=fazmug_d] if score @s nn_jumpscare matches 2 run title @s title {"text":"    "}
 execute as @a[tag=fazmug_d] if score @s nn_jumpscare matches 3 run title @s title {"text":"","color":"red"}
 execute as @a[tag=fazmug_d] if score @s nn_jumpscare matches 3 run scoreboard players add @s nn_jumpscare_run 10
@@ -272,7 +272,7 @@ execute as @a[tag=donot_d] if score @s nn_jumpscare matches 3 run scoreboard pla
 
 #> bear5
 title @a[tag=bear5_d] times 0 50 20
-execute as @a[tag=bear5_d] if score @s nn_jumpscare matches 1 run title @s title {"text":"    ","color":"red"}
+execute as @a[tag=bear5_d] if score @s nn_jumpscare matches 1 run title @s title {"text":" ","color":"red"}
 execute as @a[tag=bear5_d] if score @s nn_jumpscare matches 2 run title @s title {"text":"    "}
 execute as @a[tag=bear5_d] if score @s nn_jumpscare matches 3 run title @s title {"text":"","color":"red"}
 execute as @a[tag=bear5_d] if score @s nn_jumpscare matches 3 run scoreboard players add @s nn_jumpscare_run 10
@@ -280,7 +280,7 @@ execute as @a[tag=bear5_d] if score @s nn_jumpscare matches 3 run scoreboard pla
 
 #> fan
 title @a[tag=fan_d] times 0 50 20
-execute as @a[tag=fan_d] if score @s nn_jumpscare matches 1 run title @s title {"text":"    ","color":"red"}
+execute as @a[tag=fan_d] if score @s nn_jumpscare matches 1 run title @s title {"text":" ","color":"red"}
 execute as @a[tag=fan_d] if score @s nn_jumpscare matches 2 run title @s title {"text":"    "}
 execute as @a[tag=fan_d] if score @s nn_jumpscare matches 3 run title @s title {"text":"","color":"red"}
 execute as @a[tag=fan_d] if score @s nn_jumpscare matches 3 run scoreboard players add @s nn_jumpscare_run 10
@@ -296,7 +296,7 @@ execute as @a[tag=smurf_cat_d] if score @s nn_jumpscare matches 3 run scoreboard
 
 #> blabber
 title @a[tag=blabber_d] times 0 50 20
-execute as @a[tag=blabber_d] if score @s nn_jumpscare matches 1 run title @s title {"text":"   ","color":"red"}
+execute as @a[tag=blabber_d] if score @s nn_jumpscare matches 1 run title @s title {"text":" ","color":"red"}
 execute as @a[tag=blabber_d] if score @s nn_jumpscare matches 2 run title @s title {"text":"    "}
 execute as @a[tag=blabber_d] if score @s nn_jumpscare matches 3 run title @s title {"text":"","color":"red"}
 execute as @a[tag=blabber_d] if score @s nn_jumpscare matches 3 run scoreboard players add @s nn_jumpscare_run 10
@@ -312,7 +312,7 @@ execute as @a[tag=chilly_d] if score @s nn_jumpscare matches 3 run scoreboard pl
 
 #> little_gerry
 title @a[tag=little_gerry_d] times 0 50 20
-execute as @a[tag=little_gerry_d] if score @s nn_jumpscare matches 1 run title @s title {"text":"  ","color":"red"}
+execute as @a[tag=little_gerry_d] if score @s nn_jumpscare matches 1 run title @s title {"text":" ","color":"red"}
 execute as @a[tag=little_gerry_d] if score @s nn_jumpscare matches 2 run title @s title {"text":"    "}
 execute as @a[tag=little_gerry_d] if score @s nn_jumpscare matches 3 run title @s title {"text":"","color":"red"}
 execute as @a[tag=little_gerry_d] if score @s nn_jumpscare matches 3 run scoreboard players add @s nn_jumpscare_run 10
@@ -320,7 +320,7 @@ execute as @a[tag=little_gerry_d] if score @s nn_jumpscare matches 3 run scorebo
 
 #> subspace_tripmine
 title @a[tag=subspace_tripmine_d] times 0 50 20
-execute as @a[tag=subspace_tripmine_d] if score @s nn_jumpscare matches 1 run title @s title {"text":"     ","color":"red"}
+execute as @a[tag=subspace_tripmine_d] if score @s nn_jumpscare matches 1 run title @s title {"text":" ","color":"red"}
 execute as @a[tag=subspace_tripmine_d] if score @s nn_jumpscare matches 2 run title @s title {"text":"    "}
 execute as @a[tag=subspace_tripmine_d] if score @s nn_jumpscare matches 3 run title @s title {"text":"","color":"red"}
 execute as @a[tag=subspace_tripmine_d] if score @s nn_jumpscare matches 3 run scoreboard players add @s nn_jumpscare_run 10
@@ -328,7 +328,7 @@ execute as @a[tag=subspace_tripmine_d] if score @s nn_jumpscare matches 3 run sc
 
 #> boykisser
 title @a[tag=boykisser_d] times 0 50 20
-execute as @a[tag=boykisser_d] if score @s nn_jumpscare matches 1 run title @s title {"text":"    ","color":"red"}
+execute as @a[tag=boykisser_d] if score @s nn_jumpscare matches 1 run title @s title {"text":" ","color":"red"}
 execute as @a[tag=boykisser_d] if score @s nn_jumpscare matches 2 run title @s title {"text":"    "}
 execute as @a[tag=boykisser_d] if score @s nn_jumpscare matches 3 run title @s title {"text":"","color":"red"}
 execute as @a[tag=boykisser_d] if score @s nn_jumpscare matches 3 run scoreboard players add @s nn_jumpscare_run 10
@@ -336,7 +336,7 @@ execute as @a[tag=boykisser_d] if score @s nn_jumpscare matches 3 run scoreboard
 
 #> boba
 title @a[tag=boba_d] times 0 50 20
-execute as @a[tag=boba_d] if score @s nn_jumpscare matches 1 run title @s title {"text":"   ","color":"red"}
+execute as @a[tag=boba_d] if score @s nn_jumpscare matches 1 run title @s title {"text":" ","color":"red"}
 execute as @a[tag=boba_d] if score @s nn_jumpscare matches 2 run title @s title {"text":"    "}
 execute as @a[tag=boba_d] if score @s nn_jumpscare matches 3 run title @s title {"text":"","color":"red"}
 execute as @a[tag=boba_d] if score @s nn_jumpscare matches 3 run scoreboard players add @s nn_jumpscare_run 10
@@ -344,7 +344,7 @@ execute as @a[tag=boba_d] if score @s nn_jumpscare matches 3 run scoreboard play
 
 #> squewe
 title @a[tag=squewe_d] times 0 50 20
-execute as @a[tag=squewe_d] if score @s nn_jumpscare matches 1 run title @s title {"text":"  ","color":"red"}
+execute as @a[tag=squewe_d] if score @s nn_jumpscare matches 1 run title @s title {"text":" ","color":"red"}
 execute as @a[tag=squewe_d] if score @s nn_jumpscare matches 2 run title @s title {"text":"    "}
 execute as @a[tag=squewe_d] if score @s nn_jumpscare matches 3 run title @s title {"text":"","color":"red"}
 execute as @a[tag=squewe_d] if score @s nn_jumpscare matches 3 run scoreboard players add @s nn_jumpscare_run 10
@@ -352,7 +352,7 @@ execute as @a[tag=squewe_d] if score @s nn_jumpscare matches 3 run scoreboard pl
 
 #> ccat
 title @a[tag=ccat_d] times 0 50 20
-execute as @a[tag=ccat_d] if score @s nn_jumpscare matches 1 run title @s title {"text":"  ","color":"red"}
+execute as @a[tag=ccat_d] if score @s nn_jumpscare matches 1 run title @s title {"text":" ","color":"red"}
 execute as @a[tag=ccat_d] if score @s nn_jumpscare matches 2 run title @s title {"text":"    "}
 execute as @a[tag=ccat_d] if score @s nn_jumpscare matches 3 run title @s title {"text":"","color":"red"}
 execute as @a[tag=ccat_d] if score @s nn_jumpscare matches 3 run scoreboard players add @s nn_jumpscare_run 10
@@ -360,7 +360,7 @@ execute as @a[tag=ccat_d] if score @s nn_jumpscare matches 3 run scoreboard play
 
 #> smiler
 title @a[tag=smiler_d] times 0 50 20
-execute as @a[tag=smiler_d] if score @s nn_jumpscare matches 1 run title @s title {"text":"  ","color":"red"}
+execute as @a[tag=smiler_d] if score @s nn_jumpscare matches 1 run title @s title {"text":" ","color":"red"}
 execute as @a[tag=smiler_d] if score @s nn_jumpscare matches 2 run title @s title {"text":"    "}
 execute as @a[tag=smiler_d] if score @s nn_jumpscare matches 3 run title @s title {"text":"","color":"red"}
 execute as @a[tag=smiler_d] if score @s nn_jumpscare matches 3 run scoreboard players add @s nn_jumpscare_run 10
@@ -368,7 +368,7 @@ execute as @a[tag=smiler_d] if score @s nn_jumpscare matches 3 run scoreboard pl
 
 #> inhabitant
 title @a[tag=inhabitant_d] times 0 50 20
-execute as @a[tag=inhabitant_d] if score @s nn_jumpscare matches 1 run title @s title {"text":"  ","color":"red"}
+execute as @a[tag=inhabitant_d] if score @s nn_jumpscare matches 1 run title @s title {"text":" ","color":"red"}
 execute as @a[tag=inhabitant_d] if score @s nn_jumpscare matches 2 run title @s title {"text":"    "}
 execute as @a[tag=inhabitant_d] if score @s nn_jumpscare matches 3 run title @s title {"text":"","color":"red"}
 execute as @a[tag=inhabitant_d] if score @s nn_jumpscare matches 3 run scoreboard players add @s nn_jumpscare_run 10
@@ -376,7 +376,7 @@ execute as @a[tag=inhabitant_d] if score @s nn_jumpscare matches 3 run scoreboar
 
 #> leoret
 title @a[tag=leoret_d] times 0 50 20
-execute as @a[tag=leoret_d] if score @s nn_jumpscare matches 1 run title @s title {"text":"  ","color":"red"}
+execute as @a[tag=leoret_d] if score @s nn_jumpscare matches 1 run title @s title {"text":" ","color":"red"}
 execute as @a[tag=leoret_d] if score @s nn_jumpscare matches 2 run title @s title {"text":"    "}
 execute as @a[tag=leoret_d] if score @s nn_jumpscare matches 3 run title @s title {"text":"","color":"red"}
 execute as @a[tag=leoret_d] if score @s nn_jumpscare matches 3 run scoreboard players add @s nn_jumpscare_run 10
@@ -392,7 +392,7 @@ execute as @a[tag=dread_d] if score @s nn_jumpscare matches 3 run scoreboard pla
 
 #> andy
 title @a[tag=andy_d] times 0 50 20
-execute as @a[tag=andy_d] if score @s nn_jumpscare matches 1 run title @s title {"text":"   ","color":"red"}
+execute as @a[tag=andy_d] if score @s nn_jumpscare matches 1 run title @s title {"text":" ","color":"red"}
 execute as @a[tag=andy_d] if score @s nn_jumpscare matches 2 run title @s title {"text":"    "}
 execute as @a[tag=andy_d] if score @s nn_jumpscare matches 3 run title @s title {"text":"","color":"red"}
 execute as @a[tag=andy_d] if score @s nn_jumpscare matches 3 run scoreboard players add @s nn_jumpscare_run 10
@@ -400,7 +400,7 @@ execute as @a[tag=andy_d] if score @s nn_jumpscare matches 3 run scoreboard play
 
 #> catnap
 title @a[tag=catnap_d] times 0 50 20
-execute as @a[tag=catnap_d] if score @s nn_jumpscare matches 1 run title @s title {"text":"  ","color":"red"}
+execute as @a[tag=catnap_d] if score @s nn_jumpscare matches 1 run title @s title {"text":" ","color":"red"}
 execute as @a[tag=catnap_d] if score @s nn_jumpscare matches 2 run title @s title {"text":"    "}
 execute as @a[tag=catnap_d] if score @s nn_jumpscare matches 3 run title @s title {"text":"","color":"red"}
 execute as @a[tag=catnap_d] if score @s nn_jumpscare matches 3 run scoreboard players add @s nn_jumpscare_run 10
