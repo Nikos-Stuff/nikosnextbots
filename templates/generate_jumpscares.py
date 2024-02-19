@@ -1,17 +1,22 @@
 original_list = [
-    "metal_pipe", "toob", "crying_sans", "pbj", "smile_ghost", "idiot", "ohl", "meem", "nope",
-    "noob", "observer", "benny", "racoon", "fazmug", "donot", "bear5", "blabber",
-    "chilly", "smurf_cat", "intruder", "jet", "darkness", "bear", "litlle_gerry",
-    "winrar", "fan", "boykisser", "subspace_tripmine", "nothing", "nuke", "flash", "osc",
-    "cb", "dragon", "carter", "shroom", "grumbo", "giggle", "rei", "ico", "leorio",
-    "mochu", "jack", "unfortunate", "lolguy", "smiler", "boba", "squewe", "ccat",
-    "andy", "inhabitant", "leoret", "dread", "catnap"
+    "pbj", "shroom", "carter", "osc", "toob", "nothing",
+    "nuke", "amogus", "flash", "winrar", "smile_ghost",
+    "ohl", "idiot", "crying_sans", "metal_pipe", "meem",
+    "darkness", "jet", "intruder", "bear", "grumbo",
+    "giggle", "rei", "leorio", "mohu", "jack",
+    "unfortunate", "nope", "noob", "observer",
+    "benny", "racoon", "fazmug", "donot",
+    "bear5", "fan", "smurf_cat", "blabber",
+    "chilly", "little_gerry", "subspace_tripmine",
+    "boykisser", "boba", "squewe", "ccat", "smiler",
+    "inhabitant", "leoret", "dread", "andy", "catnap"
 ]
 
 unicode_chars = [
-    "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
-    "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
-    "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+"", "", ""
 ]
 
 for item, char in zip(original_list, unicode_chars):
