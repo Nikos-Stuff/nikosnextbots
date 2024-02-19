@@ -44,7 +44,7 @@ tag @a[tag=darkness_d] remove darkness_d
 
 tag @a[tag=bear_d] remove bear_d
 
-tag @a[tag=litlle_gerry_d] remove litlle_gerry_d
+tag @a[tag=little_gerry_d] remove little_gerry_d
 
 tag @a[tag=winrar_d] remove winrar_d
 
