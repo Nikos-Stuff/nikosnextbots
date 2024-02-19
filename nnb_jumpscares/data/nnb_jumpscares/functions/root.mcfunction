@@ -22,5 +22,5 @@ execute as @a[scores={nn_jumpscare_run=40..}] run scoreboard players set @s nn_j
 #> Example for metal pipe
 # Each nextbot will have its own scoreboard command - in that way i will have more freedom to make each bot more fun
 # by customizing stuff
-scoreboard players add @a[tag=metalpipe_d] nn_jumpscare 1
+scoreboard players add @a[tag=metal_pipe_d] nn_jumpscare 1
 scoreboard players set @a[scores={nn_jumpscare=4..}] nn_jumpscare 1

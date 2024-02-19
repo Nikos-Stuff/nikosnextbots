@@ -1,0 +1,519 @@
+{
+  "providers": [
+     {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/pj/pj1.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/shroom.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/carter.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/osc.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/toob.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/sariel.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/nuke.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/amogus.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/flash.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/winrar.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/smile_ghost.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/oh_hell_nah.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/idiot/idiot_w.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/sans_cry.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/metal_pipe.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/meem.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/darkness.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/jet.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/intruder.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/bear.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/grumbo.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/giggle.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/rei.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/leorio.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/mohu.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/jack.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/unfortunate.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	
+	
+	
+	
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/nope.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/noob.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/observer.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	
+	
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/benny/benny.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	
+	
+	
+	
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/racoon/racoon_a.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+
+	
+	
+	
+	
+	
+	
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/fazmug.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },	
+	
+
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/donot.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	
+	
+	
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/bear5.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	
+	
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/fan.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	
+	
+	 
+	
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/smurf_cat.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	
+	
+	
+	
+	
+	
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/blabber/blabber.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/chilly.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/little_gerry.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/subspace_tripmine.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/boykisser/boykisser_1.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	
+	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/boba.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/squewe.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/ccat.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/smiler.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/inhabitant.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/leoret.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/dread.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/andy/andy_1.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/catnap.png",
+      "ascent": 25,
+      "height": 55,
+      "chars": [
+        ""
+      ]
+    }
+  ]
+}
