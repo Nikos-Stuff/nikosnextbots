@@ -1,3 +1,5 @@
+tag @a remove jumpscared
+
 tag @a[tag=metal_pipe_d] remove metal_pipe_d
 
 tag @a[tag=toob_d] remove toob_d
