@@ -1111,4 +1111,4 @@ execute if entity @a[scores={nn_possesion=54},tag=!nextbot_timeout] run tag @a[s
 execute at @a[tag=catnap_z] run tp @e[tag=catnap] ~ ~2 ~
 
 #> Screen effects tag
-tag @a[tag=catnap_z] add n_nextbot
+tag @a[tag=catnap_z] add b_nextbot
