@@ -12,6 +12,7 @@
 
 #> Tick the main function with all of the diffrent titles
 function nnb_jumpscares:titles
+scoreboard players set @a[scores={nn_jumpscare=4..}] nn_jumpscare 1
 
 
 #> Check the score and kill the player if the jumpscare played
@@ -22,5 +23,105 @@ execute as @a[scores={nn_jumpscare_run=40..}] run scoreboard players set @s nn_j
 #> Example for metal pipe
 # Each nextbot will have its own scoreboard command - in that way i will have more freedom to make each bot more fun
 # by customizing stuff
+scoreboard players add @a[tag=pbj_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=shroom_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=carter_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=osc_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=toob_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=nothing_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=nuke_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=amogus_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=flash_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=winrar_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=smile_ghost_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=ohl_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=idiot_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=crying_sans_d] nn_jumpscare 1
+
 scoreboard players add @a[tag=metal_pipe_d] nn_jumpscare 1
-scoreboard players set @a[scores={nn_jumpscare=4..}] nn_jumpscare 1
+
+scoreboard players add @a[tag=meem_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=darkness_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=jet_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=intruder_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=bear_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=grumbo_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=giggle_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=rei_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=leorio_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=mohu_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=jack_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=unfortunate_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=nope_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=noob_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=observer_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=benny_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=racoon_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=fazmug_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=donot_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=bear5_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=fan_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=smurf_cat_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=blabber_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=chilly_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=little_gerry_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=subspace_tripmine_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=boykisser_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=boba_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=squewe_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=ccat_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=smiler_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=inhabitant_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=leoret_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=dread_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=andy_d] nn_jumpscare 1
+
+scoreboard players add @a[tag=catnap_d] nn_jumpscare 1
+
