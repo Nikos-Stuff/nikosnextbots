@@ -76,8 +76,8 @@ jobs:
       - name: Deploy file - OPENWORLD
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-            username: ${{ secrets.SFTP_USERNAME_OPENWORLD  }}
-            server: ${{ secrets.SFTP_SERVER_OPENWORLD  }}
+            username: ${{ secrets.SFTP_USERNAME_OPENWORLD }}
+            server: ${{ secrets.SFTP_SERVER_OPENWORLD }}
             port: 2022
             local_path: './nnb_possessions.zip'
             remote_path: '/world/datapacks/'
@@ -119,8 +119,8 @@ jobs:
       - name: Deploy file - OPENWORLD
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-            username: ${{ secrets.SFTP_USERNAME_OPENWORLD  }}
-            server: ${{ secrets.SFTP_SERVER_OPENWORLD  }}
+            username: ${{ secrets.SFTP_USERNAME_OPENWORLD }}
+            server: ${{ secrets.SFTP_SERVER_OPENWORLD }}
             port: 2022
             local_path: './nnb_vote_system.zip'
             remote_path: '/world/datapacks/'
@@ -158,8 +158,8 @@ jobs:
       - name: Deploy file - OPENWORLD
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-            username: ${{ secrets.SFTP_USERNAME_OPENWORLD  }}
-            server: ${{ secrets.SFTP_SERVER_OPENWORLD  }}
+            username: ${{ secrets.SFTP_USERNAME_OPENWORLD }}
+            server: ${{ secrets.SFTP_SERVER_OPENWORLD }}
             port: 2022
             local_path: './nnb_jumpscares.zip'
             remote_path: '/world/datapacks/'
