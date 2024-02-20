@@ -1,27 +1,27 @@
 #> ------------------ metal_pipe | id 1
 
-execute unless entity @e[tag=metal_pipe_z] run scoreboard players set spawn nn_nextbot_spawn 1
+# execute unless entity @e[tag=metal_pipe_z] run scoreboard players set spawn nn_nextbot_spawn 1
 
 
 
 
 #> ------------------ toob | id 2
 
-execute unless entity @e[tag=toob_z] run scoreboard players set spawn nn_nextbot_spawn 2
+# execute unless entity @e[tag=toob_z] run scoreboard players set spawn nn_nextbot_spawn 2
 
 
 
 
 #> ------------------ crying_sans | id 3
 
-execute unless entity @e[tag=crying_sans_z] run scoreboard players set spawn nn_nextbot_spawn 3
+# execute unless entity @e[tag=crying_sans_z] run scoreboard players set spawn nn_nextbot_spawn 3
 
 
 
 
 #> ------------------ pbj | id 4
 
-execute unless entity @e[tag=pbj_z] run scoreboard players set spawn nn_nextbot_spawn 4
+# execute unless entity @e[tag=pbj_z] run scoreboard players set spawn nn_nextbot_spawn 4
 
 
 
@@ -42,7 +42,7 @@ execute unless entity @e[tag=idiot_z] run scoreboard players set spawn nn_nextbo
 
 #> ------------------ ohl | id 7
 
-execute unless entity @e[tag=ohl_z] run scoreboard players set spawn nn_nextbot_spawn 7
+# execute unless entity @e[tag=ohl_z] run scoreboard players set spawn nn_nextbot_spawn 7
 
 
 
@@ -98,7 +98,7 @@ execute unless entity @e[tag=fazmug_z] run scoreboard players set spawn nn_nextb
 
 #> ------------------ donot | id 15
 
-execute unless entity @e[tag=donot_z] run scoreboard players set spawn nn_nextbot_spawn 15
+# execute unless entity @e[tag=donot_z] run scoreboard players set spawn nn_nextbot_spawn 15
 
 
 
@@ -112,14 +112,14 @@ execute unless entity @e[tag=bear5_z] run scoreboard players set spawn nn_nextbo
 
 #> ------------------ blabber | id 17
 
-execute unless entity @e[tag=blabber_z] run scoreboard players set spawn nn_nextbot_spawn 17
+# execute unless entity @e[tag=blabber_z] run scoreboard players set spawn nn_nextbot_spawn 17
 
 
 
 
 #> ------------------ chilly | id 18
 
-execute unless entity @e[tag=chilly_z] run scoreboard players set spawn nn_nextbot_spawn 18
+# execute unless entity @e[tag=chilly_z] run scoreboard players set spawn nn_nextbot_spawn 18
 
 
 
@@ -252,56 +252,56 @@ execute unless entity @e[tag=shroom_z] run scoreboard players set spawn nn_nextb
 
 #> ------------------ grumbo | id 37
 
-execute unless entity @e[tag=grumbo_z] run scoreboard players set spawn nn_nextbot_spawn 37
+# execute unless entity @e[tag=grumbo_z] run scoreboard players set spawn nn_nextbot_spawn 37
 
 
 
 
 #> ------------------ giggle | id 38
 
-execute unless entity @e[tag=giggle_z] run scoreboard players set spawn nn_nextbot_spawn 38
+# execute unless entity @e[tag=giggle_z] run scoreboard players set spawn nn_nextbot_spawn 38
 
 
 
 
 #> ------------------ rei | id 39
 
-execute unless entity @e[tag=rei_z] run scoreboard players set spawn nn_nextbot_spawn 39
+# execute unless entity @e[tag=rei_z] run scoreboard players set spawn nn_nextbot_spawn 39
 
 
 
 
 #> ------------------ ico | id 40
 
-execute unless entity @e[tag=ico_z] run scoreboard players set spawn nn_nextbot_spawn 40
+# execute unless entity @e[tag=ico_z] run scoreboard players set spawn nn_nextbot_spawn 40
 
 
 
 
 #> ------------------ leorio | id 41
 
-execute unless entity @e[tag=leorio_z] run scoreboard players set spawn nn_nextbot_spawn 41
+# execute unless entity @e[tag=leorio_z] run scoreboard players set spawn nn_nextbot_spawn 41
 
 
 
 
 #> ------------------ mohu | id 42
 
-execute unless entity @e[tag=mohu_z] run scoreboard players set spawn nn_nextbot_spawn 42
+# execute unless entity @e[tag=mohu_z] run scoreboard players set spawn nn_nextbot_spawn 42
 
 
 
 
 #> ------------------ jack | id 43
 
-execute unless entity @e[tag=jack_z] run scoreboard players set spawn nn_nextbot_spawn 43
+# execute unless entity @e[tag=jack_z] run scoreboard players set spawn nn_nextbot_spawn 43
 
 
 
 
 #> ------------------ unfortunate | id 44
 
-execute unless entity @e[tag=unfortunate_z] run scoreboard players set spawn nn_nextbot_spawn 44
+# execute unless entity @e[tag=unfortunate_z] run scoreboard players set spawn nn_nextbot_spawn 44
 
 
 
@@ -371,5 +371,5 @@ execute unless entity @e[tag=dread_z] run scoreboard players set spawn nn_nextbo
 
 #> ------------------ catnap | id 54
 
-execute unless entity @e[tag=catnap_z] run scoreboard players set spawn nn_nextbot_spawn 54
+# execute unless entity @e[tag=catnap_z] run scoreboard players set spawn nn_nextbot_spawn 54
 
