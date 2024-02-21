@@ -12,6 +12,15 @@
         ""
       ]
     },
+    {
+      "type": "bitmap",
+        "file": "vibecraft:gui/voting/crossroads_classic.png",
+        "ascent": 13,
+        "height": 138,
+        "chars": [
+          ""
+        ]
+      },
 	 
      {
 	  "type": "bitmap",
@@ -132,7 +141,7 @@
         "chars": [
           ""
         ]
-      },
+     },
 	 
      {
 	  "type": "bitmap",
@@ -142,6 +151,16 @@
       "chars": [
         ""
       ]
+    },
+
+    {
+      "type": "bitmap",
+        "file": "vibecraft:gui/voting/notfound.png",
+        "ascent": 13,
+        "height": 138,
+        "chars": [
+          ""
+        ]
     },
 	 
 

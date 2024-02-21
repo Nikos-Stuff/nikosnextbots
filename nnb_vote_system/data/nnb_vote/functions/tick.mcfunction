@@ -6,5 +6,6 @@
 
 
 execute if score start nn_voting_open matches 1 run function nnb_vote:assign
+execute if score start nn_voting_open matches 1 run function nnb_vote:vip_assign
 
-schedule function nnb_vote:tick 3s
+schedule function nnb_vote:tick 2s
