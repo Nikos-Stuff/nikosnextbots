@@ -1,4 +1,5 @@
 scoreboard players set @p nn_deathscreen 60
+effect give @p minecraft:blindness 3 255 true
 execute at @a run playsound vibecraft:ded master @p ~ ~ ~ 1 1
 gamemode spectator @p
 function nnb_jumpscares:removetags
