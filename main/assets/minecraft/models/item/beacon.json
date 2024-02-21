@@ -1,4 +1,7 @@
 {
+  "textures": {
+    "layer0": "item/beacon"
+  },
   "overrides": [
     {
       "predicate": {
