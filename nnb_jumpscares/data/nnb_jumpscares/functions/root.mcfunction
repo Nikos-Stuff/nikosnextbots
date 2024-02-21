@@ -34,7 +34,7 @@ execute if score title nn_deathscreen matches 2 run title @a[tag=jumpscared,game
 execute if score title nn_deathscreen matches 3 run title @a[tag=jumpscared,gamemode=spectator] subtitle {"text":"Bro that was EZ move. You messed up!","color":"yellow"}
 execute if score title nn_deathscreen matches 4 run title @a[tag=jumpscared,gamemode=spectator] subtitle {"text":"Better luck next time!","color":"yellow"}
 
-execute at @a[tag=jumpscared,gamemode=spectator] if score @p nn_deathscreen <= 0 0 run function nnb_jumpscares:end_deathscreen
+execute at @a[tag=jumpscared,gamemode=spectator,scores={nn_deathscreen=..0}] run function nnb_jumpscares:end_deathscreen
 
 
 
