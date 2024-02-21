@@ -1,8 +1,4 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "item/snowball"
-  },
   "overrides": [
     {
       "predicate": {
