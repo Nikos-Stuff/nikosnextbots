@@ -3,6 +3,22 @@
     "sounds": [
       "vibecraft:menu"]
 	},	
+  "rfti_round_start": {
+    "sounds": [
+      "vibecraft:runningfromtheinternet/round_start"]
+	},	
+  "rfti_round": {
+    "sounds": [
+      "vibecraft:runningfromtheinternet/round"]
+	},
+  "rfti_prepare": {
+    "sounds": [
+      "vibecraft:runningfromtheinternet/prepare"]
+	},
+  "rfti_kill": {
+    "sounds": [
+      "vibecraft:runningfromtheinternet/kill"]
+	},
   "menu_h": {
     "sounds": [
       "vibecraft:menu_h"]
