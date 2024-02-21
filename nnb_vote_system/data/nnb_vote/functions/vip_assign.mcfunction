@@ -33,7 +33,7 @@ execute if entity @e[name=nn_crossroads_classic,tag=vip_map_3] run scoreboard ob
 
 
 
-
+# If we failed to detect map icon - use temp placeholder image
 scoreboard objectives add vip_sel_map_1 dummy {"text":""}
 scoreboard objectives add vip_sel_map_2 dummy {"text":""}
 scoreboard objectives add vip_sel_map_3 dummy {"text":""}

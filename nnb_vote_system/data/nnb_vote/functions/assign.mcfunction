@@ -71,3 +71,16 @@ execute if entity @e[name=nn_habitablezone,tag=map_3] run scoreboard objectives 
 execute if entity @e[name=nn_doomspire,tag=map_1] run scoreboard objectives add sel_map_1 dummy {"text":""}
 execute if entity @e[name=nn_doomspire,tag=map_2] run scoreboard objectives add sel_map_2 dummy {"text":""}
 execute if entity @e[name=nn_doomspire,tag=map_3] run scoreboard objectives add sel_map_3 dummy {"text":""}
+
+
+
+
+
+
+
+
+
+# If we failed to detect map icon - use temp placeholder image
+scoreboard objectives add sel_map_1 dummy {"text":""}
+scoreboard objectives add sel_map_2 dummy {"text":""}
+scoreboard objectives add sel_map_3 dummy {"text":""}
