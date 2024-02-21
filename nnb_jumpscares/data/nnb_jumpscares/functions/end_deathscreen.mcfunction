@@ -1,3 +1,3 @@
 kill @p
-gamemode adventure
+gamemode adventure @p
 tag @p remove jumpscared
