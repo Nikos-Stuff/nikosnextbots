@@ -1,3 +1,6 @@
+tag @a[tag=amogus_d] remove amogus_d
+# Idk unused stuff are above his line
+# ---------------------------------------------------------
 
 
 tag @a[tag=metal_pipe_d] remove metal_pipe_d
