@@ -4,6 +4,8 @@
 <p align="center">Texturepack & Datapacks for our server - Niko's Nextbots</p>
 
 
+[Roadmap](https://github.com/users/Nik0-0/projects/1/views/1)
+
 ## Description
 
 Welcome to the Nico's Nextbots Texture Pack! This is the texture pack used in our server. Any edits in the master branch will be applied in our server. In that way, we can add new bots and features easier + with the help of community.
