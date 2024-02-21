@@ -210,7 +210,7 @@ execute unless entity @e[tag=nuke_z] run scoreboard players set spawn nn_nextbot
 
 #> ------------------ flash | id 31
 
-execute unless entity @e[tag=flash_z] run scoreboard players set spawn nn_nextbot_spawn 31
+#execute unless entity @e[tag=flash_z] run scoreboard players set spawn nn_nextbot_spawn 31
 
 
 
@@ -308,7 +308,7 @@ execute unless entity @e[tag=shroom_z] run scoreboard players set spawn nn_nextb
 
 #> ------------------ lolguy | id 45
 
-execute unless entity @e[tag=lolguy_z] run scoreboard players set spawn nn_nextbot_spawn 45
+#execute unless entity @e[tag=lolguy_z] run scoreboard players set spawn nn_nextbot_spawn 45
 
 
 
