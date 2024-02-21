@@ -1,4 +1,5 @@
 scoreboard players set @p nn_deathscreen 60
+playsound vibecraft:gameover weather @p ~ ~ ~ 1 1
 effect give @p minecraft:blindness 3 255 true
 execute at @a run playsound vibecraft:ded master @p ~ ~ ~ 1 1
 gamemode spectator @p

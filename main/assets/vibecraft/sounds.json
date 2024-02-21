@@ -27,6 +27,10 @@
     "sounds": [
       "vibecraft:chase"]
 	},
+  "gameover": {
+    "sounds": [
+      "vibecraft:gameover"]
+	},
   "metal_pipe": {
     "sounds": [
       "vibecraft:nextbots/metal_pipe/metal_pipe"]
