@@ -3,4 +3,4 @@ execute at @a[tag=jumpscared,gamemode=!spectator] function nnb_jumpscares:end_de
 
 
 
-schedule function nnb_jumpscares:fix 5s
+schedule function nnb_jumpscares:fix_stuff 5s
