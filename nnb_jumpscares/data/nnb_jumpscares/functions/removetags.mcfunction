@@ -1,4 +1,4 @@
-tag @a remove jumpscared
+
 
 tag @a[tag=metal_pipe_d] remove metal_pipe_d
 

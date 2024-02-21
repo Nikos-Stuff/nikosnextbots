@@ -17,10 +17,27 @@ scoreboard players set @a[scores={nn_jumpscare=3..}] nn_jumpscare 0
 
 
 #> Check the score and kill the player if the jumpscare played
-execute at @a[scores={nn_jumpscare_run=40..}] run kill @p
-execute at @a[scores={nn_jumpscare_run=40..}] run function nnb_jumpscares:removetags
-execute at @a[scores={nn_jumpscare_run=40..}] run scoreboard players set @p nn_jumpscare 0
-execute at @a[scores={nn_jumpscare_run=40..}] run scoreboard players set @p nn_jumpscare_run 0
+execute at @a[scores={nn_jumpscare_run=40..}] run function nnb_jumpscares:check
+
+
+
+#> Death Screen
+scoreboard players remove @a[tag=jumpscared,gamemode=spectator] nn_deathscreen 1 
+
+execute if score title nn_deathscreen matches 1 run title @a[tag=jumpscared,gamemode=spectator] title {"text":"OOPS...","color":"red","bold":true}
+execute if score title nn_deathscreen matches 2 run title @a[tag=jumpscared,gamemode=spectator] title {"text":"Yeah you ded!","color":"red","bold":true}
+execute if score title nn_deathscreen matches 3 run title @a[tag=jumpscared,gamemode=spectator] title {"text":"NOOBER!","color":"red","bold":true}
+execute if score title nn_deathscreen matches 4 run title @a[tag=jumpscared,gamemode=spectator] title {"text":"GG!","color":"red","bold":true}
+
+execute if score title nn_deathscreen matches 1 run title @a[tag=jumpscared,gamemode=spectator] subtitle {"text":"Welp.. You Tried!","color":"yellow"}
+execute if score title nn_deathscreen matches 2 run title @a[tag=jumpscared,gamemode=spectator] subtitle {"text":"Lets move on..","color":"yellow"}
+execute if score title nn_deathscreen matches 3 run title @a[tag=jumpscared,gamemode=spectator] subtitle {"text":"Bro that was EZ move. You messed up!","color":"yellow"}
+execute if score title nn_deathscreen matches 4 run title @a[tag=jumpscared,gamemode=spectator] subtitle {"text":"Better luck next time!","color":"yellow"}
+
+execute at @a[tag=jumpscared,gamemode=spectator] if score @p nn_deathscreen <= 0 0 run function nnb_jumpscares:end_deathscreen
+
+
+
 
 #> Example for metal pipe
 # Each nextbot will have its own scoreboard command - in that way i will have more freedom to make each bot more fun
