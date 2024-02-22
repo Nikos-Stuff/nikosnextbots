@@ -1116,7 +1116,7 @@ tag @a[tag=catnap_z] add b_nextbot
 
 
 
-#> ------------------ catnap | id 55
+#> ------------------ mrl | id 55
 
 #> Detect and assign possession
 execute at @e[type=minecraft:zombie,tag=mrl_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 55

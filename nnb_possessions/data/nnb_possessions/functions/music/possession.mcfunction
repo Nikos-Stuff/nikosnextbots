@@ -13,4 +13,4 @@ execute as @a[tag=s_nextbot] run playsound vibecraft:smile_ghost_p master @s ~ ~
 
 
 #> Purple - Possession B Side
-execute as @a[tag=b_nextbot] run playsound vibecraft:possession_b master @s ~ ~ ~ 1
+execute as @a[tag=b_nextbot] run playsound vibecraft:possession_bside master @s ~ ~ ~ 1
