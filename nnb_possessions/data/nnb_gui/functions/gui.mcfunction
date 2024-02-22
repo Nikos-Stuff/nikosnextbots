@@ -4,7 +4,7 @@ execute as @a run title @s actionbar ["七七七七七七七七七七七七七�
 
 
 
-schedule function nnb_gui:gui 1t
+
 
 
 # Background got removed - too many scalling issues - Symbol 
