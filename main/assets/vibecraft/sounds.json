@@ -6,7 +6,7 @@
   "rfti_round_start": {
     "sounds": [
       "vibecraft:runningfromtheinternet/round_start"]
-	},	
+	},	t
   "rfti_round": {
     "sounds": [
       "vibecraft:runningfromtheinternet/round"]
@@ -366,6 +366,10 @@
   "shop": {
     "sounds": [
       "vibecraft:shop"]
+	},
+  "mini_shop": {
+    "sounds": [
+      "vibecraft:mini_shop"]
 	},
   "club": {
     "sounds": [
