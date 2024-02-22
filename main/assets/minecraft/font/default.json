@@ -1,7 +1,15 @@
 {
   "providers": [
      {"type": "bitmap", "file": "vibecraft:gui/pixel.png","ascent": -2000,"height": -3,"chars": ["七"]},
-	 
+     {
+      "type": "bitmap",
+        "file": "vibecraft:gui/stats.png",
+        "ascent": 13,
+        "height": 138,
+        "chars": [
+          ""
+        ]
+      },
 	 
      {
 	  "type": "bitmap",
