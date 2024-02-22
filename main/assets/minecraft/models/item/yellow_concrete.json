@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/yellow_concrete",
+  "textures": {
+    "layer0": "block/yellow_concrete"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "item/server_icons/arcade_icon"
+    }
+  ]
+}

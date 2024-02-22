@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/purple_concrete",
+  "textures": {
+    "layer0": "block/purple_concrete"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "item/server_icons/openworld_icon"
+    }
+  ]
+}
