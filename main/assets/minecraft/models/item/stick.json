@@ -27,6 +27,12 @@
         "custom_model_data": 4
       },
       "model": "item/lolguy/lolguy_anim"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5
+      },
+      "model": "item/mrl/mrl_anim"
     }
   ]
 }

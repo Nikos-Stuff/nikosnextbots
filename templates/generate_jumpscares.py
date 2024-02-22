@@ -9,7 +9,7 @@ original_list = [
     "bear5", "fan", "smurf_cat", "blabber",
     "chilly", "little_gerry", "subspace_tripmine",
     "boykisser", "boba", "squewe", "ccat", "smiler",
-    "inhabitant", "leoret", "dread", "andy", "catnap"
+    "inhabitant", "leoret", "dread", "andy", "catnap", "mrl"
 ]
 
 unicode_chars = [

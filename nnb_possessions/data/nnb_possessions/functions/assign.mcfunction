@@ -1112,3 +1112,24 @@ execute at @a[tag=catnap_z] run tp @e[tag=catnap] ~ ~2 ~
 
 #> Screen effects tag
 tag @a[tag=catnap_z] add b_nextbot
+
+
+
+
+#> ------------------ catnap | id 55
+
+#> Detect and assign possession
+execute at @e[type=minecraft:zombie,tag=mrl_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 55
+execute at @e[type=minecraft:zombie,tag=mrl_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
+execute at @e[type=minecraft:zombie,tag=mrl_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
+execute at @a[scores={nn_possesion=55}] run tag @p add nextbot
+
+#> Reset on timeout
+execute if entity @a[scores={nn_possesion=55},tag=nextbot_timeout] run function nnb_possessions:55/mrl_end
+
+#> Teleport sprite and assign tags
+execute if entity @a[scores={nn_possesion=55},tag=!nextbot_timeout] run tag @a[scores={nn_possesion=55},tag=!nextbot_timeout] add mrl_z
+execute at @a[tag=mrl_z] run tp @e[tag=mrl] ~ ~2 ~
+
+#> Screen effects tag
+tag @a[tag=mrl_z] add b_nextbot
