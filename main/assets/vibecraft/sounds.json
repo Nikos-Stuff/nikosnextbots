@@ -681,6 +681,10 @@
     "sounds": [
       "vibecraft:round_end/pluggnb_r"]
 	},
+  "awake": {
+    "sounds": [
+      "vibecraft:round_end/awake"]
+	},
 	
 	
 	
