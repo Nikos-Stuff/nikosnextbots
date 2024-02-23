@@ -15,6 +15,12 @@
         "custom_model_data": 1
       },
       "model": "item/possessor/possessor"
-    }
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2
+      },
+      "model": "item/pile_snowball"
+    },
   ]
 }
