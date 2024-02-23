@@ -1,7 +1,7 @@
 scoreboard players set @p nn_possession_effect 0
 
 #> Normal
-playsound vibecraft:possession master @p[tag=n_nextbot]  ~ ~ ~ 1 
+playsound vibecraft:possession master @p[tag=n_nextbot] ~ ~ ~ 1 
 
 
 #> Blue
