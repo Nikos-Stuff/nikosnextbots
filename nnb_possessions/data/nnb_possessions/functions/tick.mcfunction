@@ -2,6 +2,11 @@
 execute at @a[tag=nextbot_timeout] run summon minecraft:lightning_bolt ~ ~ ~
 
 
+#> Fix non-possessed players
+stopsound @a[scores={nn_possessions=0},tag=nextbot] * vibecraft:possession
+tag @a[scores={nn_possessions=0},tag=nextbot] remove nextbot
+
+
 #> EFFECT FOR USE:
 #> n_nextbot - normal red screen + normal music
 #> c_nextbot - for chilly - blue screen + normal music
