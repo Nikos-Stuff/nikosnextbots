@@ -6,6 +6,12 @@
   "overrides": [
     {
       "predicate": {
+        "custom_model_data": 0
+      },
+      "model": "item/single_snowball"
+    },
+    {
+      "predicate": {
         "custom_model_data": 1
       },
       "model": "item/possessor/possessor"
