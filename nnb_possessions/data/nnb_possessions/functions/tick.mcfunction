@@ -18,3 +18,8 @@ function nnb_possessions:timer
 #> Set default stuff and yeet the player on the timeout
 scoreboard players set @a[tag=!nextbot] nn_possession_effect 100000
 
+
+
+
+
+
