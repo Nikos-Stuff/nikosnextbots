@@ -588,7 +588,15 @@
 
 
 
-
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/trespasser.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
     {
       "type": "bitmap",
       "file": "vibecraft:nextbots/shroom.png",

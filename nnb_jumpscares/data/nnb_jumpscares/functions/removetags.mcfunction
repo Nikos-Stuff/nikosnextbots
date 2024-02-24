@@ -112,3 +112,5 @@ tag @a[tag=dread_d] remove dread_d
 tag @a[tag=catnap_d] remove catnap_d
 
 tag @a[tag=mrl_d] remove mrl_d
+
+tag @a[tag=trespasser_d] remove trespasser_d

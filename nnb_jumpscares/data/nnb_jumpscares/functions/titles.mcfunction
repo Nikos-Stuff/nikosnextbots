@@ -413,3 +413,12 @@ execute at @a[tag=mrl_d] if score @p nn_jumpscare matches 2 run title @p title {
 execute at @a[tag=mrl_d] if score @p nn_jumpscare matches 3 run title @p title {"text":"","color":"red"}
 execute at @a[tag=mrl_d] if score @p nn_jumpscare matches 3 run scoreboard players add @p nn_jumpscare_run 10
 # execute at @a[tag=mrl_d] if score @p nn_jumpscare matches 3 run title @p title {"text":"","color":"red"}
+
+
+#> trespasser
+title @a[tag=trespasser_d] times 0 5 20
+execute at @a[tag=trespasser_d] if score @p nn_jumpscare matches 1 run title @p title {"text":" ","color":"red"}
+execute at @a[tag=trespasser_d] if score @p nn_jumpscare matches 2 run title @p title {"text":"    "}
+execute at @a[tag=trespasser_d] if score @p nn_jumpscare matches 3 run title @p title {"text":"","color":"red"}
+execute at @a[tag=trespasser_d] if score @p nn_jumpscare matches 3 run scoreboard players add @p nn_jumpscare_run 10
+# execute at @a[tag=trespasser_d] if score @p nn_jumpscare matches 3 run title @p title {"text":"","color":"red"}
