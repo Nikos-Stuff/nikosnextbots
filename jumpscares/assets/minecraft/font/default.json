@@ -532,6 +532,15 @@
       "chars": [
         ""
       ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/anim8or.png",
+      "ascent": 50,
+      "height": 110,
+      "chars": [
+        ""
+      ]
     }
   ]
 }

@@ -114,3 +114,5 @@ tag @a[tag=catnap_d] remove catnap_d
 tag @a[tag=mrl_d] remove mrl_d
 
 tag @a[tag=trespasser_d] remove trespasser_d
+
+tag @a[tag=anim8or_d] remove anim8or_d
