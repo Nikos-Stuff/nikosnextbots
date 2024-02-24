@@ -13,6 +13,7 @@
   {"predicate": {"custom_model_data":6}, "model": "block/custom/3d_virtual_shades"},
   {"predicate": {"custom_model_data":7}, "model": "block/back/on_off_button"},
   {"predicate": {"custom_model_data":8}, "model": "block/custom/chilly_goggles"},
-  {"predicate": {"custom_model_data":9}, "model": "block/custom/nerd_glasses"}
+  {"predicate": {"custom_model_data":9}, "model": "block/custom/nerd_glasses"},
+  {"predicate": {"custom_model_data":9}, "model": "block/custom/enphoso_mask"}
  ]
 }

@@ -1,0 +1,93 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "enphoso_mask",
+	"texture_size": [48, 48],
+	"textures": {
+		"0": "item/enphoso_mask",
+		"particle": "item/enphoso_mask"
+	},
+	"elements": [
+		{
+			"from": [1, 0, 1],
+			"to": [15, 14, 1],
+			"faces": {
+				"north": {"uv": [0, 0, 4.66667, 4.66667], "texture": "#0"},
+				"east": {"uv": [0, 0, 0, 4.66667], "texture": "#0"},
+				"south": {"uv": [0, 4.66667, 4.66667, 9.33333], "texture": "#0"},
+				"west": {"uv": [0, 0, 0, 4.66667], "texture": "#0"},
+				"up": {"uv": [4.66667, 0, 0, 0], "texture": "#0"},
+				"down": {"uv": [4.66667, 0, 0, 0], "texture": "#0"}
+			}
+		},
+		{
+			"from": [1, 14, 1],
+			"to": [15, 14, 15],
+			"faces": {
+				"north": {"uv": [0, 0, 4.66667, 0], "texture": "#0"},
+				"east": {"uv": [0, 0, 4.66667, 0], "texture": "#0"},
+				"south": {"uv": [0, 0, 4.66667, 0], "texture": "#0"},
+				"west": {"uv": [0, 0, 4.66667, 0], "texture": "#0"},
+				"up": {"uv": [9.33333, 4.66667, 4.66667, 0], "texture": "#0"},
+				"down": {"uv": [9.33333, 4.66667, 4.66667, 9.33333], "texture": "#0"}
+			}
+		},
+		{
+			"from": [1, 0, 1],
+			"to": [1, 14, 15],
+			"faces": {
+				"north": {"uv": [0, 0, 0, 4.66667], "texture": "#0"},
+				"east": {"uv": [0, 9.33333, 4.66667, 14], "texture": "#0"},
+				"south": {"uv": [0, 0, 0, 4.66667], "texture": "#0"},
+				"west": {"uv": [9.33333, 0, 14, 4.66667], "texture": "#0"},
+				"up": {"uv": [0, 4.66667, 0, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 4.66667], "texture": "#0"}
+			}
+		},
+		{
+			"from": [15, 0, 1],
+			"to": [15, 14, 15],
+			"faces": {
+				"north": {"uv": [0, 0, 0, 4.66667], "texture": "#0"},
+				"east": {"uv": [4.66667, 9.33333, 9.33333, 14], "texture": "#0"},
+				"south": {"uv": [0, 0, 0, 4.66667], "texture": "#0"},
+				"west": {"uv": [9.33333, 4.66667, 14, 9.33333], "texture": "#0"},
+				"up": {"uv": [0, 4.66667, 0, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 4.66667], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 0, 3],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 0, 3],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"ground": {
+			"translation": [0, 2.5, 0],
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"gui": {
+			"rotation": [-171.75, -36.25, 180],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"head": {
+			"translation": [0, 1, -0.5],
+			"scale": [0.91797, 0.90234, 0.88672]
+		},
+		"fixed": {
+			"translation": [0, 0, 7.75]
+		}
+	},
+	"groups": [
+		{
+			"name": "enphoso_mask",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"boneType": "",
+			"children": [0, 1, 2, 3]
+		}
+	]
+}
