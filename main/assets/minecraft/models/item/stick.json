@@ -33,6 +33,12 @@
         "custom_model_data": 5
       },
       "model": "item/mrl/mrl_anim"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 6
+      },
+      "model": "item/anim8or/anim8or_anim"
     }
   ]
 }
