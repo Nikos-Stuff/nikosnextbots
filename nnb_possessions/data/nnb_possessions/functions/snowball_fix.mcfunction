@@ -1,4 +1,4 @@
-#> Kill useless snowballs + 
+#> Kill useless snowballs + Effects stuff 
 
 
 execute at @e[tag=nextbot] run kill @e[type=snowball,nbt=!{Item:{tag:{CustomModelData:1}}},distance=..8.3]
