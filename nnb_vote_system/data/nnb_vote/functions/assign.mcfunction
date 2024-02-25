@@ -73,9 +73,9 @@ execute if entity @e[name=nn_doomspire,tag=map_2] run scoreboard objectives add 
 execute if entity @e[name=nn_doomspire,tag=map_3] run scoreboard objectives add sel_map_3 dummy {"text":""}
 
 
-execute if entity @e[name=nn_topmodernhouse,tag=map_1] run scoreboard objectives add sel_map_1 dummy {"text":""}
-execute if entity @e[name=nn_topmodernhousee,tag=map_2] run scoreboard objectives add sel_map_2 dummy {"text":""}
-execute if entity @e[name=nn_topmodernhouse,tag=map_3] run scoreboard objectives add sel_map_3 dummy {"text":""}
+execute if entity @e[name=nn_funtopolis,tag=map_1] run scoreboard objectives add sel_map_1 dummy {"text":""}
+execute if entity @e[name=nn_funtopolis,tag=map_2] run scoreboard objectives add sel_map_2 dummy {"text":""}
+execute if entity @e[name=nn_funtopolis,tag=map_3] run scoreboard objectives add sel_map_3 dummy {"text":""}
 
 
 
