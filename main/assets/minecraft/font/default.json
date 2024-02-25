@@ -160,6 +160,7 @@
         ""
       ]
     },
+    
     {
       "type": "bitmap",
         "file": "vibecraft:gui/voting/funtopolis.png",
@@ -168,7 +169,7 @@
         "chars": [
           ""
         ]
-      },
+    },
 
     {
       "type": "bitmap",
