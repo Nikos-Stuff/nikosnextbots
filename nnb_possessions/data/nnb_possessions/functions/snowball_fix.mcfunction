@@ -11,4 +11,4 @@ execute at @e[type=snowball,nbt={Item:{tag:{CustomModelData:1}}}] run particle m
 
 execute at @a[tag=nextbot] run particle minecraft:soul_fire_flame ~ ~1 ~ 0.5 0.5 0.5 0 1 force @a[tag=!nextbot]
 
-schedule function nnb_possessions:snowball_fix 1t
+schedule function nnb_possessions:snowball_fix 10t
