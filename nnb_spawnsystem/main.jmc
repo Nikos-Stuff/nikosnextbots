@@ -81,6 +81,7 @@ switch(nn_map:map) {
     case 6: 
         execute store result score spawn nn_spawn run random value 1..60;
         call_bots(sel_map="nn_russia");
+        say "A";
     case 7: 
         execute store result score spawn nn_spawn run random value 1..60;
         call_bots(sel_map="nn_trainstation");
@@ -114,6 +115,7 @@ schedule function map_detect() 30t;
 
 //Spawn Bots based on map stuff
 function call_bots() {
+$say "Map: $(sel_map)";
 switch(nn_spawn:spawn) {
     case 1:
         $setup_bots(bot_name="metal_pipe",id="1",map="$(sel_map)");
@@ -229,8 +231,8 @@ switch(nn_spawn:spawn) {
         $setup_bots(bot_name="trespasser",id="56",map="$(sel_map)");
     case 57:
         $setup_bots(bot_name="anim8or",id="57",map="$(sel_map)");
-  //  default:
-  //      say "Unable to find anything";
+    default:
+        say "Unable to find anything";
 }}
 
 // Universal spawn bot stuff
