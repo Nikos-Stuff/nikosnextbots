@@ -1,1 +1,1 @@
-$function nnb_spawnsystem:setup_bots {"bot_name":"crying_sans","id":"3","map":"${sel_map}"}
+$function nnb_spawnsystem:setup_bots {"bot_name":"crying_sans","id":"3","map":"nn_mall"}
