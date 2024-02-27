@@ -64,50 +64,37 @@ if (nn_lobby:phase = 5) {
 function map_detect() {
 switch(nn_map:map) {
     case 1: 
-        execute store result score spawn nn_spawn run random value 1..60;
         call_bots(sel_map="nn_mall");
     case 2: 
-        execute store result score spawn nn_spawn run random value 1..60;
         call_bots(sel_map="nn_poolrooms");
     case 3: 
-        execute store result score spawn nn_spawn run random value 1..60;
         call_bots(sel_map="nn_port");
     case 4: 
-        execute store result score spawn nn_spawn run random value 1..60;
         call_bots(sel_map="nn_camberturn");
     case 5: 
-        execute store result score spawn nn_spawn run random value 1..60;
         call_bots(sel_map="nn_crossroads");
     case 6: 
-        execute store result score spawn nn_spawn run random value 1..60;
         call_bots(sel_map="nn_russia");
     case 7: 
-        execute store result score spawn nn_spawn run random value 1..60;
         call_bots(sel_map="nn_trainstation");
     case 8: 
-        execute store result score spawn nn_spawn run random value 1..60;
         call_bots(sel_map="nn_fungle");
     case 9: 
-        execute store result score spawn nn_spawn run random value 1..60;
         call_bots(sel_map="nn_hotel");
     case 10: 
-        execute store result score spawn nn_spawn run random value 1..60;
         call_bots(sel_map="nn_hauntedmansion");
     case 11: 
-        execute store result score spawn nn_spawn run random value 1..60;
         call_bots(sel_map="nn_habitablezone");
     case 12: 
-        execute store result score spawn nn_spawn run random value 1..60;
         call_bots(sel_map="nn_doomspire");
     case 13: 
-        execute store result score spawn nn_spawn run random value 1..60;
         call_bots(sel_map="nn_crossroads_c");
     case 14: 
-        execute store result score spawn nn_spawn run random value 1..60;
         call_bots(sel_map="nn_topmodernhouse");
    // default:
    //     say "Unable to find anything";
 }
+schedule function map_detect() 1t;
 }
 
 
@@ -174,14 +161,13 @@ function call_bots() {
 
 // Universal spawn bot stuff
 function setup_bots() {
-    scoreboard players set ticks nn_spawn 20;
-    
+    scoreboard players remove ticks nn_spawn 1;
     $say "$(bot_name) $(id) $(map)";
     $execute unless entity @e[tag=$(bot_name)] run scoreboard players set spawn nn_nextbot_spawn $(id);
-    $tp @e[tag=$(bot_name)_z] @e[tag=$(map),limit=1,sort=random];
 
     if (nn_spawn:ticks <= nn_lobby:0) {
-        map_detect();
+        scoreboard players set ticks nn_spawn 20;
+        $tp @e[tag=$(bot_name)_z] @e[tag=$(map),limit=1,sort=random];
     }
 }
 
