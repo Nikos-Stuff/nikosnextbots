@@ -4,7 +4,7 @@ function __tick__() {
 root();
 map_detect();
 
-if (nn_lobby:phase = 5) {
+if (nn_lobby:started = 1) {
 timer_msec();
 }}
 
