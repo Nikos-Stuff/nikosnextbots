@@ -3,8 +3,10 @@ Text.tellraw(@a, "Spawn System Loaded");
 function __tick__() {
 root();
 map_detect();
+
+if (nn_lobby:phase = 5) {
 timer_msec();
-}
+}}
 
 
 
