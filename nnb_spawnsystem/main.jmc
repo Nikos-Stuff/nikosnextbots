@@ -70,6 +70,24 @@ function map_detect() {
 // Check Maps 
 if (map_nn_mall:start = 1) {
 
+switch(nn_spawn:spawn) {
+    case 1:
+        say "Today is Saturday";
+    case 2:
+        say "Today is Sunday";
+    default:
+        say "Voxuś is cute";
+}
+
+
+
+
+
+
+
+
+
+
 
 }}
 
