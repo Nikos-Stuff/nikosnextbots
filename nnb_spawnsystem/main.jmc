@@ -80,8 +80,7 @@ switch(nn_map:map) {
         call_bots(sel_map="nn_crossroads");
     case 6: 
         execute store result score spawn nn_spawn run random value 1..60;
-        call_bots(sel_map="nn_russia");
-        say "A";
+       // call_bots(sel_map="nn_russia");
     case 7: 
         execute store result score spawn nn_spawn run random value 1..60;
         call_bots(sel_map="nn_trainstation");
