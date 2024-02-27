@@ -171,7 +171,7 @@ switch(nn_spawn:spawn) {
     case 27:
         $setup_bots(bot_name="boykisser",id="27",map="$(sel_map)");
     case 28:
-        setup_bots(bot_name="subspace_tripmine",id="28",map="$(sel_map)");
+        $setup_bots(bot_name="subspace_tripmine",id="28",map="$(sel_map)");
     case 29:
         Text.tellraw(@a, "Tried to spawn disabled bot. Aborting");
     case 30:
