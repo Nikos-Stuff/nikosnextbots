@@ -1,1 +1,1 @@
-$function nnb_spawnsystem:setup_bots {"bot_name":"toob","id":"2","map":"nn_mall"}
+function nnb_spawnsystem:setup_bots {"bot_name":"toob","id":"2","map":"nn_mall"}
