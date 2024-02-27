@@ -105,8 +105,8 @@ switch(nn_map:map) {
     case 14: 
         execute store result score spawn nn_spawn run random value 1..60;
         call_bots(sel_map="nn_topmodernhouse");
-    default:
-        say "Unable to find anything";
+   // default:
+   //     say "Unable to find anything";
 }
 schedule function map_detect() 30t;
 }
@@ -229,8 +229,8 @@ switch(nn_spawn:spawn) {
         $setup_bots(bot_name="trespasser",id="56",map="${sel_map}");
     case 57:
         $setup_bots(bot_name="anim8or",id="57",map="${sel_map}");
-    default:
-        say "Unable to find anything";
+  //  default:
+  //      say "Unable to find anything";
 }}
 
 // Universal spawn bot stuff
