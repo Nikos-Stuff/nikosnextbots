@@ -1,10 +1,10 @@
 Text.tellraw(@a, "Spawn System Loaded");
-map_detect();
 
 
 // Run Every Tick
 function __tick__() {
 root();
+map_detect();
 
 
 if (nn_lobby:started = 1) {
@@ -94,7 +94,6 @@ switch(nn_map:map) {
    // default:
    //     say "Unable to find anything";
 }
-schedule function map_detect() 1t;
 }
 
 
