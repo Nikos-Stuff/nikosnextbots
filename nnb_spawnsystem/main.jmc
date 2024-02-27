@@ -1,0 +1,148 @@
+Text.tellraw(@a, "Spawn System Loaded");
+
+
+
+
+
+
+
+
+
+// Run Every Tick
+
+function __tick__() {
+
+root();
+map_detect();
+timer_msec();
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// Bossbar & Entity Stuff
+
+function root() {
+
+
+//Detect if round has started
+if (nn_lobby:phase = 5) {
+// check if minutes are not less than 0
+if (nn_lobby:min < nn_lobby:0) {
+// Set the bossbar stuff
+bossbar set minecraft:game name ["",{"score":{"name":"min","objective":"nn_lobby"},"color":"yellow"},{"text":":","color":"yellow"},{"score":{"name":"sec","objective":"nn_lobby"},"color":"yellow"},{"text":" |","color":"dark_gray"},{"text":" Playing nn_mall","color":"aqua"}];
+
+}}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function map_detect() {
+
+// Check Maps 
+if (map_nn_mall:start = 1) {
+
+
+
+
+
+
+
+
+}}
+
+
+
+// Basic Timer STuff
+
+function timer_msec() {
+if (nn_lobby:prepare = 0) {
+scoreboard players remove msec nn_lobby 1;
+}
+if (nn_lobby:msec <= nn_lobby:20) {
+scoreboard players set msec nn_lobby 0;
+scoreboard players remove sec nn_lobby 1;
+timer_sec();
+}}
+
+
+
+function timer_sec() {
+if (nn_lobby:sec <= nn_lobby:0) {
+scoreboard players set sec nn_lobby 59;
+scoreboard players remove min nn_lobby 1;
+}
+if (nn_lobby:min < nn_lobby:0) {
+scoreboard players set end nn_lobby 1;
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

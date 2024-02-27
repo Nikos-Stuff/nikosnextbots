@@ -1,0 +1,3 @@
+function nnb_spawnsystem:root
+function nnb_spawnsystem:map_detect
+function nnb_spawnsystem:timer_msec
