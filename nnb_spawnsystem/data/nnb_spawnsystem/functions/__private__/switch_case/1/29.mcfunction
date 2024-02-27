@@ -1,1 +1,1 @@
-tellraw @a "<dark_gray>Tried to spawn disabled bot. Aborting"
+tellraw @a "Tried to spawn disabled bot. Aborting"

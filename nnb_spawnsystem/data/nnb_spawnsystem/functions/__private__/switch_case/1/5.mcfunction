@@ -1,1 +1,1 @@
-function nnb_spawnsystem:setup_bots {"bot_name":"smile_ghost","id":"5","map":"nn_mall"}
+$function nnb_spawnsystem:setup_bots {"bot_name":"smile_ghost","id":"5","map":"$(sel_map)"}
