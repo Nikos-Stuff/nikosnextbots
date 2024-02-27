@@ -6,6 +6,7 @@ map_detect();
 function __tick__() {
 root();
 
+
 if (nn_lobby:started = 1) {
 timer_msec();
 }}
@@ -23,18 +24,9 @@ function root() {
          bossbar set minecraft:game name [
           {"score":{"name":"min","objective":"nn_lobby"},"color":"yellow"},
           {"text":":","color":"yellow"},{"score":{"name":"sec","objective":"nn_lobby"},"color":"yellow"},
-          {"text":" |","color":"dark_gray"},{"text":" Playing nn_mall","color":"aqua"}];
+          {"text":" |","color":"dark_gray"},{"text":" Playing ","color":"aqua"},{"selector","@e[tag=now_playing]","color":"aqua"}];
 
 }}}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -58,8 +50,7 @@ function timer_sec() {
     scoreboard players set sec nn_lobby 59;
     scoreboard players remove min nn_lobby 1;
     }
-
-
+    
 if (nn_lobby:phase = 5) {
     if (nn_lobby:min < nn_lobby:0) {
         scoreboard players set end nn_lobby 1;
@@ -68,12 +59,185 @@ if (nn_lobby:phase = 5) {
 
 
 
-function map_detect() {
-// Check Maps 
-if (map_nn_mall:start = 1) {
 
+// Detect maps
+function map_detect() {
+switch(nn_map:map) {
+    case 1: 
+        execute store result score spawn nn_spawn run random value 1..60;
+        call_bots(sel_map="nn_mall");
+    case 2: 
+        execute store result score spawn nn_spawn run random value 1..60;
+        call_bots(sel_map="nn_poolrooms");
+    case 3: 
+        execute store result score spawn nn_spawn run random value 1..60;
+        call_bots(sel_map="nn_port");
+    case 4: 
+        execute store result score spawn nn_spawn run random value 1..60;
+        call_bots(sel_map="nn_camberturn");
+    case 5: 
+        execute store result score spawn nn_spawn run random value 1..60;
+        call_bots(sel_map="nn_crossroads");
+    case 6: 
+        execute store result score spawn nn_spawn run random value 1..60;
+        call_bots(sel_map="nn_russia");
+    case 7: 
+        execute store result score spawn nn_spawn run random value 1..60;
+        call_bots(sel_map="nn_trainstation");
+    case 8: 
+        execute store result score spawn nn_spawn run random value 1..60;
+        call_bots(sel_map="nn_fungle");
+    case 9: 
+        execute store result score spawn nn_spawn run random value 1..60;
+        call_bots(sel_map="nn_hotel");
+    case 10: 
+        execute store result score spawn nn_spawn run random value 1..60;
+        call_bots(sel_map="nn_hauntedmansion");
+    case 11: 
+        execute store result score spawn nn_spawn run random value 1..60;
+        call_bots(sel_map="nn_habitablezone");
+    case 12: 
+        execute store result score spawn nn_spawn run random value 1..60;
+        call_bots(sel_map="nn_doomspire");
+    case 13: 
+        execute store result score spawn nn_spawn run random value 1..60;
+        call_bots(sel_map="nn_crossroads_c");
+    case 14: 
+        execute store result score spawn nn_spawn run random value 1..60;
+        call_bots(sel_map="nn_topmodernhouse");
+    default:
+        say "Unable to find anything";
 }
-schedule function map_detect() 20t;
+schedule function map_detect() 30t;
+}
+
+
+//Spawn Bots based on map stuff
+function call_bots() {
+switch(nn_spawn:spawn) {
+    case 1:
+        $setup_bots(bot_name="metal_pipe",id="1",map="${sel_map}");
+    case 2:
+        $setup_bots(bot_name="toob",id="2",map="${sel_map}");
+    case 3:
+        $setup_bots(bot_name="crying_sans",id="3",map="${sel_map}");
+    case 4:
+        $setup_bots(bot_name="pbj",id="4",map="${sel_map}");
+    case 5:
+        $setup_bots(bot_name="smile_ghost",id="5",map="${sel_map}");
+    case 6:
+        $setup_bots(bot_name="idiot",id="6",map="${sel_map}");
+    case 7:
+        $setup_bots(bot_name="ohl",id="7",map="${sel_map}");
+    case 8:
+        $setup_bots(bot_name="meem",id="8",map="${sel_map}");
+    case 9:
+        $setup_bots(bot_name="nope",id="9",map="${sel_map}");
+    case 10:
+        $setup_bots(bot_name="noob",id="10",map="${sel_map}");
+    case 11:
+        $setup_bots(bot_name="observer",id="11",map="${sel_map}");
+    case 12:
+        $setup_bots(bot_name="benny",id="12",map="${sel_map}");
+    case 13:
+        $setup_bots(bot_name="racoon",id="13",map="${sel_map}");
+    case 14:
+        $setup_bots(bot_name="fazmug",id="14",map="${sel_map}");
+    case 15:
+        $setup_bots(bot_name="donot",id="15",map="${sel_map}");
+    case 16:
+        $setup_bots(bot_name="bear5",id="16",map="${sel_map}");
+    case 17:
+        $setup_bots(bot_name="blabber",id="17",map="${sel_map}");
+    case 18:
+        $setup_bots(bot_name="chilly",id="18",map="${sel_map}");
+    case 19:
+        $setup_bots(bot_name="smurf_cat",id="19",map="${sel_map}");
+    case 20:
+        $setup_bots(bot_name="intruder",id="20",map="${sel_map}");
+    case 21:
+        $setup_bots(bot_name="jet",id="21",map="${sel_map}");
+    case 22:
+        $setup_bots(bot_name="darkness",id="22",map="${sel_map}");
+    case 23:
+        $setup_bots(bot_name="bear",id="23",map="${sel_map}");
+    case 24:
+        $setup_bots(bot_name="litlle_gerry",id="24",map="${sel_map}");
+    case 25:
+        $setup_bots(bot_name="winrar",id="25",map="${sel_map}");
+    case 26:
+        $setup_bots(bot_name="fan",id="26",map="${sel_map}");
+    case 27:
+        $setup_bots(bot_name="boykisser",id="27",map="${sel_map}");
+    case 28:
+        $setup_bots(bot_name="subspace_tripmine",id="28",map="${sel_map}");
+    case 29:
+        Text.tellraw(@a, "<dark_gray>Tried to spawn disabled bot. Aborting");
+    case 30:
+        $setup_bots(bot_name="nuke",id="30",map="${sel_map}");
+    case 31:
+        $setup_bots(bot_name="flash",id="31",map="${sel_map}");
+    case 32:
+        $setup_bots(bot_name="osc",id="32",map="${sel_map}");
+    case 33:
+        $setup_bots(bot_name="cb",id="33",map="${sel_map}");
+    case 34:
+        $setup_bots(bot_name="dragon",id="34",map="${sel_map}");
+    case 35:
+        $setup_bots(bot_name="carter",id="35",map="${sel_map}");
+    case 36:
+        $setup_bots(bot_name="shroom",id="36",map="${sel_map}");
+    case 37:
+        $setup_bots(bot_name="grumbo",id="37",map="${sel_map}");
+    case 38:
+        $setup_bots(bot_name="giggle",id="38",map="${sel_map}");
+    case 39:
+        $setup_bots(bot_name="rei",id="39",map="${sel_map}");
+    case 40:
+        $setup_bots(bot_name="ico",id="40",map="${sel_map}");
+    case 41:
+        $setup_bots(bot_name="leorio",id="41",map="${sel_map}");
+    case 42:
+        $setup_bots(bot_name="mohu",id="42",map="${sel_map}");
+    case 43:
+        $setup_bots(bot_name="jack",id="43",map="${sel_map}");
+    case 44:
+        $setup_bots(bot_name="unfortunate",id="44",map="${sel_map}");
+    case 45:
+        $setup_bots(bot_name="lolguy",id="45",map="${sel_map}");
+    case 46:
+        $setup_bots(bot_name="smiler",id="46",map="${sel_map}");
+    case 47:
+        $setup_bots(bot_name="boba",id="47",map="${sel_map}");
+    case 48:
+        $setup_bots(bot_name="squewe",id="48",map="${sel_map}");
+    case 49:
+        $setup_bots(bot_name="ccat",id="49",map="${sel_map}");
+    case 50:
+        $setup_bots(bot_name="andy",id="50",map="${sel_map}");
+    case 51:
+        $setup_bots(bot_name="inhabitant",id="51",map="${sel_map}");
+    case 52:
+        $setup_bots(bot_name="leoret",id="52",map="${sel_map}");
+    case 53:
+        $setup_bots(bot_name="dread",id="53",map="${sel_map}");
+    case 54:
+        $setup_bots(bot_name="catnap",id="54",map="${sel_map}");
+    case 55:
+        $setup_bots(bot_name="mrl",id="55",map="${sel_map}");
+    case 56:
+        $setup_bots(bot_name="trespasser",id="56",map="${sel_map}");
+    case 57:
+        $setup_bots(bot_name="anim8or",id="57",map="${sel_map}");
+    default:
+        say "Unable to find anything";
+}}
+
+// Universal spawn bot stuff
+function setup_bots() {
+    $execute unless entity @e[tag=${bot_name}] run scoreboard players set spawn nn_nextbot_spawn ${bot_id};
+    $tp @e[tag=${bot_name}_z,tag=!done] @e[tag=${map},limit=1,sort=random];
+    $tag @e[tag=${bot_name}_z,tag=!done] add done;
 }
 
 
