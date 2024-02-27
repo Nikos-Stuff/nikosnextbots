@@ -16,7 +16,7 @@ function root() {
     //Detect if round has started
     if (nn_lobby:phase = 5) {
     // check if minutes are not less than 0
-      if (nn_lobby:min < nn_lobby:0) {
+      if (nn_lobby:min >= nn_lobby:0) {
         // Set the bossbar stuff
          bossbar set minecraft:game name [
           {"score":{"name":"min","objective":"nn_lobby"},"color":"yellow"},
