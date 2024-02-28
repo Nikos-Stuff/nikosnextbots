@@ -25,7 +25,7 @@ $execute if score spawn nn_spawn matches 24 run function nnb_spawnsystem:setup_b
 $execute if score spawn nn_spawn matches 26 run function nnb_spawnsystem:setup_bots {"bot_name":"fan","id":"26","map":"$(sel_map)"}
 $execute if score spawn nn_spawn matches 27 run function nnb_spawnsystem:setup_bots {"bot_name":"boykisser","id":"27","map":"$(sel_map)"}
 $execute if score spawn nn_spawn matches 28 run function nnb_spawnsystem:setup_bots {"bot_name":"subspace_tripmine","id":"28","map":"$(sel_map)"}
-$execute if score spawn nn_spawn matches 29 run function nnb_spawnsystem:setup_bots {"bot_name":"nothing","id":"29","map":"$(sel_map)"}
+$execute if score spawn nn_spawn matches 29 run function nnb_spawnsystem:setup_bots {"bot_name":"nothing","id":"0","map":"$(sel_map)"}
 $execute if score spawn nn_spawn matches 30 run function nnb_spawnsystem:setup_bots {"bot_name":"nuke","id":"30","map":"$(sel_map)"}
 $execute if score spawn nn_spawn matches 31 run function nnb_spawnsystem:setup_bots {"bot_name":"flash","id":"31","map":"$(sel_map)"}
 $execute if score spawn nn_spawn matches 32 run function nnb_spawnsystem:setup_bots {"bot_name":"osc","id":"32","map":"$(sel_map)"}
