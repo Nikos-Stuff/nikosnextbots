@@ -3,7 +3,7 @@ Text.tellraw(@a, "Spawn System Loaded");
 
 // Run Every Tick
 function __tick__() {
-root()
+root();
 map_detect();
 
 
