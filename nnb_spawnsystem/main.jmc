@@ -230,7 +230,7 @@ setup_bots() with storage nnb_spawnsystem:temp;
 // Universal spawn bot stuff
 function setup_bots() {
     // Prevent spawning w.i.p.
-    if (nn_spawn:spawn = 29 ) {
+    if (nn_spawn:spawn = 29) {
         scoreboard players set spawn nn_spawn 0;
     }
     
@@ -239,7 +239,7 @@ function setup_bots() {
     $execute unless entity @e[tag=$(bot_name)] run scoreboard players set spawn nn_nextbot_spawn $(id);
 
     // Delay the teleportation stuff
-    if (nn_spawn:ticks = 10) {
+    if (nn_spawn:ticks > 10) {
         tp_bots() with storage nnb_spawnsystem:temp;
 }}
 
