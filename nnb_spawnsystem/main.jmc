@@ -3,6 +3,7 @@ Text.tellraw(@a, "Spawn System Loaded");
 
 // Run Every Tick
 function __tick__() {
+root()
 map_detect();
 
 
@@ -12,7 +13,20 @@ timer_msec();
 
 
 
+// Bossbar & Entity Stuff
+function root() {
 
+    //Detect if round has started
+    if (nn_lobby:phase = 5) {
+    // check if minutes are not less than 0
+      if (nn_lobby:min >= nn_lobby:0) {
+        // Set the bossbar stuff
+         bossbar set minecraft:game name [
+          {"score":{"name":"min","objective":"nn_lobby"},"color":"yellow"},
+          {"text":":","color":"yellow"},{"score":{"name":"sec","objective":"nn_lobby"},"color":"yellow"},
+          {"text":" |","color":"dark_gray"},{"text":" Playing ","color":"aqua"},{"selector":"@e[tag=now_playing]","color":"gold"}];
+
+}}}
 
 
 
@@ -213,10 +227,7 @@ function call_bots() {
 scoreboard players remove ticks nn_spawn 1;
 if (nn_spawn:ticks < 10) {
     setup_bots() with storage nnb_spawnsystem:temp;
-}
-// Tick the bossbar with the correct info
-root() with storage nnb_spawnsystem:temp;
-}
+}}
 
 // Universal spawn bot stuff
 function setup_bots() {
@@ -249,20 +260,7 @@ function tp_bots() {
 
 
 
-// Bossbar & Entity Stuff
-function root() {
 
-    //Detect if round has started
-    if (nn_lobby:phase = 5) {
-    // check if minutes are not less than 0
-      if (nn_lobby:min >= nn_lobby:0) {
-        // Set the bossbar stuff
-         $bossbar set minecraft:game name [
-          {"score":{"name":"min","objective":"nn_lobby"},"color":"yellow"},
-          {"text":":","color":"yellow"},{"score":{"name":"sec","objective":"nn_lobby"},"color":"yellow"},
-          {"text":" |","color":"dark_gray"},{"text":" Playing $(map)","color":"aqua"}];
-
-}}}
 
 
 
