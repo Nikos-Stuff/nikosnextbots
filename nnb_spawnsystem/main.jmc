@@ -164,8 +164,8 @@ function call_bots() {
             data modify storage nnb_spawnsystem:temp bot_name set value "boykisser";
         case 28:
             data modify storage nnb_spawnsystem:temp bot_name set value "subspace_tripmine";
-        case 29:
-            data modify storage nnb_spawnsystem:temp bot_name set value "nothing";
+        // case 29:
+        //    data modify storage nnb_spawnsystem:temp bot_name set value "nothing";
         case 30:
             data modify storage nnb_spawnsystem:temp bot_name set value "nuke";
         case 31:
