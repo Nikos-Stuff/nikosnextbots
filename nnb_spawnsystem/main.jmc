@@ -4,8 +4,16 @@ Text.tellraw(@a, "Spawn System Loaded");
 // Run Every Tick
 function __tick__() {
 root();
-map_detect();
 
+
+// Only run spawn system if its enabled
+if (nn_spawn:disable = 0) {
+
+    if (nn_spawn:botscount > 6) {
+        scoreboard players set spawn nn_spawn 0;
+    } else {
+        map_detect();
+    }}
 
 if (nn_lobby:started = 1) {
 timer_msec();
@@ -30,7 +38,7 @@ function root() {
 
 
 
-// Basic Timer STuff
+// Basic Timer Stuff
 
 function timer_msec() {
 if (nn_lobby:prepare = 0) {

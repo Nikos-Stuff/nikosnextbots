@@ -1,2 +1,1 @@
-scoreboard players set sec nn_lobby 59
-scoreboard players remove min nn_lobby 1
+function nnb_spawnsystem:map_detect

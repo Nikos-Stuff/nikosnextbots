@@ -1,3 +1,2 @@
-scoreboard players set msec nn_lobby 0
-scoreboard players remove sec nn_lobby 1
-function nnb_spawnsystem:timer_sec
+scoreboard players set spawn nn_spawn 0
+scoreboard players set __if_else__ __variable__ 1
