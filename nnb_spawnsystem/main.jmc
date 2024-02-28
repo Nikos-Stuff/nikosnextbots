@@ -5,8 +5,8 @@ Text.tellraw(@a, "Spawn System Loaded");
 function __tick__() {
 root();
 
-// Count the bots
-execute store result score botscount nn_spawn run execute if entity @e[type=!player,tag=nextbot];
+// Count the bots - MOVED TO THE INGAME CMB SYSTEM
+// execute store result score botscount nn_spawn run execute if entity @e[type=!player,tag=nextbot];
 
 
 // Only run spawn system if its enabled
