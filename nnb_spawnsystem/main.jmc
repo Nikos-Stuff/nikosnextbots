@@ -99,77 +99,158 @@ switch(nn_map:map) {
 
 //Spawn Bots based on map stuff
 function call_bots() {
-    //$say "Map: $(sel_map)";
-    $execute if score spawn nn_spawn matches 1 run function nnb_spawnsystem:setup_bots {"bot_name":"metal_pipe","id":"1","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 2 run function nnb_spawnsystem:setup_bots {"bot_name":"toob","id":"2","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 3 run function nnb_spawnsystem:setup_bots {"bot_name":"crying_sans","id":"3","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 4 run function nnb_spawnsystem:setup_bots {"bot_name":"pbj","id":"4","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 5 run function nnb_spawnsystem:setup_bots {"bot_name":"smile_ghost","id":"5","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 6 run function nnb_spawnsystem:setup_bots {"bot_name":"idiot","id":"6","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 7 run function nnb_spawnsystem:setup_bots {"bot_name":"ohl","id":"7","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 8 run function nnb_spawnsystem:setup_bots {"bot_name":"meem","id":"8","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 9 run function nnb_spawnsystem:setup_bots {"bot_name":"nope","id":"9","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 10 run function nnb_spawnsystem:setup_bots {"bot_name":"noob","id":"10","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 11 run function nnb_spawnsystem:setup_bots {"bot_name":"observer","id":"11","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 12 run function nnb_spawnsystem:setup_bots {"bot_name":"benny","id":"12","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 13 run function nnb_spawnsystem:setup_bots {"bot_name":"racoon","id":"13","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 14 run function nnb_spawnsystem:setup_bots {"bot_name":"fazmug","id":"14","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 15 run function nnb_spawnsystem:setup_bots {"bot_name":"donot","id":"15","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 16 run function nnb_spawnsystem:setup_bots {"bot_name":"bear5","id":"16","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 17 run function nnb_spawnsystem:setup_bots {"bot_name":"blabber","id":"17","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 18 run function nnb_spawnsystem:setup_bots {"bot_name":"chilly","id":"18","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 19 run function nnb_spawnsystem:setup_bots {"bot_name":"smurf_cat","id":"19","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 20 run function nnb_spawnsystem:setup_bots {"bot_name":"intruder","id":"20","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 21 run function nnb_spawnsystem:setup_bots {"bot_name":"jet","id":"21","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 22 run function nnb_spawnsystem:setup_bots {"bot_name":"darkness","id":"22","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 23 run function nnb_spawnsystem:setup_bots {"bot_name":"bear","id":"23","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 24 run function nnb_spawnsystem:setup_bots {"bot_name":"litlle_gerry","id":"24","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 26 run function nnb_spawnsystem:setup_bots {"bot_name":"fan","id":"26","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 27 run function nnb_spawnsystem:setup_bots {"bot_name":"boykisser","id":"27","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 28 run function nnb_spawnsystem:setup_bots {"bot_name":"subspace_tripmine","id":"28","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 29 run function nnb_spawnsystem:setup_bots {"bot_name":"nothing","id":"0","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 30 run function nnb_spawnsystem:setup_bots {"bot_name":"nuke","id":"30","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 31 run function nnb_spawnsystem:setup_bots {"bot_name":"flash","id":"31","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 32 run function nnb_spawnsystem:setup_bots {"bot_name":"osc","id":"32","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 33 run function nnb_spawnsystem:setup_bots {"bot_name":"cb","id":"33","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 34 run function nnb_spawnsystem:setup_bots {"bot_name":"dragon","id":"34","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 35 run function nnb_spawnsystem:setup_bots {"bot_name":"carter","id":"35","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 36 run function nnb_spawnsystem:setup_bots {"bot_name":"shroom","id":"36","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 37 run function nnb_spawnsystem:setup_bots {"bot_name":"grumbo","id":"37","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 38 run function nnb_spawnsystem:setup_bots {"bot_name":"giggle","id":"38","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 39 run function nnb_spawnsystem:setup_bots {"bot_name":"rei","id":"39","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 40 run function nnb_spawnsystem:setup_bots {"bot_name":"ico","id":"40","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 41 run function nnb_spawnsystem:setup_bots {"bot_name":"leorio","id":"41","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 42 run function nnb_spawnsystem:setup_bots {"bot_name":"mohu","id":"42","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 43 run function nnb_spawnsystem:setup_bots {"bot_name":"jack","id":"43","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 44 run function nnb_spawnsystem:setup_bots {"bot_name":"unfortunate","id":"44","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 45 run function nnb_spawnsystem:setup_bots {"bot_name":"lolguy","id":"45","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 46 run function nnb_spawnsystem:setup_bots {"bot_name":"smiler","id":"46","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 47 run function nnb_spawnsystem:setup_bots {"bot_name":"boba","id":"47","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 48 run function nnb_spawnsystem:setup_bots {"bot_name":"squewe","id":"48","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 49 run function nnb_spawnsystem:setup_bots {"bot_name":"ccat","id":"49","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 50 run function nnb_spawnsystem:setup_bots {"bot_name":"andy","id":"50","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 51 run function nnb_spawnsystem:setup_bots {"bot_name":"inhabitant","id":"51","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 52 run function nnb_spawnsystem:setup_bots {"bot_name":"leoret","id":"52","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 53 run function nnb_spawnsystem:setup_bots {"bot_name":"dread","id":"53","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 54 run function nnb_spawnsystem:setup_bots {"bot_name":"catnap","id":"54","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 55 run function nnb_spawnsystem:setup_bots {"bot_name":"mrl","id":"55","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 56 run function nnb_spawnsystem:setup_bots {"bot_name":"trespasser","id":"56","map":"$(sel_map)"};
-    $execute if score spawn nn_spawn matches 57 run function nnb_spawnsystem:setup_bots {"bot_name":"anim8or","id":"57","map":"$(sel_map)"};
+    // Set the "map" value from $(sel_map)
+    $data modify storage nnb_spawnsystem:temp map set value $(sel_map);
+    // Get the value from the scoreboard (in this case spawn nn_spawn)
+    execute store result storage nnb_spawnsystem:temp id int 1 run scoreboard players get spawn nn_spawn;
+    // Get the global limit
+    execute store result storage nnb_spawnsystem:temp limit int 1 run scoreboard players get random_r nn_spawn;
+
+    // Basic Switch Action
+    switch (nn_spawn:spawn) {
+        case 1:
+            data modify storage nnb_spawnsystem:temp bot_name set value "metal_pipe";
+        case 2:
+            data modify storage nnb_spawnsystem:temp bot_name set value "toob";
+        case 3:
+            data modify storage nnb_spawnsystem:temp bot_name set value "crying_sans";
+        case 4:
+            data modify storage nnb_spawnsystem:temp bot_name set value "pbj";
+        case 5:
+            data modify storage nnb_spawnsystem:temp bot_name set value "smile_ghost";
+        case 6:
+            data modify storage nnb_spawnsystem:temp bot_name set value "idiot";
+        case 7:
+            data modify storage nnb_spawnsystem:temp bot_name set value "ohl";
+        case 8:
+            data modify storage nnb_spawnsystem:temp bot_name set value "meem";
+        case 9:
+            data modify storage nnb_spawnsystem:temp bot_name set value "nope";
+        case 10:
+            data modify storage nnb_spawnsystem:temp bot_name set value "noob";
+        case 11:
+            data modify storage nnb_spawnsystem:temp bot_name set value "observer";
+        case 12:
+            data modify storage nnb_spawnsystem:temp bot_name set value "benny";
+        case 13:
+            data modify storage nnb_spawnsystem:temp bot_name set value "racoon";
+        case 14:
+            data modify storage nnb_spawnsystem:temp bot_name set value "fazmug";
+        case 15:
+            data modify storage nnb_spawnsystem:temp bot_name set value "donot";
+        case 16:
+            data modify storage nnb_spawnsystem:temp bot_name set value "bear5";
+        case 17:
+            data modify storage nnb_spawnsystem:temp bot_name set value "blabber";
+        case 18:
+            data modify storage nnb_spawnsystem:temp bot_name set value "chilly";
+        case 19:
+            data modify storage nnb_spawnsystem:temp bot_name set value "smurf_cat";
+        case 20:
+            data modify storage nnb_spawnsystem:temp bot_name set value "intruder";
+        case 21:
+            data modify storage nnb_spawnsystem:temp bot_name set value "jet";
+        case 22:
+            data modify storage nnb_spawnsystem:temp bot_name set value "darkness";
+        case 23:
+            data modify storage nnb_spawnsystem:temp bot_name set value "bear";
+        case 24:
+            data modify storage nnb_spawnsystem:temp bot_name set value "litlle_gerry";
+        case 25:
+            data modify storage nnb_spawnsystem:temp bot_name set value "winrar";
+        case 26:
+            data modify storage nnb_spawnsystem:temp bot_name set value "fan";
+        case 27:
+            data modify storage nnb_spawnsystem:temp bot_name set value "boykisser";
+        case 28:
+            data modify storage nnb_spawnsystem:temp bot_name set value "subspace_tripmine";
+        case 29:
+            data modify storage nnb_spawnsystem:temp bot_name set value "nothing";
+        case 30:
+            data modify storage nnb_spawnsystem:temp bot_name set value "nuke";
+        case 31:
+            data modify storage nnb_spawnsystem:temp bot_name set value "flash";
+        case 32:
+            data modify storage nnb_spawnsystem:temp bot_name set value "osc";
+        case 33:
+            data modify storage nnb_spawnsystem:temp bot_name set value "cb";
+        case 34:
+            data modify storage nnb_spawnsystem:temp bot_name set value "dragon";
+        case 35:
+            data modify storage nnb_spawnsystem:temp bot_name set value "carter";
+        case 36:
+            data modify storage nnb_spawnsystem:temp bot_name set value "shroom";
+        case 37:
+            data modify storage nnb_spawnsystem:temp bot_name set value "grumbo";
+        case 38:
+            data modify storage nnb_spawnsystem:temp bot_name set value "giggle";
+        case 39:
+            data modify storage nnb_spawnsystem:temp bot_name set value "rei";
+        case 40:
+            data modify storage nnb_spawnsystem:temp bot_name set value "ico";
+        case 41:
+            data modify storage nnb_spawnsystem:temp bot_name set value "leorio";
+        case 42:
+            data modify storage nnb_spawnsystem:temp bot_name set value "mohu";
+        case 43:
+            data modify storage nnb_spawnsystem:temp bot_name set value "jack";
+        case 44:
+            data modify storage nnb_spawnsystem:temp bot_name set value "unfortunate";
+        case 45:
+            data modify storage nnb_spawnsystem:temp bot_name set value "lolguy";
+        case 46:
+            data modify storage nnb_spawnsystem:temp bot_name set value "smiler";
+        case 47:
+            data modify storage nnb_spawnsystem:temp bot_name set value "boba";
+        case 48:
+            data modify storage nnb_spawnsystem:temp bot_name set value "squewe";
+        case 49:
+            data modify storage nnb_spawnsystem:temp bot_name set value "ccat";
+        case 50:
+            data modify storage nnb_spawnsystem:temp bot_name set value "andy";
+        case 51:
+            data modify storage nnb_spawnsystem:temp bot_name set value "inhabitant";
+        case 52:
+            data modify storage nnb_spawnsystem:temp bot_name set value "leoret";
+        case 53:
+            data modify storage nnb_spawnsystem:temp bot_name set value "dread";
+        case 54:
+            data modify storage nnb_spawnsystem:temp bot_name set value "catnap";
+        case 55:
+            data modify storage nnb_spawnsystem:temp bot_name set value "mrl";
+        case 56:
+            data modify storage nnb_spawnsystem:temp bot_name set value "trespasser";
+        case 57:
+            data modify storage nnb_spawnsystem:temp bot_name set value "anim8or";
 }
+// Call the universal spawn bot function
+setup_bots() with storage nnb_spawnsystem:temp;
+} 
 
 // Universal spawn bot stuff
 function setup_bots() {
-    scoreboard players remove ticks nn_spawn 1;
+    // Prevent spawning w.i.p.
+    if (nn_spawn:spawn = 29 ) {
+        scoreboard players set spawn nn_spawn 0;
+    }
+    
+    scoreboard players add ticks nn_spawn 1;
+
     $execute unless entity @e[tag=$(bot_name)] run scoreboard players set spawn nn_nextbot_spawn $(id);
 
-        $execute if score ticks nn_spawn <= 1 nn_spawn run tp @e[tag=$(bot_name)_z,tag=!done] @e[tag=$(map),limit=1,sort=random];
-        $execute if score ticks nn_spawn <= 0 nn_spawn run execute at @e[tag=$(bot_name)_z,tag=!done] run summon minecraft:lightning_bolt ~ ~ ~;
-        $execute if score ticks nn_spawn <= 1 nn_spawn run tag @e[tag=$(bot_name)_z,tag=!done] add done;
-        $execute if score ticks nn_spawn <= 1 nn_spawn run tellraw @a[tag=debug] "$(bot_name) $(id) $(map)";
-        execute if score ticks nn_spawn <= 1 nn_spawn run scoreboard players set ticks nn_spawn 20;
+    // Delay the teleportation stuff
+    if (nn_spawn:ticks = 10) {
+        tp_bots() with storage nnb_spawnsystem:temp;
+}}
+
+// TP Stuff
+function tp_bots() {
+    $tp @e[tag=$(bot_name)_z,tag=!done] @e[tag=$(map),limit=1,sort=random];
+    $execute at @e[tag=$(bot_name)_z,tag=!done] run summon minecraft:lightning_bolt ~ ~ ~;
+    $tag @e[tag=$(bot_name)_z,tag=!done] add done;
+    $tellraw @a[tag=debug] "$(bot_name) $(id) $(map)";
         
-    
+    $scoreboard players set ticks nn_spawn $(limit);
 }
 
 
