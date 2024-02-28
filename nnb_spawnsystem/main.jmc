@@ -225,7 +225,7 @@ function call_bots() {
 }
 // Call the universal spawn bot function
 scoreboard players add ticks nn_spawn 1;
-if (nn_spawn:ticks > 5) {
+if (nn_spawn:ticks < 0) {
     setup_bots() with storage nnb_spawnsystem:temp;
 }}
 
@@ -241,7 +241,7 @@ function setup_bots() {
     $execute unless entity @e[tag=$(bot_name)] run scoreboard players set spawn nn_nextbot_spawn $(id);
 
     // Delay the teleportation stuff
-    if (nn_spawn:ticks > 10) {
+    if (nn_spawn:ticks < -5) {
         tp_bots() with storage nnb_spawnsystem:temp;
 }}
 
