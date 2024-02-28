@@ -252,7 +252,7 @@ function tp_bots() {
     $tag @e[tag=$(bot_name)_z,tag=!done] add done;
     $tellraw @a[tag=debug] "&<dark_gray>Spawned: $(bot_name) $(id) In: $(map)";
         
-    data modify storage nnb_spawnsystem:temp bot_name set value "IDLE_N/A"
+    data modify storage nnb_spawnsystem:temp bot_name set value "IDLE_NA"
     $scoreboard players set ticks nn_spawn $(limit);
 }
 
