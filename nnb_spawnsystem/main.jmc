@@ -224,8 +224,10 @@ function call_bots() {
             data modify storage nnb_spawnsystem:temp bot_name set value "anim8or";
 }
 // Call the universal spawn bot function
-setup_bots() with storage nnb_spawnsystem:temp;
-} 
+scoreboard players add ticks nn_spawn 1;
+if (nn_spawn:ticks > 5) {
+    setup_bots() with storage nnb_spawnsystem:temp;
+}}
 
 // Universal spawn bot stuff
 function setup_bots() {
@@ -234,7 +236,7 @@ function setup_bots() {
         scoreboard players set spawn nn_spawn 0;
     }
     
-    scoreboard players add ticks nn_spawn 1;
+
 
     $execute unless entity @e[tag=$(bot_name)] run scoreboard players set spawn nn_nextbot_spawn $(id);
 
