@@ -12,7 +12,7 @@ execute store result score botscount nn_spawn run execute if entity @e[type=!pla
 // Only run spawn system if its enabled
 if (nn_spawn:disable = 0) {
 
-    if (nn_spawn:botscount > 6) {
+    if (nn_spawn:botscount >= 6) {
         scoreboard players set idle nn_spawn 0;
     } else {
         map_detect();
