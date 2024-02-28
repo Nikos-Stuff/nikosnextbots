@@ -3,7 +3,7 @@ Text.tellraw(@a, "Spawn System Loaded");
 
 // Run Every Tick
 function __tick__() {
-root();
+root() with storage nnb_spawnsystem:temp;
 map_detect();
 
 
@@ -21,10 +21,10 @@ function root() {
     // check if minutes are not less than 0
       if (nn_lobby:min >= nn_lobby:0) {
         // Set the bossbar stuff
-         bossbar set minecraft:game name [
+         $bossbar set minecraft:game name [
           {"score":{"name":"min","objective":"nn_lobby"},"color":"yellow"},
           {"text":":","color":"yellow"},{"score":{"name":"sec","objective":"nn_lobby"},"color":"yellow"},
-          {"text":" |","color":"dark_gray"},{"text":" Playing ","color":"aqua"},{"selector":"@e[tag=now_playing]","color":"aqua"}];
+          {"text":" |","color":"dark_gray"},{"text":" Playing $(map)","color":"aqua"}];
 
 }}}
 
@@ -252,7 +252,7 @@ function tp_bots() {
     $tag @e[tag=$(bot_name)_z,tag=!done] add done;
     $tellraw @a[tag=debug] "&<dark_gray>Spawned: $(bot_name) $(id) In: $(map)";
         
-    data modify storage nnb_spawnsystem:temp bot_name set value "IDLE_NA"
+    data modify storage nnb_spawnsystem:temp bot_name set value "EMPTY_SKIPPED";
     $scoreboard players set ticks nn_spawn $(limit);
 }
 
