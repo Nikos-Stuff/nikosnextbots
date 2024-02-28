@@ -6,7 +6,7 @@ function __tick__() {
 root();
 
 // Count the bots
-execute store result score botscount ynn_spawn run execute if entity @e[tpe=!player,tag=nextbot];
+execute store result score botscount nn_spawn run execute if entity @e[type=!player,tag=nextbot];
 
 
 // Only run spawn system if its enabled
