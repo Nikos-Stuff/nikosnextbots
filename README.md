@@ -3,6 +3,9 @@
 ![Preview Image](https://cdn.discordapp.com/attachments/1079841488365686854/1186730327264198666/n_maintitle.png?ex=65a6c4be&is=65944fbe&hm=2ae5af54dcc94b1d1ca449d9eb3d9e784bcc2cdad42666ce182228c3bccbdb79&)
 <p align="center">Texturepack & Datapacks for our server - Niko's Nextbots - nnb.nikodaproot.pl </p>
 
+<p align="center">Datapacks won't work on they own. Specific world setup is required. We don't have plans to upload the whole setup stuff. (For at least now)</p>
+
+
 
 [Roadmap](https://github.com/orgs/Nikos-Stuff/projects/4)
 
