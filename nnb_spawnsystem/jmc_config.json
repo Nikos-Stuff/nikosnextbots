@@ -1,7 +1,7 @@
 {
     "namespace": "nnb_spawnsystem",
     "description": "Spawn System system by _Nik0__",
-    "pack_format": "18",
+    "pack_format": "26",
     "target": "main.jmc",
     "output": "."
 }
