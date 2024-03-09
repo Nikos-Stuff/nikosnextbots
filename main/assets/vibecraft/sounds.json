@@ -646,7 +646,14 @@
     "sounds": [
       "vibecraft:nextbots/catnap/catnap_gaz"]
     },
-	
+	"pool_noodle_j": {
+      "sounds": [
+        "vibecraft:nextbots/pool_noodle/pool_noodle_j"]
+    },
+   "pool_noodle": {
+      "sounds": [
+        "vibecraft:nextbots/pool_noodle/pool_noodle"]
+    },
 	
 	
 	
