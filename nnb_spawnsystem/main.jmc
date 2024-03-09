@@ -233,6 +233,8 @@ function call_bots() {
             data modify storage nnb_spawnsystem:temp bot_name set value "trespasser";
         case 57:
             data modify storage nnb_spawnsystem:temp bot_name set value "anim8or";
+        case 58:
+            data modify storage nnb_spawnsystem:temp bot_name set value "pool_noodle";
 }
 // Call the universal spawn bot function
 scoreboard players remove ticks nn_spawn 1;

@@ -9,14 +9,14 @@ original_list = [
     "bear5", "fan", "smurf_cat", "blabber",
     "chilly", "little_gerry", "subspace_tripmine",
     "boykisser", "boba", "squewe", "ccat", "smiler",
-    "inhabitant", "leoret", "dread", "andy", "catnap", "mrl", "trespasser", "anim8or"
+    "inhabitant", "leoret", "dread", "andy", "catnap", "mrl", "trespasser", "anim8or", "pool_noodle"
 ]
 
 unicode_chars = [
 "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
 "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
 "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
-"", "", "", "", "", ""
+"", "", "", "", "", "", ""
 ]
 
 for item, char in zip(original_list, unicode_chars):

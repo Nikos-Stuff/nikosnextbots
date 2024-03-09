@@ -152,4 +152,6 @@ scoreboard players add @a[tag=trespasser_d] nn_jumpscare 1
 
 scoreboard players add @a[tag=anim8or_d] nn_jumpscare 1
 
+scoreboard players add @a[tag=pool_noodle_d] nn_jumpscare 1
+
 # Remember to add it to templates too!

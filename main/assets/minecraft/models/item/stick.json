@@ -39,6 +39,12 @@
         "custom_model_data": 6
       },
       "model": "item/anim8or/anim8or_anim"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7
+      },
+      "model": "item/pool_noodle/pool_noodle_anim"
     }
   ]
 }

@@ -541,6 +541,15 @@
       "chars": [
         ""
       ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/pool_noodle.png",
+      "ascent": 50,
+      "height": 110,
+      "chars": [
+        ""
+      ]
     }
   ]
 }
