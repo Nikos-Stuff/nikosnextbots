@@ -86,10 +86,10 @@ function play_music() {
 
         // Music Stuff
         scoreboard players add tick nn_map_music 1;
-        $scoreboard players set reset nn_map_music $(m_name); // Music lenght in ticks
+        $scoreboard players set reset nn_map_music $(m_lenght); // Music lenght in ticks
 
         if (nn_map_music:tick > nn_map_music:reset) {
-        $execute at @a run playsound vibecraft:$(m_lenght) weather @p ~ ~ ~ 0.2 1;
+        $execute at @a run playsound vibecraft:$(m_name) weather @p ~ ~ ~ 0.2 1;
         scoreboard players set tick nn_map_music 0;
         }
 }
