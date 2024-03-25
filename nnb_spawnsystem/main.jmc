@@ -75,7 +75,7 @@ if (nn_lobby:phase = 5) {
 
 // Music function
 function map_music() {
-         $data modify storage nnb_spawnsystem:music m_name set value $(map_ambient_name);
+        $data modify storage nnb_spawnsystem:music m_name set value $(map_ambient_name);
 
         $scoreboard players set reset nn_map_music $(map_ambient_lenght);
 
@@ -338,7 +338,6 @@ execute at @a at @p run fill ~-2 ~-1 ~-2 ~2 ~1 ~2 air replace light;
 
 
 }
-
 
 
 
