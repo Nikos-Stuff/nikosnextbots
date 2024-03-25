@@ -102,6 +102,8 @@ switch(nn_map:map) {
         call_bots(sel_map="nn_crossroads_c");
     case 14: 
         call_bots(sel_map="nn_topmodernhouse");
+    case 15: 
+        call_bots(sel_map="nn_abandonedoffice"); 
    // default:
    //     say "Unable to find anything";
 }
