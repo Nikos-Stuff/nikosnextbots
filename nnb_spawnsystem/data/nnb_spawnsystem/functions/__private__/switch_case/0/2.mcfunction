@@ -1,3 +1,2 @@
 function nnb_spawnsystem:call_bots {"sel_map":"nn_poolrooms"}
-data modify storage nnb_spawnsystem:music m_name set value nn_port_ambient
-scoreboard players set reset nn_map_musice 1620
+function nnb_spawnsystem:map_music {"map_ambient_name":"nn_port_ambient","map_ambient_lenght":"1620"}
