@@ -75,9 +75,6 @@ if (nn_lobby:phase = 5) {
 
 // Music function
 function map_music() {
-         $data modify storage nnb_spawnsystem:music m_name set value $(map_ambient_name);
-
-        $scoreboard players set reset nn_map_music $(map_ambient_lenght);
 
         scoreboard players add tick nn_map_music 1;
 
@@ -108,22 +105,34 @@ function map_detect() {
 switch(nn_map:map) {
     case 1: 
         call_bots(sel_map="nn_mall");
-        map_music(map_ambient_name="nn_mall_ambient",map_ambient_lenght="2900");
+
+        data modify storage nnb_spawnsystem:music m_name set value nn_mall_ambient;
+        scoreboard players set reset nn_map_musice 2900;
     case 2: 
         call_bots(sel_map="nn_poolrooms");
-        map_music(map_ambient_name="nn_port_ambient",map_ambient_lenght="1620");
+
+        data modify storage nnb_spawnsystem:music m_name set value nn_port_ambient;
+        scoreboard players set reset nn_map_musice 1620;
     case 3: 
         call_bots(sel_map="nn_port");
-        map_music(map_ambient_name="nn_port_ambient",map_ambient_lenght="1620");
+
+        data modify storage nnb_spawnsystem:music m_name set value nn_port_ambient;
+        scoreboard players set reset nn_map_musice 1620;
     case 4: 
         call_bots(sel_map="nn_camberturn");
-        map_music(map_ambient_name="nn_camberturn_ambient",map_ambient_lenght="2440");
+
+        data modify storage nnb_spawnsystem:music m_name set value nn_camberturn_ambient;
+        scoreboard players set reset nn_map_musice 2440;
     case 5: 
         call_bots(sel_map="nn_crossroads");
-        map_music(map_ambient_name="nn_crossroads_ambient",map_ambient_lenght="3520");
+
+        data modify storage nnb_spawnsystem:music m_name set value nn_crossroads_ambient;
+        scoreboard players set reset nn_map_musice 3520;
     case 6: 
         call_bots(sel_map="nn_russia");
-        map_music(map_ambient_name="nn_russia_ambient",map_ambient_lenght="3000");
+        
+        data modify storage nnb_spawnsystem:music m_name set value nn_russia_ambient;
+        scoreboard players set reset nn_map_musice 3000;
     case 7: 
         call_bots(sel_map="nn_trainstation");
     case 8: 
