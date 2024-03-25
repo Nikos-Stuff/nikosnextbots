@@ -1,0 +1,1 @@
+function nnb_spawnsystem:call_bots {"sel_map":"nn_crossroads_c"}
