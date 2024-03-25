@@ -76,16 +76,76 @@ function map_detect() {
 switch(nn_map:map) {
     case 1: 
         call_bots(sel_map="nn_mall");
+
+        // Music Stuff
+        scoreboard players add tick nn_map_music 1;
+        scoreboard players set reset nn_map_music 2900; // Music lenght in ticks
+
+        if (nn_map_music:tick > nn_map_music:reset) {
+        execute at @a run playsound vibecraft:nn_mall_ambient weather @p ~ ~ ~ 0.2 1;
+        scoreboard players set tick nn_map_music 0;
+        }
+
     case 2: 
         call_bots(sel_map="nn_poolrooms");
+
+        // Music Stuff
+        scoreboard players add tick nn_map_music 1;
+        scoreboard players set reset nn_map_music 1620; // Music lenght in ticks
+
+        if (nn_map_music:tick > nn_map_music:reset) {
+        execute at @a run playsound vibecraft:nn_port_ambient weather @p ~ ~ ~ 0.2 1;
+        scoreboard players set tick nn_map_music 0;
+        }
+
     case 3: 
         call_bots(sel_map="nn_port");
+
+        // Music Stuff
+        scoreboard players add tick nn_map_music 1;
+        scoreboard players set reset nn_map_music 1620; // Music lenght in ticks
+
+        if (nn_map_music:tick > nn_map_music:reset) {
+        execute at @a run playsound vibecraft:nn_port_ambient weather @p ~ ~ ~ 0.2 1;
+        scoreboard players set tick nn_map_music 0;
+        }
+        
     case 4: 
         call_bots(sel_map="nn_camberturn");
+
+        // Music Stuff
+        scoreboard players add tick nn_map_music 1;
+        scoreboard players set reset nn_map_music 2440; // Music lenght in ticks
+
+        if (nn_map_music:tick > nn_map_music:reset) {
+        execute at @a run playsound vibecraft:nn_camberturn_ambient weather @p ~ ~ ~ 0.2 1;
+        scoreboard players set tick nn_map_music 0;
+        }
+        
     case 5: 
         call_bots(sel_map="nn_crossroads");
+
+        // Music Stuff
+        scoreboard players add tick nn_map_music 1;
+        scoreboard players set reset nn_map_music 3520; // Music lenght in ticks
+
+        if (nn_map_music:tick > nn_map_music:reset) {
+        execute at @a run playsound vibecraft:nn_crossroads_ambient weather @p ~ ~ ~ 0.2 1;
+        scoreboard players set tick nn_map_music 0;
+        }
+        
     case 6: 
         call_bots(sel_map="nn_russia");
+
+        // Music Stuff
+        scoreboard players add tick nn_map_music 1;
+        scoreboard players set reset nn_map_music 3000; // Music lenght in ticks
+
+        if (nn_map_music:tick > nn_map_music:reset) {
+        execute at @a run playsound vibecraft:nn_russia_ambient weather @p ~ ~ ~ 0.2 1;
+        scoreboard players set tick nn_map_music 0;
+        }
+        
     case 7: 
         call_bots(sel_map="nn_trainstation");
     case 8: 
