@@ -173,6 +173,16 @@
 
     {
       "type": "bitmap",
+        "file": "vibecraft:gui/voting/abandonedoffice.png",
+        "ascent": 13,
+        "height": 138,
+        "chars": [
+          ""
+        ]
+    },
+
+    {
+      "type": "bitmap",
         "file": "vibecraft:gui/voting/notfound.png",
         "ascent": 13,
         "height": 138,
