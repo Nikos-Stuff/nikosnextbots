@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "item/torch"
+    "layer0": "block/torch"
   },
   "overrides": [
     {
