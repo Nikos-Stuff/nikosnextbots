@@ -1,0 +1,2 @@
+execute as @a[nbt={SelectedItem:{id:"minecraft:torch",tag:{CustomModelData:1}}}] at @s run fill ~ ~ ~ ~ ~ ~ light[level=15] replace air
+execute as @a at @s run fill ~-2 ~-1 ~-2 ~2 ~1 ~2 air replace light
