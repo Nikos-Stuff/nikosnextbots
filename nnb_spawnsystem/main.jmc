@@ -29,6 +29,8 @@ function root() {
 
     //Detect if round has started
     if (nn_lobby:phase = 5) {
+    // Call Play Music on round start
+        map_music();
     // check if minutes are not less than 0
       if (nn_lobby:min >= nn_lobby:0) {
         // Set the bossbar stuff
@@ -71,81 +73,58 @@ if (nn_lobby:phase = 5) {
 
 
 
+// Music function
+function map_music() {
+         $data modify storage nnb_spawnsystem:music m_name set value $(map_ambient_name);
+         $data modify storage nnb_spawnsystem:music m_lenght set value $(map_ambient_lenght);
+
+         play_music() with storage nnb_spawnsystem:music;
+}
+
+// Play Music
+function play_music() {
+
+        // Music Stuff
+        scoreboard players add tick nn_map_music 1;
+        $scoreboard players set reset nn_map_music $(m_name); // Music lenght in ticks
+
+        if (nn_map_music:tick > nn_map_music:reset) {
+        $execute at @a run playsound vibecraft:$(m_lenght) weather @p ~ ~ ~ 0.2 1;
+        scoreboard players set tick nn_map_music 0;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
 // Detect maps
 function map_detect() {
 switch(nn_map:map) {
     case 1: 
         call_bots(sel_map="nn_mall");
-
-        // Music Stuff
-        scoreboard players add tick nn_map_music 1;
-        scoreboard players set reset nn_map_music 2900; // Music lenght in ticks
-
-        if (nn_map_music:tick > nn_map_music:reset) {
-        execute at @a run playsound vibecraft:nn_mall_ambient weather @p ~ ~ ~ 0.2 1;
-        scoreboard players set tick nn_map_music 0;
-        }
-
+        map_music(map_ambient_name="nn_mall_ambient",map_ambient_lenght="2900");
     case 2: 
         call_bots(sel_map="nn_poolrooms");
-
-        // Music Stuff
-        scoreboard players add tick nn_map_music 1;
-        scoreboard players set reset nn_map_music 1620; // Music lenght in ticks
-
-        if (nn_map_music:tick > nn_map_music:reset) {
-        execute at @a run playsound vibecraft:nn_port_ambient weather @p ~ ~ ~ 0.2 1;
-        scoreboard players set tick nn_map_music 0;
-        }
-
+        map_music(map_ambient_name="nn_port_ambient",map_ambient_lenght="1620");
     case 3: 
         call_bots(sel_map="nn_port");
-
-        // Music Stuff
-        scoreboard players add tick nn_map_music 1;
-        scoreboard players set reset nn_map_music 1620; // Music lenght in ticks
-
-        if (nn_map_music:tick > nn_map_music:reset) {
-        execute at @a run playsound vibecraft:nn_port_ambient weather @p ~ ~ ~ 0.2 1;
-        scoreboard players set tick nn_map_music 0;
-        }
-        
+        map_music(map_ambient_name="nn_port_ambient",map_ambient_lenght="1620");
     case 4: 
         call_bots(sel_map="nn_camberturn");
-
-        // Music Stuff
-        scoreboard players add tick nn_map_music 1;
-        scoreboard players set reset nn_map_music 2440; // Music lenght in ticks
-
-        if (nn_map_music:tick > nn_map_music:reset) {
-        execute at @a run playsound vibecraft:nn_camberturn_ambient weather @p ~ ~ ~ 0.2 1;
-        scoreboard players set tick nn_map_music 0;
-        }
-        
+        map_music(map_ambient_name="nn_camberturn_ambient",map_ambient_lenght="2440");
     case 5: 
         call_bots(sel_map="nn_crossroads");
-
-        // Music Stuff
-        scoreboard players add tick nn_map_music 1;
-        scoreboard players set reset nn_map_music 3520; // Music lenght in ticks
-
-        if (nn_map_music:tick > nn_map_music:reset) {
-        execute at @a run playsound vibecraft:nn_crossroads_ambient weather @p ~ ~ ~ 0.2 1;
-        scoreboard players set tick nn_map_music 0;
-        }
-        
+        map_music(map_ambient_name="nn_crossroads_ambient",map_ambient_lenght="3520");
     case 6: 
         call_bots(sel_map="nn_russia");
-
-        // Music Stuff
-        scoreboard players add tick nn_map_music 1;
-        scoreboard players set reset nn_map_music 3000; // Music lenght in ticks
-
-        if (nn_map_music:tick > nn_map_music:reset) {
-        execute at @a run playsound vibecraft:nn_russia_ambient weather @p ~ ~ ~ 0.2 1;
-        scoreboard players set tick nn_map_music 0;
-        }
-        
+        map_music(map_ambient_name="nn_russia_ambient",map_ambient_lenght="3000");
     case 7: 
         call_bots(sel_map="nn_trainstation");
     case 8: 
