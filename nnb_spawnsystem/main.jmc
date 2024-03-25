@@ -12,7 +12,7 @@ root();
 // Only run spawn system if its enabled
 if (nn_spawn:disable = 0) {
 
-    if (nn_spawn:botscount >= 6) {
+    if (nn_spawn:botscount >= nn_spawn:maxbots) {
         scoreboard players set idle nn_spawn 0;
     } else {
         map_detect();
