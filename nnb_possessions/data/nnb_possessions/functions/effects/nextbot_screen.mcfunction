@@ -2,7 +2,7 @@ scoreboard players set beat nn_possession_effect 0
 execute at @a[tag=nextbot] run title @p times 0 2 15
 
 #> Normal
-execute at @a[tag=n_nextbot] run title @p title [{"text":"","color":"red","bold":true}]
+execute at @a[tag=n_nextbot] run title @p title [{"text":"","color":"dark_red","bold":true}]
 execute at @a[tag=n_nextbot] unless score @p nn_possesion_min matches -1 run title @p actionbar ["",{"score":{"name":"@p","objective":"nn_possesion_min"},"bold":true,"color":"red"},{"text":":","bold":true,"color":"red"},{"score":{"name":"@p","objective":"nn_possesion_sec"},"bold":true,"color":"red"},{"text":" | ","bold":false,"color":"dark_gray"},{"score":{"name":"@p","objective":"nn_kills"},"bold":true,"color":"red"}]
 
 #> Blue
