@@ -119,6 +119,10 @@
     "sounds": [
       "vibecraft:possession"]
 	},
+  "possession_timeout": {
+    "sounds": [
+      "vibecraft:possession_timeout"]
+	},
   "possession_bside": {
     "sounds": [
       "vibecraft:possession_bside"]
