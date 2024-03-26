@@ -17,4 +17,4 @@ execute at @a[tag=nextbot] if score @p nn_possession_effect >= @p nn_beat_r run 
 #> End sound effect
 execute at @a[tag=nextbot,tag=!played] if score @p nn_possesion_min matches 0 if score @p nn_possesion_sec matches 5 run playsound vibecraft:possession_timeout master @p ~ ~ ~ 1 1
 execute at @a[tag=nextbot,tag=!played] if score @p nn_possesion_min matches 0 if score @p nn_possesion_sec matches 5 run tag @p add played
-execute at @a[tag=nextbot,tag=!played] if score @p nn_possesion_min matches 0 if score @p nn_possesion_sec matches 4 run tag @p remove played
+execute at @a[tag=nextbot,tag=played] if score @p nn_possesion_min matches 0 if score @p nn_possesion_sec matches 4 run tag @p remove played
