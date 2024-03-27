@@ -37,7 +37,7 @@
 	},
   "prepare": {
     "sounds": [
-      "vibecraft:prepare"]
+      "vibecraft:prepare", "vibecraft:prepare_2"]
 	},
   "chase": {
     "sounds": [
