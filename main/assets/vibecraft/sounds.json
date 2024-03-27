@@ -671,7 +671,10 @@
 	
 	
 	
-	
+  "yipeee": {
+    "sounds": [
+      "vibecraft:round_end/yipeee"]
+	},
   "chiptunes": {
     "sounds": [
       "vibecraft:round_end/chiptunes"]
