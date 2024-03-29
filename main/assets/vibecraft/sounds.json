@@ -670,7 +670,10 @@
 	
 	
 	
-	
+  "monster": {
+    "sounds": [
+      "vibecraft:round_end/monster"]
+	},
   "yipeee": {
     "sounds": [
       "vibecraft:round_end/yipeee"]
