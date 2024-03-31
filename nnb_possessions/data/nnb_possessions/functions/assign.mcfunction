@@ -5,7 +5,7 @@
 #> ------------------ metal_pipe | id 1
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=metal_pipe_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 1
+execute at @e[type=minecraft:zombie,tag=metal_pipe_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 1
 execute at @e[type=minecraft:zombie,tag=metal_pipe_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=metal_pipe_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=1}] run tag @p add nextbot
@@ -26,7 +26,7 @@ tag @a[tag=metal_pipe_z] add n_nextbot
 #> ------------------ toob | id 2
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=toob_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 2
+execute at @e[type=minecraft:zombie,tag=toob_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 2
 execute at @e[type=minecraft:zombie,tag=toob_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=toob_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=2}] run tag @p add nextbot
@@ -47,7 +47,7 @@ tag @a[tag=toob_z] add n_nextbot
 #> ------------------ crying_sans | id 3
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=crying_sans_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 3
+execute at @e[type=minecraft:zombie,tag=crying_sans_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 3
 execute at @e[type=minecraft:zombie,tag=crying_sans_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=crying_sans_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=3}] run tag @p add nextbot
@@ -68,7 +68,7 @@ tag @a[tag=crying_sans_z] add n_nextbot
 #> ------------------ pbj | id 4
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=pbj_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 4
+execute at @e[type=minecraft:zombie,tag=pbj_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 4
 execute at @e[type=minecraft:zombie,tag=pbj_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=pbj_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=4}] run tag @p add nextbot
@@ -89,7 +89,7 @@ tag @a[tag=pbj_z] add n_nextbot
 #> ------------------ smile_ghost | id 5
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=smile_ghost_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 5
+execute at @e[type=minecraft:zombie,tag=smile_ghost_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 5
 execute at @e[type=minecraft:zombie,tag=smile_ghost_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=smile_ghost_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=5}] run tag @p add nextbot
@@ -110,7 +110,7 @@ tag @a[tag=smile_ghost_z] add s_nextbot
 #> ------------------ idiot | id 6
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=idiot_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 6
+execute at @e[type=minecraft:zombie,tag=idiot_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 6
 execute at @e[type=minecraft:zombie,tag=idiot_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=idiot_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=6}] run tag @p add nextbot
@@ -131,7 +131,7 @@ tag @a[tag=idiot_z] add n_nextbot
 #> ------------------ ohl | id 7
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=ohl_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 7
+execute at @e[type=minecraft:zombie,tag=ohl_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 7
 execute at @e[type=minecraft:zombie,tag=ohl_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=ohl_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=7}] run tag @p add nextbot
@@ -152,7 +152,7 @@ tag @a[tag=ohl_z] add n_nextbot
 #> ------------------ meem | id 8
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=meem_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 8
+execute at @e[type=minecraft:zombie,tag=meem_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 8
 execute at @e[type=minecraft:zombie,tag=meem_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=meem_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=8}] run tag @p add nextbot
@@ -173,7 +173,7 @@ tag @a[tag=meem_z] add n_nextbot
 #> ------------------ nope | id 9
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=nope_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 9
+execute at @e[type=minecraft:zombie,tag=nope_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 9
 execute at @e[type=minecraft:zombie,tag=nope_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=nope_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=9}] run tag @p add nextbot
@@ -194,7 +194,7 @@ tag @a[tag=nope_z] add n_nextbot
 #> ------------------ noob | id 10
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=noob_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 10
+execute at @e[type=minecraft:zombie,tag=noob_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 10
 execute at @e[type=minecraft:zombie,tag=noob_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=noob_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=10}] run tag @p add nextbot
@@ -215,7 +215,7 @@ tag @a[tag=noob_z] add n_nextbot
 #> ------------------ observer | id 11
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=observer_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 11
+execute at @e[type=minecraft:zombie,tag=observer_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 11
 execute at @e[type=minecraft:zombie,tag=observer_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=observer_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=11}] run tag @p add nextbot
@@ -236,7 +236,7 @@ tag @a[tag=observer_z] add n_nextbot
 #> ------------------ benny | id 12
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=benny_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 12
+execute at @e[type=minecraft:zombie,tag=benny_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 12
 execute at @e[type=minecraft:zombie,tag=benny_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=benny_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=12}] run tag @p add nextbot
@@ -257,7 +257,7 @@ tag @a[tag=benny_z] add n_nextbot
 #> ------------------ racoon | id 13
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=racoon_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 13
+execute at @e[type=minecraft:zombie,tag=racoon_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 13
 execute at @e[type=minecraft:zombie,tag=racoon_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=racoon_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=13}] run tag @p add nextbot
@@ -278,7 +278,7 @@ tag @a[tag=racoon_z] add n_nextbot
 #> ------------------ fazmug | id 14
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=fazmug_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 14
+execute at @e[type=minecraft:zombie,tag=fazmug_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 14
 execute at @e[type=minecraft:zombie,tag=fazmug_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=fazmug_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=14}] run tag @p add nextbot
@@ -299,7 +299,7 @@ tag @a[tag=fazmug_z] add n_nextbot
 #> ------------------ donot | id 15
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=donot_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 15
+execute at @e[type=minecraft:zombie,tag=donot_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 15
 execute at @e[type=minecraft:zombie,tag=donot_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=donot_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=15}] run tag @p add nextbot
@@ -320,7 +320,7 @@ tag @a[tag=donot_z] add n_nextbot
 #> ------------------ bear5 | id 16
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=bear5_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 16
+execute at @e[type=minecraft:zombie,tag=bear5_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 16
 execute at @e[type=minecraft:zombie,tag=bear5_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=bear5_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=16}] run tag @p add nextbot
@@ -341,7 +341,7 @@ tag @a[tag=bear5_z] add n_nextbot
 #> ------------------ blabber | id 17
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=blabber_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 17
+execute at @e[type=minecraft:zombie,tag=blabber_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 17
 execute at @e[type=minecraft:zombie,tag=blabber_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=blabber_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=17}] run tag @p add nextbot
@@ -362,7 +362,7 @@ tag @a[tag=blabber_z] add n_nextbot
 #> ------------------ chilly | id 18
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=chilly_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 18
+execute at @e[type=minecraft:zombie,tag=chilly_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 18
 execute at @e[type=minecraft:zombie,tag=chilly_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=chilly_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=18}] run tag @p add nextbot
@@ -383,7 +383,7 @@ tag @a[tag=chilly_z] add c_nextbot
 #> ------------------ smurf_cat | id 19
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=smurf_cat_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 19
+execute at @e[type=minecraft:zombie,tag=smurf_cat_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 19
 execute at @e[type=minecraft:zombie,tag=smurf_cat_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=smurf_cat_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=19}] run tag @p add nextbot
@@ -404,7 +404,7 @@ tag @a[tag=smurf_cat_z] add n_nextbot
 #> ------------------ intruder | id 20
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=intruder_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 20
+execute at @e[type=minecraft:zombie,tag=intruder_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 20
 execute at @e[type=minecraft:zombie,tag=intruder_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=intruder_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=20}] run tag @p add nextbot
@@ -425,7 +425,7 @@ tag @a[tag=intruder_z] add n_nextbot
 #> ------------------ jet | id 21
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=jet_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 21
+execute at @e[type=minecraft:zombie,tag=jet_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 21
 execute at @e[type=minecraft:zombie,tag=jet_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=jet_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=21}] run tag @p add nextbot
@@ -446,7 +446,7 @@ tag @a[tag=jet_z] add n_nextbot
 #> ------------------ darkness | id 22
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=darkness_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 22
+execute at @e[type=minecraft:zombie,tag=darkness_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 22
 execute at @e[type=minecraft:zombie,tag=darkness_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=darkness_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=22}] run tag @p add nextbot
@@ -467,7 +467,7 @@ tag @a[tag=darkness_z] add n_nextbot
 #> ------------------ bear | id 23
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=bear_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 23
+execute at @e[type=minecraft:zombie,tag=bear_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 23
 execute at @e[type=minecraft:zombie,tag=bear_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=bear_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=23}] run tag @p add nextbot
@@ -488,7 +488,7 @@ tag @a[tag=bear_z] add n_nextbot
 #> ------------------ litlle_gerry | id 24
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=litlle_gerry_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 24
+execute at @e[type=minecraft:zombie,tag=litlle_gerry_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 24
 execute at @e[type=minecraft:zombie,tag=litlle_gerry_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=litlle_gerry_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=24}] run tag @p add nextbot
@@ -509,7 +509,7 @@ tag @a[tag=litlle_gerry_z] add n_nextbot
 #> ------------------ winrar | id 25
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=winrar_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 25
+execute at @e[type=minecraft:zombie,tag=winrar_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 25
 execute at @e[type=minecraft:zombie,tag=winrar_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=winrar_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=25}] run tag @p add nextbot
@@ -530,7 +530,7 @@ tag @a[tag=winrar_z] add n_nextbot
 #> ------------------ fan | id 26
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=fan_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 26
+execute at @e[type=minecraft:zombie,tag=fan_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 26
 execute at @e[type=minecraft:zombie,tag=fan_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=fan_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=26}] run tag @p add nextbot
@@ -551,7 +551,7 @@ tag @a[tag=fan_z] add n_nextbot
 #> ------------------ boykisser | id 27
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=boykisser_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 27
+execute at @e[type=minecraft:zombie,tag=boykisser_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 27
 execute at @e[type=minecraft:zombie,tag=boykisser_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=boykisser_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=27}] run tag @p add nextbot
@@ -572,7 +572,7 @@ tag @a[tag=boykisser_z] add n_nextbot
 #> ------------------ subspace_tripmine | id 28
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=subspace_tripmine_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 28
+execute at @e[type=minecraft:zombie,tag=subspace_tripmine_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 28
 execute at @e[type=minecraft:zombie,tag=subspace_tripmine_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=subspace_tripmine_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=28}] run tag @p add nextbot
@@ -594,7 +594,7 @@ tag @a[tag=subspace_tripmine_z] add b_nextbot
 #> ------------------ nuke | id 30
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=nuke_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 30
+execute at @e[type=minecraft:zombie,tag=nuke_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 30
 execute at @e[type=minecraft:zombie,tag=nuke_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=nuke_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=30}] run tag @p add nextbot
@@ -615,7 +615,7 @@ tag @a[tag=nuke_z] add n_nextbot
 #> ------------------ flash | id 31
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=flash_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 31
+execute at @e[type=minecraft:zombie,tag=flash_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 31
 execute at @e[type=minecraft:zombie,tag=flash_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=flash_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=31}] run tag @p add nextbot
@@ -636,7 +636,7 @@ tag @a[tag=flash_z] add n_nextbot
 #> ------------------ osc | id 32
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=osc_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 32
+execute at @e[type=minecraft:zombie,tag=osc_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 32
 execute at @e[type=minecraft:zombie,tag=osc_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=osc_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=32}] run tag @p add nextbot
@@ -657,7 +657,7 @@ tag @a[tag=osc_z] add n_nextbot
 #> ------------------ cb | id 33
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=cb_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 33
+execute at @e[type=minecraft:zombie,tag=cb_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 33
 execute at @e[type=minecraft:zombie,tag=cb_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=cb_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=33}] run tag @p add nextbot
@@ -678,7 +678,7 @@ tag @a[tag=cb_z] add n_nextbot
 #> ------------------ dragon | id 34
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=dragon_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 34
+execute at @e[type=minecraft:zombie,tag=dragon_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 34
 execute at @e[type=minecraft:zombie,tag=dragon_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=dragon_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=34}] run tag @p add nextbot
@@ -699,7 +699,7 @@ tag @a[tag=dragon_z] add n_nextbot
 #> ------------------ carter | id 35
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=carter_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 35
+execute at @e[type=minecraft:zombie,tag=carter_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 35
 execute at @e[type=minecraft:zombie,tag=carter_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=carter_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=35}] run tag @p add nextbot
@@ -720,7 +720,7 @@ tag @a[tag=carter_z] add n_nextbot
 #> ------------------ shroom | id 36
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=shroom_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 36
+execute at @e[type=minecraft:zombie,tag=shroom_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 36
 execute at @e[type=minecraft:zombie,tag=shroom_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=shroom_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=36}] run tag @p add nextbot
@@ -741,7 +741,7 @@ tag @a[tag=shroom_z] add n_nextbot
 #> ------------------ grumbo | id 37
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=grumbo_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 37
+execute at @e[type=minecraft:zombie,tag=grumbo_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 37
 execute at @e[type=minecraft:zombie,tag=grumbo_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=grumbo_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=37}] run tag @p add nextbot
@@ -762,7 +762,7 @@ tag @a[tag=grumbo_z] add n_nextbot
 #> ------------------ giggle | id 38
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=giggle_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 38
+execute at @e[type=minecraft:zombie,tag=giggle_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 38
 execute at @e[type=minecraft:zombie,tag=giggle_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=giggle_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=38}] run tag @p add nextbot
@@ -783,7 +783,7 @@ tag @a[tag=giggle_z] add n_nextbot
 #> ------------------ rei | id 39
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=rei_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 39
+execute at @e[type=minecraft:zombie,tag=rei_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 39
 execute at @e[type=minecraft:zombie,tag=rei_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=rei_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=39}] run tag @p add nextbot
@@ -804,7 +804,7 @@ tag @a[tag=rei_z] add n_nextbot
 #> ------------------ ico | id 40
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=ico_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 40
+execute at @e[type=minecraft:zombie,tag=ico_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 40
 execute at @e[type=minecraft:zombie,tag=ico_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=ico_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=40}] run tag @p add nextbot
@@ -825,7 +825,7 @@ tag @a[tag=ico_z] add n_nextbot
 #> ------------------ leorio | id 41
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=leorio_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 41
+execute at @e[type=minecraft:zombie,tag=leorio_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 41
 execute at @e[type=minecraft:zombie,tag=leorio_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=leorio_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=41}] run tag @p add nextbot
@@ -846,7 +846,7 @@ tag @a[tag=leorio_z] add n_nextbot
 #> ------------------ mohu | id 42
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=mohu_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 42
+execute at @e[type=minecraft:zombie,tag=mohu_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 42
 execute at @e[type=minecraft:zombie,tag=mohu_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=mohu_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=42}] run tag @p add nextbot
@@ -867,7 +867,7 @@ tag @a[tag=mohu_z] add n_nextbot
 #> ------------------ jack | id 43
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=jack_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 43
+execute at @e[type=minecraft:zombie,tag=jack_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 43
 execute at @e[type=minecraft:zombie,tag=jack_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=jack_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=43}] run tag @p add nextbot
@@ -888,7 +888,7 @@ tag @a[tag=jack_z] add n_nextbot
 #> ------------------ unfortunate | id 44
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=unfortunate_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 44
+execute at @e[type=minecraft:zombie,tag=unfortunate_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 44
 execute at @e[type=minecraft:zombie,tag=unfortunate_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=unfortunate_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=44}] run tag @p add nextbot
@@ -909,7 +909,7 @@ tag @a[tag=unfortunate_z] add n_nextbot
 #> ------------------ lolguy | id 45
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=lolguy_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 45
+execute at @e[type=minecraft:zombie,tag=lolguy_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 45
 execute at @e[type=minecraft:zombie,tag=lolguy_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=lolguy_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=45}] run tag @p add nextbot
@@ -930,7 +930,7 @@ tag @a[tag=lolguy_z] add n_nextbot
 #> ------------------ smiler | id 46
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=smiler_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 46
+execute at @e[type=minecraft:zombie,tag=smiler_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 46
 execute at @e[type=minecraft:zombie,tag=smiler_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=smiler_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=46}] run tag @p add nextbot
@@ -951,7 +951,7 @@ tag @a[tag=smiler_z] add n_nextbot
 #> ------------------ boba | id 47
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=boba_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 47
+execute at @e[type=minecraft:zombie,tag=boba_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 47
 execute at @e[type=minecraft:zombie,tag=boba_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=boba_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=47}] run tag @p add nextbot
@@ -972,7 +972,7 @@ tag @a[tag=boba_z] add n_nextbot
 #> ------------------ squewe | id 48
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=squewe_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 48
+execute at @e[type=minecraft:zombie,tag=squewe_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 48
 execute at @e[type=minecraft:zombie,tag=squewe_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=squewe_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=48}] run tag @p add nextbot
@@ -993,7 +993,7 @@ tag @a[tag=squewe_z] add n_nextbot
 #> ------------------ ccat | id 49
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=ccat_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 49
+execute at @e[type=minecraft:zombie,tag=ccat_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 49
 execute at @e[type=minecraft:zombie,tag=ccat_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=ccat_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=49}] run tag @p add nextbot
@@ -1014,7 +1014,7 @@ tag @a[tag=ccat_z] add n_nextbot
 #> ------------------ andy | id 50
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=andy_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 50
+execute at @e[type=minecraft:zombie,tag=andy_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 50
 execute at @e[type=minecraft:zombie,tag=andy_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=andy_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=50}] run tag @p add nextbot
@@ -1035,7 +1035,7 @@ tag @a[tag=andy_z] add n_nextbot
 #> ------------------ inhabitant | id 51
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=inhabitant_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 51
+execute at @e[type=minecraft:zombie,tag=inhabitant_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 51
 execute at @e[type=minecraft:zombie,tag=inhabitant_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=inhabitant_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=51}] run tag @p add nextbot
@@ -1056,7 +1056,7 @@ tag @a[tag=inhabitant_z] add n_nextbot
 #> ------------------ leoret | id 52
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=leoret_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 52
+execute at @e[type=minecraft:zombie,tag=leoret_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 52
 execute at @e[type=minecraft:zombie,tag=leoret_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=leoret_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=52}] run tag @p add nextbot
@@ -1077,7 +1077,7 @@ tag @a[tag=leoret_z] add n_nextbot
 #> ------------------ dread | id 53
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=dread_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 53
+execute at @e[type=minecraft:zombie,tag=dread_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 53
 execute at @e[type=minecraft:zombie,tag=dread_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=dread_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=53}] run tag @p add nextbot
@@ -1098,7 +1098,7 @@ tag @a[tag=dread_z] add n_nextbot
 #> ------------------ catnap | id 54
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=catnap_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 54
+execute at @e[type=minecraft:zombie,tag=catnap_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 54
 execute at @e[type=minecraft:zombie,tag=catnap_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=catnap_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=54}] run tag @p add nextbot
@@ -1119,7 +1119,7 @@ tag @a[tag=catnap_z] add b_nextbot
 #> ------------------ mrl | id 55
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=mrl_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 55
+execute at @e[type=minecraft:zombie,tag=mrl_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 55
 execute at @e[type=minecraft:zombie,tag=mrl_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=mrl_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=55}] run tag @p add nextbot
@@ -1140,7 +1140,7 @@ tag @a[tag=mrl_z] add b_nextbot
 #> ------------------ trespasser | id 56
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=trespasser_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 56
+execute at @e[type=minecraft:zombie,tag=trespasser_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 56
 execute at @e[type=minecraft:zombie,tag=trespasser_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=trespasser_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=56}] run tag @p add nextbot
@@ -1161,7 +1161,7 @@ tag @a[tag=trespasser_z] add n_nextbot
 #> ------------------ anim8or | id 57
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=anim8or_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 57
+execute at @e[type=minecraft:zombie,tag=anim8or_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 57
 execute at @e[type=minecraft:zombie,tag=anim8or_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=anim8or_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=57}] run tag @p add nextbot
@@ -1182,7 +1182,7 @@ tag @a[tag=anim8or_z] add n_nextbot
 #> ------------------ pool_noodle | id 58
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=pool_noodle_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot] run scoreboard players set @p nn_possesion 58
+execute at @e[type=minecraft:zombie,tag=pool_noodle_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 58
 execute at @e[type=minecraft:zombie,tag=pool_noodle_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=pool_noodle_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=58}] run tag @p add nextbot
