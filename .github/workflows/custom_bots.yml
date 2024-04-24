@@ -20,9 +20,9 @@ jobs:
       - uses: actions/checkout@v3
       - name: Download Files
         run: |
-         curl -L https://nikodaproot.pl/wp-content/nextbots_png/bot.png -o custom_bots/assets/userbots/textures/bot/bot.png
-         curl -L https://nikodaproot.pl/wp-content/nextbots_s/custom_s.ogg -o custom_bots/assets/userbots/sounds/custom_s.ogg
-         curl -L https://nikodaproot.pl/wp-content/nextbots_j/custom_j.ogg -o custom_bots/assets/userbots/sounds/custom_j.ogg
+         curl -L https://nikostuff.com/wp-content/nextbots_png/bot.png -o custom_bots/assets/userbots/textures/bot/bot.png
+         curl -L https://nikostuff.com/wp-content/nextbots_s/custom_s.ogg -o custom_bots/assets/userbots/sounds/custom_s.ogg
+         curl -L https://nikostuff.com/wp-content/nextbots_j/custom_j.ogg -o custom_bots/assets/userbots/sounds/custom_j.ogg
       
       - name: Setup MinIO
         run: |
@@ -33,7 +33,7 @@ jobs:
 
       - name: Set Up MinIO Configuration
         run: |
-          mc alias set myminio https://mcapi.nikodaproot.pl/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
+          mc alias set myminio https://mcapi.nikostuff.com/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
 
 
       - name: Prepare File
