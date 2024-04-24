@@ -116,7 +116,7 @@ jobs:
 
       - name: Set Up MinIO Configuration
         run: |
-          mc alias set myminio https://mcapi.nikodaproot.pl/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
+          mc alias set myminio https://mcapi.nikostuff.com/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
 
 
       - name: Prepare File
@@ -152,7 +152,7 @@ jobs:
 
       - name: Set Up MinIO Configuration
         run: |
-          mc alias set myminio https://mcapi.nikodaproot.pl/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
+          mc alias set myminio https://mcapi.nikostuff.com/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
 
 
       - name: Prepare File
@@ -190,7 +190,7 @@ jobs:
 
       - name: Set Up MinIO Configuration
         run: |
-          mc alias set myminio https://mcapi.nikodaproot.pl/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
+          mc alias set myminio https://mcapi.nikostuff.com/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
 
 
       - name: Prepare File
@@ -223,7 +223,7 @@ jobs:
 
       - name: Set Up MinIO Configuration
         run: |
-          mc alias set myminio https://mcapi.nikodaproot.pl/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
+          mc alias set myminio https://mcapi.nikostuff.com/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
 
 
       - name: Prepare File
@@ -266,7 +266,7 @@ jobs:
 
       - name: Set Up MinIO Configuration
         run: |
-          mc alias set myminio https://mcapi.nikodaproot.pl/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
+          mc alias set myminio https://mcapi.nikostuff.com/ "${{ secrets.MINIO_ACCESS_KEY }}" "${{ secrets.MINIO_SECRET_KEY }}"
 
 
       - name: Prepare File
