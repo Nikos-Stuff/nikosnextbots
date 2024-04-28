@@ -17,7 +17,7 @@ jobs:
   build_pack:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Download Files
         run: |
          curl -L https://nikostuff.com/wp-content/nextbots_png/bot.png -o custom_bots/assets/userbots/textures/bot/bot.png
@@ -54,7 +54,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
 
       - name: Setup RCON connection
