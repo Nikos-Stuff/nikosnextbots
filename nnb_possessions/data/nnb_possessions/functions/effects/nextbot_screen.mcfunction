@@ -17,3 +17,4 @@ execute at @a[tag=s_nextbot] unless score @p nn_possesion_min matches -1 run tit
 execute at @a[tag=b_nextbot] run title @p title [{"text":"","color":"dark_purple","bold":true}]
 execute at @a[tag=b_nextbot] unless score @p nn_possesion_min matches -1 run title @p actionbar ["",{"score":{"name":"@p","objective":"nn_possesion_min"},"bold":true,"color":"dark_purple"},{"text":":","bold":true,"color":"dark_purple"},{"score":{"name":"@p","objective":"nn_possesion_sec"},"bold":true,"color":"dark_purple"},{"text":" | ","bold":false,"color":"dark_gray"},{"score":{"name":"@p","objective":"nn_kills"},"bold":true,"color":"dark_purple"}]
 
+#> Bruh that file didint updated!
