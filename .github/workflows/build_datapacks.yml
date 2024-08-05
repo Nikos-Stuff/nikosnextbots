@@ -74,16 +74,16 @@ jobs:
             sftp_only: true
             password: ${{ secrets.SFTP_PASSWORD }}
 
-      - name: Deploy file - OPENWORLD
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        with:
-            username: ${{ secrets.SFTP_USERNAME_OPENWORLD }}
-            server: ${{ secrets.SFTP_SERVER_OPENWORLD }}
-            port: 2022
-            local_path: './nnb_possessions.zip'
-            remote_path: '/world/datapacks/'
-            sftp_only: true
-            password: ${{ secrets.SFTP_PASSWORD_OPENWORLD }}
+      # - name: Deploy file - OPENWORLD
+      #   uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+      #   with:
+      #       username: ${{ secrets.SFTP_USERNAME_OPENWORLD }}
+      #       server: ${{ secrets.SFTP_SERVER_OPENWORLD }}
+      #       port: 2022
+      #       local_path: './nnb_possessions.zip'
+      #       remote_path: '/world/datapacks/'
+      #       sftp_only: true
+      #       password: ${{ secrets.SFTP_PASSWORD_OPENWORLD }}
 
 
 
@@ -117,16 +117,16 @@ jobs:
             sftp_only: true
             password: ${{ secrets.SFTP_PASSWORD }}
 
-      - name: Deploy file - OPENWORLD
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        with:
-            username: ${{ secrets.SFTP_USERNAME_OPENWORLD }}
-            server: ${{ secrets.SFTP_SERVER_OPENWORLD }}
-            port: 2022
-            local_path: './nnb_vote_system.zip'
-            remote_path: '/world/datapacks/'
-            sftp_only: true
-            password: ${{ secrets.SFTP_PASSWORD_OPENWORLD }}
+      # - name: Deploy file - OPENWORLD
+      #   uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+      #   with:
+      #       username: ${{ secrets.SFTP_USERNAME_OPENWORLD }}
+      #       server: ${{ secrets.SFTP_SERVER_OPENWORLD }}
+      #       port: 2022
+      #       local_path: './nnb_vote_system.zip'
+      #       remote_path: '/world/datapacks/'
+      #       sftp_only: true
+      #       password: ${{ secrets.SFTP_PASSWORD_OPENWORLD }}
 
 
   build_jumpscare_sys:
@@ -156,16 +156,16 @@ jobs:
             sftp_only: true
             password: ${{ secrets.SFTP_PASSWORD }}
 
-      - name: Deploy file - OPENWORLD
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        with:
-            username: ${{ secrets.SFTP_USERNAME_OPENWORLD }}
-            server: ${{ secrets.SFTP_SERVER_OPENWORLD }}
-            port: 2022
-            local_path: './nnb_jumpscares.zip'
-            remote_path: '/world/datapacks/'
-            sftp_only: true
-            password: ${{ secrets.SFTP_PASSWORD_OPENWORLD }}
+      # - name: Deploy file - OPENWORLD
+      #   uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+      #   with:
+      #       username: ${{ secrets.SFTP_USERNAME_OPENWORLD }}
+      #       server: ${{ secrets.SFTP_SERVER_OPENWORLD }}
+      #       port: 2022
+      #       local_path: './nnb_jumpscares.zip'
+      #       remote_path: '/world/datapacks/'
+      #       sftp_only: true
+      #       password: ${{ secrets.SFTP_PASSWORD_OPENWORLD }}
 
   build_spawn_sys:
     runs-on: ubuntu-latest
@@ -224,5 +224,5 @@ jobs:
       - name: Import Texturepack
         run: mcrcon -H ${{ secrets.ARCADE_RCON_IP }} -P ${{ secrets.ARCADE_RCON_PORT }} -p ${{ secrets.ARCADE_RCON_PASSWORD }} "minecraft:reload"
 
-      - name: Import Texturepack - OPENWORLD
-        run: mcrcon -H ${{ secrets.OPENWORLD_RCON_IP }} -P ${{ secrets.OPENWORLD_RCON_PORT }} -p ${{ secrets.OPENWORLD_RCON_PASSWORD }} "minecraft:reload"
+      # - name: Import Texturepack - OPENWORLD
+      #   run: mcrcon -H ${{ secrets.OPENWORLD_RCON_IP }} -P ${{ secrets.OPENWORLD_RCON_PORT }} -p ${{ secrets.OPENWORLD_RCON_PASSWORD }} "minecraft:reload"
