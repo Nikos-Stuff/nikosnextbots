@@ -147,6 +147,10 @@
     "sounds": [
       "vibecraft:countdown"]
 	},
+  "map_vote": {
+    "sounds": [
+      "vibecraft:map_vote"]
+	},
 	
 	
 	
