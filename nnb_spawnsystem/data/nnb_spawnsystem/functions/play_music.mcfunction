@@ -1,1 +1,0 @@
-$execute at @a run playsound vibecraft:$(m_name) weather @p ~ ~ ~ 0.1 1
