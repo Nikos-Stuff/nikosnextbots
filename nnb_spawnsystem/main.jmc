@@ -107,12 +107,12 @@ switch(nn_map:map) {
         call_bots(sel_map="nn_mall");
 
         data modify storage nnb_spawnsystem:music m_name set value nn_mall_ambient;
-        scoreboard players set reset nn_map_musice 2900;
+        scoreboard players set reset nn_map_music 2900;
     case 2: 
         call_bots(sel_map="nn_poolrooms");
 
         data modify storage nnb_spawnsystem:music m_name set value nn_port_ambient;
-        scoreboard players set reset nn_map_musice 1620;
+        scoreboard players set reset nn_map_music 1620;
     case 3: 
         call_bots(sel_map="nn_port");
 
