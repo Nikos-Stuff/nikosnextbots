@@ -117,22 +117,22 @@ switch(nn_map:map) {
         call_bots(sel_map="nn_port");
 
         data modify storage nnb_spawnsystem:music m_name set value nn_port_ambient;
-        scoreboard players set reset nn_map_musice 1620;
+        scoreboard players set reset nn_map_music 1620;
     case 4: 
         call_bots(sel_map="nn_camberturn");
 
         data modify storage nnb_spawnsystem:music m_name set value nn_camberturn_ambient;
-        scoreboard players set reset nn_map_musice 2440;
+        scoreboard players set reset nn_map_music 2440;
     case 5: 
         call_bots(sel_map="nn_crossroads");
 
         data modify storage nnb_spawnsystem:music m_name set value nn_crossroads_ambient;
-        scoreboard players set reset nn_map_musice 3520;
+        scoreboard players set reset nn_map_music 3520;
     case 6: 
         call_bots(sel_map="nn_russia");
         
         data modify storage nnb_spawnsystem:music m_name set value nn_russia_ambient;
-        scoreboard players set reset nn_map_musice 3000;
+        scoreboard players set reset nn_map_music 3000;
     case 7: 
         call_bots(sel_map="nn_trainstation");
     case 8: 
