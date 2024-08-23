@@ -9,6 +9,12 @@
         "custom_model_data": 1
       },
       "model": "item/server_icons/openworld_icon"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2
+      },
+      "model": "item/event_icon/events_icon"
     }
   ]
 }
