@@ -83,7 +83,9 @@ execute if entity @e[name=nn_abandonedoffice,tag=map_2] run scoreboard objective
 execute if entity @e[name=nn_abandonedoffice,tag=map_3] run scoreboard objectives add sel_map_3 dummy {"text":""}
 
 
-
+execute if entity @e[name=nn_pillars,tag=map_1] run scoreboard objectives add sel_map_1 dummy {"text":""}
+execute if entity @e[name=nn_pillars,tag=map_2] run scoreboard objectives add sel_map_2 dummy {"text":""}
+execute if entity @e[name=nn_pillars,tag=map_3] run scoreboard objectives add sel_map_3 dummy {"text":""}
 
 
 
@@ -92,3 +94,7 @@ execute if entity @e[name=nn_abandonedoffice,tag=map_3] run scoreboard objective
 scoreboard objectives add sel_map_1 dummy {"text":""}
 scoreboard objectives add sel_map_2 dummy {"text":""}
 scoreboard objectives add sel_map_3 dummy {"text":""}
+
+
+
+#> https://unicode.bayashi.net/?page=1801 <-- EUGHHHH STUPID UNICODEEEEEEEEEEEEEEEEEEEEEEE

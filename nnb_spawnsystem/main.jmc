@@ -153,6 +153,8 @@ switch(nn_map:map) {
         call_bots(sel_map="nn_abandonedoffice");
     case 16:
         call_bots(sel_map="nn_flatgrass_arcade");
+    case 17:
+        call_bots(sel_map="nn_pillars");
    // default:
    //     say "Unable to find anything";
    }
