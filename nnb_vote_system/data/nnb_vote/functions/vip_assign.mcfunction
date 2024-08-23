@@ -19,7 +19,7 @@ execute if entity @e[name=nn_flatgrass_a,tag=vip_map_2] run scoreboard objective
 execute if entity @e[name=nn_flatgrass_a,tag=vip_map_3] run scoreboard objectives add vip_sel_map_3 dummy {"text":""}
 
 
-#> French Jail
+#> https://unicode.bayashi.net/?page=1801 <-- EUGHHHH STUPID UNICODEEEEEEEEEEEEEEEEEEEEEEE
 
 
 
