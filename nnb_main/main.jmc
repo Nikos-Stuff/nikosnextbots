@@ -1,0 +1,33 @@
+Text.tellraw(@a, "Core Scripts Loaded");
+
+// Create basic scoreboards
+
+// Lobby related
+c_sb(sc_name="nn_lobbymusic");
+c_sb(sc_name="nn_lobby");
+
+// Gameplay Related
+c_sb(sc_name="nn_spawn");
+c_sb(sc_name="nn_possesion");
+c_sb(sc_name="nn_possesion_min");
+c_sb(sc_name="nn_possesion_sec");
+c_sb(sc_name="nn_possesion_msec");
+c_sb(sc_name="nn_possession_effect);
+
+
+
+// Run Every Tick
+function __tick__() {
+root();
+}
+
+
+
+
+
+// Root function to create scoreboards if not created already
+function root() {
+}
+
+
+function c_sb() { $scoreboard objectives add $(sc_name) dummy; }
