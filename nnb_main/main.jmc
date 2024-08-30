@@ -1,5 +1,5 @@
 Text.tellraw(@a, "Core Scripts Loaded");
-
+function c_sb() { $scoreboard objectives add $(sc_name) dummy; }
 // Create basic scoreboards
 
 // Lobby related
@@ -12,7 +12,7 @@ c_sb(sc_name="nn_possesion");
 c_sb(sc_name="nn_possesion_min");
 c_sb(sc_name="nn_possesion_sec");
 c_sb(sc_name="nn_possesion_msec");
-c_sb(sc_name="nn_possession_effect);
+c_sb(sc_name="nn_possession_effect");
 
 
 
@@ -27,7 +27,44 @@ root();
 
 // Root function to create scoreboards if not created already
 function root() {
+    //Manage music system
+    lobby_music();
+
 }
 
 
-function c_sb() { $scoreboard objectives add $(sc_name) dummy; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// lobby music manager 
+function lobby_music() {
+
+    if (nn_lobby:phase = 1) {
+        scoreboard players add tick nn_lobbymusic 1;
+        if (nn_lobbymusic:tick => nn_lobbymusic:max) {scoreboard players add track_number 1;}
+
+        switch (nn_lobbymusic:track_number) {
+          case 1:
+             scoreboard players set max nn_lobbymusic 2180;
+             execute at @e[tag=lobby_music] run playsound vibecraft:bee_lobby master @a[distance=..1000.0] ~ ~ ~ 0.2 1;
+          case 2:
+             scoreboard players set max nn_lobbymusic 3000;
+             execute at @e[tag=lobby_music] run playsound vibecraft:delta_lobby master @a[distance=..1000.0] ~ ~ ~ 0.2 1;
+          default:
+             scoreboard players set track_number nn_lobbymusic 0;
+             scoreboard players set max nn_lobbymusic 10;
+        }
+
+    }
+}

@@ -1,0 +1,1 @@
+$function nnb_main:__private__/switch_case/0/$(switch_key)

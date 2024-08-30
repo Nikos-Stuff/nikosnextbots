@@ -7,4 +7,4 @@ function nnb_main:c_sb {"sc_name":"nn_possesion"}
 function nnb_main:c_sb {"sc_name":"nn_possesion_min"}
 function nnb_main:c_sb {"sc_name":"nn_possesion_sec"}
 function nnb_main:c_sb {"sc_name":"nn_possesion_msec"}
-function nnb_main:c_sb {"sc_name":"nn_possesion"}
+function nnb_main:c_sb {"sc_name":"nn_possession_effect"}
