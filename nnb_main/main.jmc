@@ -52,18 +52,22 @@ function lobby_music() {
 
     if (nn_lobby:phase = 1) {
         scoreboard players add tick nn_lobbymusic 1;
-        if (nn_lobbymusic:tick >= nn_lobbymusic:max) {scoreboard players add track_number nn_lobbymusic 1;}
+        if (nn_lobbymusic:tick >= nn_lobbymusic:max) {scoreboard players add track_number nn_lobbymusic 1; scoreboard players set playing nn_lobbymusic 0;}
 
-        switch (nn_lobbymusic:track_number) {
-          case 1:
-             scoreboard players set max nn_lobbymusic 2180;
-             execute at @e[tag=lobby_music] run playsound vibecraft:bee_lobby master @a[distance=..1000.0] ~ ~ ~ 0.2 1;
-          case 2:
-             scoreboard players set max nn_lobbymusic 3000;
-             execute at @e[tag=lobby_music] run playsound vibecraft:delta_lobby master @a[distance=..1000.0] ~ ~ ~ 0.2 1;
-          default:
-             scoreboard players set track_number nn_lobbymusic 0;
-             scoreboard players set max nn_lobbymusic 10;
+
+        if (nn_lobbymusic:playing = 0) {
+            scoreboard players set playing nn_lobbymusic 1;
+            switch (nn_lobbymusic:track_number) {
+            case 1:
+                scoreboard players set max nn_lobbymusic 2180;
+                execute at @e[tag=lobby_music] run playsound vibecraft:bee_lobby master @a[distance=..1000.0] ~ ~ ~ 0.2 1;
+            case 2:
+                scoreboard players set max nn_lobbymusic 3000;
+                execute at @e[tag=lobby_music] run playsound vibecraft:delta_lobby master @a[distance=..1000.0] ~ ~ ~ 0.2 1;
+            default:
+                scoreboard players set track_number nn_lobbymusic 0;
+                scoreboard players set max nn_lobbymusic 10;
+            }
         }
 
     }
