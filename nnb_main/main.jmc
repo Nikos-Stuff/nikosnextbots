@@ -52,7 +52,7 @@ function lobby_music() {
 
     if (nn_lobby:phase = 1) {
         scoreboard players add tick nn_lobbymusic 1;
-        if (nn_lobbymusic:tick => nn_lobbymusic:max) {scoreboard players add track_number 1;}
+        if (nn_lobbymusic:tick >= nn_lobbymusic:max) {scoreboard players add track_number 1;}
 
         switch (nn_lobbymusic:track_number) {
           case 1:

@@ -1,5 +1,5 @@
 scoreboard players add tick nn_lobbymusic 1
-execute if score tick nn_lobbymusic => max nn_lobbymusic run scoreboard players add track_number 1
+execute if score tick nn_lobbymusic >= max nn_lobbymusic run scoreboard players add track_number 1
 scoreboard players set __found_case__ __variable__ 0
 execute store result storage nnb_main:__storage__ switch_key int 1 run scoreboard players get track_number nn_lobbymusic
 function nnb_main:__private__/switch_case/0/select with storage nnb_main:__storage__
