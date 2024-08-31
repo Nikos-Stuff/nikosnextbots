@@ -171,14 +171,14 @@ if (nn_lobby:start_timer = 1) {
     scoreboard players remove msec nn_lobby 1;
  }
 
-if (nn_lobby:msec <= 20) {
+if (nn_lobby:msec <= numbers:20) {
     scoreboard players set msec nn_lobby 0;
     scoreboard players remove sec nn_lobby 1;
     timer_sec();
  }}
 
 function timer_sec() {
-    if (nn_lobby:sec <= 0) {
+    if (nn_lobby:sec <= numbers:0) {
     scoreboard players set sec nn_lobby 59;
     scoreboard players remove min nn_lobby 1;
 }}
