@@ -232,6 +232,13 @@ function create_marker() {
     $give @s minecraft:armor_stand[minecraft:entity_data={Invisible:true,Invulnerable:true,NoBasePlate:true,NoGravity:true,Small:true,CustomNameVisible:false,DisabledSlots:4128768,Tags:["$(Tag)"],id:"minecraft:armor_stand"},minecraft:custom_name='{"text":"$(Tag) Marker"}'] 1;
 }
 
+// Simple function to create mob marker
+function create_mob() {
+    $Text.tellraw(@s, "&<gray> ℹ | Generated $(Name)");
+    $give @s drowned_spawn_egg[custom_name='[{"text":"Map Entry $(Name)","italic":false}]',entity_data={id:pig,CustomName:'[{"text":"$(Name)"}]',CustomNameVisible:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b}] 1;
+}
+
+
 
 
 function hide_as_names() {
