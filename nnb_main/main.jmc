@@ -172,7 +172,7 @@ if (nn_lobby:start_timer = 1) {
  }
 
 if (nn_lobby:msec <= numbers:20) {
-    scoreboard players set msec nn_lobby 20;
+    scoreboard players set msec nn_lobby 0;
     scoreboard players remove sec nn_lobby 1;
     timer_sec();
  }}
