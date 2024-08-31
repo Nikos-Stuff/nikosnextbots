@@ -44,10 +44,10 @@ function root() {
 
 
 
+// -- Core Code
 
 
-
-// lobby music manager 
+// 🎵 Music Manager
 function lobby_music() {
 
     if (nn_lobby:phase = 1) {
@@ -109,7 +109,38 @@ function lobby_music() {
 }
 
 
+
+
+
+
+// -- Executable tools
+
+
+
+
+
+
+
 // Simple function to create marker
 function create_marker() {
+    logger(pl="@s",ll="1",text="Generated sucessfully");
     $give @s minecraft:armor_stand[minecraft:entity_data={Invisible:true,Invulnerable:true,NoBasePlate:true,NoGravity:true,Small:true,CustomNameVisible:false,CustomName:'{"text":"$(Tag) Marker"}',DisabledSlots:4128768,Tags:["$(Tag)"],id:"minecraft:armor_stand"},minecraft:custom_name='{"text":"$(Tag) Marker"}'] 1;
+}
+
+
+
+// Simple logger for logging & debug printed on chat
+function logger() {
+
+            switch ($ll) {
+                case 1:
+                    $Text.tellraw($(pl), "<gray> ℹ | $(text)");
+                case 2:
+                    $Text.tellraw($(pl), "<yellow> ⚠ | $(text)");
+                case 3:
+                    $Text.tellraw($(pl), "<red> 🛑 | $(text)");
+                default:
+                    $Text.tellraw($(pl), "<dark_gray> ❔ | $(text)");
+            }
+
 }
