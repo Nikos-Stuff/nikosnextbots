@@ -131,8 +131,8 @@ function create_marker() {
 
 // Simple logger for logging & debug printed on chat
 function logger() {
-            $ll = $(ll);
-            switch ($ll) {
+            $v_ll = $(ll);
+            switch ($v_ll) {
                 case 1:
                     $Text.tellraw($(pl), "<gray> ℹ | $(text)");
                 case 2:
