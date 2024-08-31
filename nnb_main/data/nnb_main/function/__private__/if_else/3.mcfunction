@@ -1,2 +1,2 @@
-scoreboard players add track_number nn_lobbymusic 1
-scoreboard players set playing nn_lobbymusic 0
+scoreboard players set end nn_lobby 3
+tellraw @a {"text":" \u2139 | Starting Phase 2","color":"gray","type":"text"}

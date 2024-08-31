@@ -1,3 +1,3 @@
-scoreboard players set msec nn_lobby 0
-scoreboard players remove sec nn_lobby 1
-function nnb_main:timer_sec
+scoreboard players add tick nn_lobbymusic 1
+execute if score tick nn_lobbymusic >= max nn_lobbymusic run function nnb_main:__private__/if_else/4
+execute if score playing nn_lobbymusic matches 0 run function nnb_main:__private__/if_else/5

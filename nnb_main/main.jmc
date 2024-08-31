@@ -58,7 +58,13 @@ function round_manager() {
     // Check if theres enough players to start
     if (nn_lobby:online >= nn_lobby:req_players) {
         // Set the phase to 2 - Pre-Voting
-        if (nn_lobby:phase = 1) { scoreboard players set phase nn_lobby 2; Text.tellraw(@a, "&<gray> ℹ | Starting Phase 2"); }
+        if (nn_lobby:phase = 1) {
+            scoreboard players set phase nn_lobby 2;
+            Text.tellraw(@a, "&<gray> ℹ | Starting Phase 2");
+            scoreboard players set min nn_lobby 0;
+            scoreboard players set sec nn_lobby 10;
+            scoreboard playsers set start_timer nn_lobby 1; // Start the timer
+            }
     } else {
         scoreboard players set phase nn_lobby 1;
         bossbar set minecraft:game name
@@ -72,6 +78,12 @@ function round_manager() {
 }
 
 
+// Start the voting phase
+if (nn_lobby:phase = 2) {
+    if (nn_lobby:min < nn_lobby:0) {
+        scoreboard players set end nn_lobby 3;
+        Text.tellraw(@a, "&<gray> ℹ | Starting Phase 3");
+}}
 
 
 
@@ -79,7 +91,7 @@ function round_manager() {
 // 🎵 Music Manager
 function lobby_music() {
 
-    if (nn_lobby:phase = 1) {
+    if (nn_lobby:phase >= 3) {
         scoreboard players add tick nn_lobbymusic 1;
         if (nn_lobbymusic:tick >= nn_lobbymusic:max) {scoreboard players add track_number nn_lobbymusic 1; scoreboard players set playing nn_lobbymusic 0;}
 
@@ -140,28 +152,24 @@ function lobby_music() {
 // ⏰ Basic Timer Stuff
 
 function timer_msec() {
-if (nn_lobby:phase = 0) {
+if (nn_lobby:start_timer = 1) {
     scoreboard players remove msec nn_lobby 1;
-    }
+ }
 
 if (nn_lobby:msec <= nn_lobby:20) {
     scoreboard players set msec nn_lobby 0;
     scoreboard players remove sec nn_lobby 1;
     timer_sec();
-    }}
-
-
+ }}
 
 function timer_sec() {
     if (nn_lobby:sec <= nn_lobby:0) {
     scoreboard players set sec nn_lobby 59;
     scoreboard players remove min nn_lobby 1;
-    }
+}}
     
-if (nn_lobby:phase = 5) {
-    if (nn_lobby:min < nn_lobby:0) {
-        scoreboard players set end nn_lobby 1;
-}}}
+
+
 
 
 
