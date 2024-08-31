@@ -1,1 +1,0 @@
-$tellraw @s "<dark_gray> \u2754 | $(text)"
