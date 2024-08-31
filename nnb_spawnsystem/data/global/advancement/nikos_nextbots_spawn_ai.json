@@ -3,9 +3,12 @@
         "title": "Nikos Nextbots Spawn System",
         "description": "",
         "icon": {
-            "item": "minecraft:player_head",
-            "nbt": "{SkullOwner:{Name: \"_Nik0__\", Properties: {textures: [{Value: \"ewogICJ0aW1lc3RhbXAiIDogMTY5ODg0MDM4MTg1NiwKICAicHJvZmlsZUlkIiA6ICJhMWNmY2Y2OWZmZWE0NzNmOGM3YTMzYzk1OGY3OTFhYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJfTmlrMF9fIiwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzZlNmY1OGQ1NWY2MWMyMDUwN2Q5MmY1YjU4MmMyMDkwMmI3YmRiN2M0MTdiOTYzNmYxMmNlYWE4ZDlkYmI1NjAiCiAgICB9CiAgfQp9\"}]}}}"
-        },
+            "id": "minecraft:lime_concrete",
+            "count": 1,
+            "components": {
+              "minecraft:custom_model_data": 1
+            }
+          },
         "show_toast": false,
         "announce_to_chat": false
     },
