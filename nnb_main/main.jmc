@@ -123,7 +123,7 @@ function lobby_music() {
 
 // Simple function to create marker
 function create_marker() {
-    $Text.tellraw(@s, "<grey> ℹ | Generated $(Tag)");
+    $Text.tellraw(@s, "&<gray> ℹ | Generated $(Tag)");
     $give @s minecraft:armor_stand[minecraft:entity_data={Invisible:true,Invulnerable:true,NoBasePlate:true,NoGravity:true,Small:true,CustomNameVisible:false,DisabledSlots:4128768,Tags:["$(Tag)"],id:"minecraft:armor_stand"},minecraft:custom_name='{"text":"$(Tag) Marker"}'] 1;
 }
 
