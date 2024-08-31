@@ -1,3 +1,2 @@
-scoreboard players set msec nn_lobby 0
-scoreboard players remove sec nn_lobby 1
-function nnb_main:timer_sec
+scoreboard players remove msec nn_lobby 1
+bossbar set minecraft:game name [{"score":{"name":"min","objective":"nn_lobby"},"color":"yellow"},{"text":" : ","color":"yellow"},{"score":{"name":"sec","objective":"nn_lobby"},"color":"yellow"}]

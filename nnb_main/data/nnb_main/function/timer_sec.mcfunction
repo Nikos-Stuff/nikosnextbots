@@ -1,1 +1,1 @@
-execute if score sec nn_lobby <= 0 numbers run function nnb_main:__private__/if_else/8
+execute if score sec nn_lobby <= 0 numbers run function nnb_main:__private__/if_else/9
