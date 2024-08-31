@@ -93,7 +93,7 @@ if (nn_lobby:phase = 2) {
 // 🎵 Music Manager
 function lobby_music() {
 
-    if (nn_lobby:phase >= 3) {
+    if (nn_lobby:phase <= 3) {
         scoreboard players add tick nn_lobbymusic 1;
         if (nn_lobbymusic:tick >= nn_lobbymusic:max) {scoreboard players add track_number nn_lobbymusic 1; scoreboard players set playing nn_lobbymusic 0;}
 
