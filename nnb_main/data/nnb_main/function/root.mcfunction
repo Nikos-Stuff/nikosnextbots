@@ -1,1 +1,2 @@
 function nnb_main:lobby_music
+function nnb_main:hide_as_names
