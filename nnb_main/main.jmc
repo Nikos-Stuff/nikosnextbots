@@ -62,43 +62,43 @@ function lobby_music() {
             switch (nn_lobbymusic:track_number) {
                 case 1:
                     scoreboard players set max nn_lobbymusic 2180;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..10] run playsound vibecraft:bee_lobby master @s ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run execute at @a[distance=..10] run playsound vibecraft:bee_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
                 case 2:
                     scoreboard players set max nn_lobbymusic 3000;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:delta_lobby master @s ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:delta_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
                 case 3:
                     scoreboard players set max nn_lobbymusic 3160;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:sherbet_lobby master @s ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:sherbet_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
                 case 4:
                     scoreboard players set max nn_lobbymusic 3360;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:pluggnb_lobby master @s ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:pluggnb_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
                 case 5:
                     scoreboard players set max nn_lobbymusic 2960;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:lucid_lobby master @s ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:lucid_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
                 case 6:
                     scoreboard players set max nn_lobbymusic 1440;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:asteries_lobby master @s ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:asteries_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
                 case 7:
                     scoreboard players set max nn_lobbymusic 1200;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:littlebig_lobby master @s ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:littlebig_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
                 case 8:
                     scoreboard players set max nn_lobbymusic 2020;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:thoughtbody_lobby master @s ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:thoughtbody_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
                 case 9:
                     scoreboard players set max nn_lobbymusic 1520;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:video_game_lobby master @s ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:video_game_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
                 case 10:
                     scoreboard players set max nn_lobbymusic 2300;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:nextbob_lobby master @s ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:nextbob_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
                 case 11:
                     scoreboard players set max nn_lobbymusic 1280;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:chill_lobby master @s ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:chill_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
                 case 12:
                     scoreboard players set max nn_lobbymusic 2020;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:nostalgia_lobby master @s ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:nostalgia_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
                 case 13:
                     scoreboard players set max nn_lobbymusic 3600;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:seal_the_deal_lobby master @s ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:seal_the_deal_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
                 default:
                     scoreboard players set track_number nn_lobbymusic 0;
                     scoreboard players set max nn_lobbymusic 10;
