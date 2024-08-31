@@ -1,7 +1,7 @@
 {
     "namespace": "nnb_main",
     "description": "Main datapack for stuff",
-    "pack_format": "18",
+    "pack_format": "48",
     "target": "main.jmc",
     "output": "."
 }
