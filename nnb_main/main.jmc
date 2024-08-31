@@ -124,14 +124,14 @@ function lobby_music() {
 // Simple function to create marker
 function create_marker() {
     logger(pl="@s",ll="1",text="Generated sucessfully");
-    $give @s minecraft:armor_stand[minecraft:entity_data={Invisible:true,Invulnerable:true,NoBasePlate:true,NoGravity:true,Small:true,CustomNameVisible:false,CustomName:'{"text":"$(Tag) Marker"}',DisabledSlots:4128768,Tags:["$(Tag)"],id:"minecraft:armor_stand"},minecraft:custom_name='{"text":"$(Tag) Marker"}'] 1;
+    $give @s minecraft:armor_stand[minecraft:entity_data={Invisible:true,Invulnerable:true,NoBasePlate:true,NoGravity:true,Small:true,CustomNameVisible:false,DisabledSlots:4128768,Tags:["$(Tag)"],id:"minecraft:armor_stand"},minecraft:custom_name='{"text":"$(Tag) Marker"}'] 1;
 }
 
 
 
 // Simple logger for logging & debug printed on chat
 function logger() {
-
+            $ll = $(ll);
             switch ($ll) {
                 case 1:
                     $Text.tellraw($(pl), "<gray> ℹ | $(text)");
