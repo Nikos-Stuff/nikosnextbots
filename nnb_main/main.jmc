@@ -135,8 +135,8 @@ function hide_as_names() {
     
     execute at @a if score @p nn_asplaced >= 1 nn_asplaced run execute as @e[type=armor_stand] expand {
       Text.tellraw(@a, "&<yellow> ⚠| Optimizing Stuff...");
-      execute as @e[type=armor_stand] run data modify entity @s CustomNameVisible set value 0b;
       scoreboard players set @p nn_asplaced 0;
+      execute as @e[type=armor_stand] run data modify entity @s CustomNameVisible set value 0b;
     }
 }
 
