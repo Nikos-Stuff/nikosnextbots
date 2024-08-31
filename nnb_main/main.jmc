@@ -92,6 +92,29 @@ function round_manager() {
             scoreboard players set min nn_lobby 0;
             scoreboard players set sec nn_lobby 40;
             scoreboard players set start_timer nn_lobby 0; // Stop the timer
+
+
+
+            Text.tellraw(@a, "&<gray> ℹ | Maps has been picked!");
+            scoreboard players set start_timer nn_lobby 1; // Start the timer
+    }}
+
+
+
+
+        // Load map
+    if (nn_lobby:phase = 3) {
+        if (nn_lobby:min < numbers:0) {
+            scoreboard players set phase nn_lobby 4;
+            Text.tellraw(@a, "&<gray> ℹ | Starting Phase 4");
+            Text.tellraw(@a, "&<gray> ℹ | Loading map that has won!");
+            scoreboard players set min nn_lobby 0;
+            scoreboard players set sec nn_lobby 10;
+
+
+
+            Text.tellraw(@a, "&<gray> ℹ | Map has been loaded!");
+            scoreboard players set start_timer nn_lobby 0; // Stop the timer
     }}
 
 }
