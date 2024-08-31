@@ -1,1 +1,1 @@
-execute if score phase nn_lobby matches 1 run function nnb_main:__private__/if_else/2
+execute if score phase nn_lobby matches 1 run function nnb_main:__private__/if_else/5

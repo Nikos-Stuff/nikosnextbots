@@ -31,6 +31,10 @@ function root() {
     lobby_music();
     //Clear names
     hide_as_names();
+    // Round Manager
+    // Count Online Players
+    execute store result score online nn_lobby if entity @a;
+    round_manager();
 
 }
 
@@ -47,6 +51,29 @@ function root() {
 
 
 // -- Core Code
+
+// 🔧 Round Manager
+function round_manager() {
+
+    // Check if theres enough players to start
+    if (nn_lobby:online >= nn_lobby:req_players) {
+        // Set the phase to 2 - Pre-Voting
+        if (nn_lobby:phase = 1) { scoreboard players set phase nn_lobby 2; Text.tellraw(@s, "&<gray> ℹ | Starting Phase 2"); }
+    } else {
+        scoreboard players set phase nn_lobby 1;
+        bossbar set minecraft:game name
+         [{"text":"Waiting for players... "},
+         {"score":{"name":"online","objective":"nn_lobby"},"color":"yellow"},
+         {"text":" / ","color":"yellow"},{"score":{"name":"req_players","objective":"nn_lobby"},"color":"yellow"}
+         ];
+    }
+
+
+}
+
+
+
+
 
 
 // 🎵 Music Manager
@@ -110,7 +137,31 @@ function lobby_music() {
     }
 }
 
+// ⏰ Basic Timer Stuff
 
+function timer_msec() {
+if (nn_lobby:phase = 0) {
+    scoreboard players remove msec nn_lobby 1;
+    }
+
+if (nn_lobby:msec <= nn_lobby:20) {
+    scoreboard players set msec nn_lobby 0;
+    scoreboard players remove sec nn_lobby 1;
+    timer_sec();
+    }}
+
+
+
+function timer_sec() {
+    if (nn_lobby:sec <= nn_lobby:0) {
+    scoreboard players set sec nn_lobby 59;
+    scoreboard players remove min nn_lobby 1;
+    }
+    
+if (nn_lobby:phase = 5) {
+    if (nn_lobby:min < nn_lobby:0) {
+        scoreboard players set end nn_lobby 1;
+}}}
 
 
 
@@ -135,7 +186,7 @@ function hide_as_names() {
     
     execute at @a if score @p nn_asplaced >= 1 nn_asplaced expand {
       execute as @e[type=armor_stand] run data modify entity @s CustomNameVisible set value 0b;
-      Text.tellraw(@a, "&<yellow> ⚠| Optimizing Stuff...");
+      Text.tellraw(@a, "&<yellow> ⚠ | Optimizing Stuff...");
       scoreboard players set @p nn_asplaced 0;
     }
 }

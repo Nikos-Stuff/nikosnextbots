@@ -1,3 +1,2 @@
-scoreboard players add tick nn_lobbymusic 1
-execute if score tick nn_lobbymusic >= max nn_lobbymusic run function nnb_main:__private__/if_else/0
-execute if score playing nn_lobbymusic matches 0 run function nnb_main:__private__/if_else/1
+scoreboard players set phase nn_lobby 1
+bossbar set minecraft:game name [{"text":"Waiting for players... "},{"score":{"name":"online","objective":"nn_lobby"},"color":"yellow"},{"text":" / ","color":"yellow"},{"score":{"name":"req_players","objective":"nn_lobby"},"color":"yellow"}]

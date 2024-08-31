@@ -67,7 +67,7 @@ function timer_sec() {
 if (nn_lobby:phase = 5) {
     if (nn_lobby:min < nn_lobby:0) {
         scoreboard players set end nn_lobby 1;
-        }}}
+}}}
 
 
 
