@@ -78,18 +78,25 @@ function round_manager() {
          ];
     }
 
+
+
+
+
+    // Start the voting phase
+    if (nn_lobby:phase = 2) {
+        if (nn_lobby:min < nn_lobby:0) {
+            scoreboard players set end nn_lobby 3;
+            Text.tellraw(@a, "&<gray> ℹ | Starting Phase 3");
+            Text.tellraw(@a, "&<gray> ℹ | We will pick some maps now...");
+            scoreboard players set min nn_lobby 0;
+            scoreboard players set sec nn_lobby 40;
+    }}
+
 }
 
 
-// Start the voting phase
-if (nn_lobby:phase = 2) {
-    if (nn_lobby:min < nn_lobby:0) {
-        scoreboard players set end nn_lobby 3;
-        Text.tellraw(@a, "&<gray> ℹ | Starting Phase 3");
-        Text.tellraw(@a, "&<gray> ℹ | We will pick some maps now...");
-        scoreboard players set min nn_lobby 0;
-        scoreboard players set sec nn_lobby 40;
-}}
+
+
 
 
 
