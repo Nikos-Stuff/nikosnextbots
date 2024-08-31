@@ -63,7 +63,7 @@ function round_manager() {
             Text.tellraw(@a, "&<gray> ℹ | Starting Phase 2");
             scoreboard players set min nn_lobby 0;
             scoreboard players set sec nn_lobby 10;
-            scoreboard playsers set start_timer nn_lobby 1; // Start the timer
+            scoreboard players set start_timer nn_lobby 1; // Start the timer
             }
     } else {
         scoreboard players set phase nn_lobby 1;
