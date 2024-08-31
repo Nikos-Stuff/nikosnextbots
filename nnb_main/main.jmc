@@ -36,6 +36,10 @@ function root() {
     execute store result score online nn_lobby if entity @a;
     round_manager();
 
+
+    // If start time has been called then run it
+    if (nn_lobby:start_timer = 1) {timer_msec();}
+
 }
 
 
@@ -153,8 +157,7 @@ function lobby_music() {
 
 // ⏰ Basic Timer Stuff
 
-// If start time has been called then run it
-if (nn_lobby:start_timer = 1) {timer_msec();}
+
 
 function timer_msec() {
 if (nn_lobby:start_timer = 1) {
