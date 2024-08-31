@@ -74,7 +74,6 @@ function round_manager() {
          ];
     }
 
-
 }
 
 
@@ -83,6 +82,9 @@ if (nn_lobby:phase = 2) {
     if (nn_lobby:min < nn_lobby:0) {
         scoreboard players set end nn_lobby 3;
         Text.tellraw(@a, "&<gray> ℹ | Starting Phase 3");
+        Text.tellraw(@a, "&<gray> ℹ | We will pick some maps now...");
+        scoreboard players set min nn_lobby 0;
+        scoreboard players set sec nn_lobby 40;
 }}
 
 
@@ -150,6 +152,9 @@ function lobby_music() {
 }
 
 // ⏰ Basic Timer Stuff
+
+// If start time has been called then run it
+if (nn_lobby:start_timer = 1) {timer_msec();}
 
 function timer_msec() {
 if (nn_lobby:start_timer = 1) {
