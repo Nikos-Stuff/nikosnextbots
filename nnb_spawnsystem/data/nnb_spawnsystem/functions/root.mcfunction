@@ -1,1 +1,0 @@
-execute if score phase nn_lobby matches 5 run function nnb_spawnsystem:__private__/if_else/3
