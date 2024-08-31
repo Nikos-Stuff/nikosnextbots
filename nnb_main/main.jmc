@@ -58,7 +58,7 @@ function round_manager() {
     // Check if theres enough players to start
     if (nn_lobby:online >= nn_lobby:req_players) {
         // Set the phase to 2 - Pre-Voting
-        if (nn_lobby:phase = 1) { scoreboard players set phase nn_lobby 2; Text.tellraw(@s, "&<gray> ℹ | Starting Phase 2"); }
+        if (nn_lobby:phase = 1) { scoreboard players set phase nn_lobby 2; Text.tellraw(@a, "&<gray> ℹ | Starting Phase 2"); }
     } else {
         scoreboard players set phase nn_lobby 1;
         bossbar set minecraft:game name
