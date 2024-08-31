@@ -202,3 +202,9 @@ function hide_as_names() {
                     // $Text.tellraw(@s, "<red> 🛑 | $(text)");
 
                     // $Text.tellraw(@s, "<dark_grey> ❔ | $(text)");
+
+
+// Discord Broadcast
+function dc_bcast() {
+    $discord bcast $(Msg);
+}
