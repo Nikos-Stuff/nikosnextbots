@@ -97,17 +97,17 @@ function round_manager() {
             // Pick random maps
 
             //map_1
-            tag @e[type=minecraft:pig,limit=1,sort=random] add map_1;
+            tag @e[type=minecraft:pig,limit=1,sort=random,tag=] add map_1;
             tag @e[tag=map_1] remove map_2;
             tag @e[tag=map_1] remove map_3;
 
             //map_2
-            tag @e[type=minecraft:pig,limit=1,sort=random] add map_2;
+            tag @e[type=minecraft:pig,limit=1,sort=random,tag=] add map_2;
             tag @e[tag=map_2] remove map_1;
             tag @e[tag=map_2] remove map_3;
 
             //map_3
-            tag @e[type=minecraft:pig,limit=1,sort=random] add map_3;
+            tag @e[type=minecraft:pig,limit=1,sort=random,tag=] add map_3;
             tag @e[tag=map_3] remove map_1;
             tag @e[tag=map_3] remove map_2;
 
