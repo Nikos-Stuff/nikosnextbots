@@ -113,6 +113,7 @@ function round_manager() {
             tag @e[tag=map_3] remove map_1;
             tag @e[tag=map_3] remove map_2;
             tellraw @a [{"text":" ℹ | Picked ","color":"gray"},{"selector":"@e[tag=map_3]","color":"yellow"}];
+            function nnb_vote:assign; // Assign images + actions from nnb_voting DP
 
 
             scoreboard players set open nn_voting_open 1; // Open the gui 
