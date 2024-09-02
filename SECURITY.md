@@ -6,10 +6,10 @@ Versions listed below will receive security patches, updates, improvements etc.
 
 |  Version  | Supported          |
 | --------- | ------------------ |
-|  1.20.x   | ✔️                 |
-|  1.19.x   | ⚠️                 |
-|  1.18.x   | ❌                 |
-| < 1.17.x  | ❌                 |
+|  1.21.x   | ✔️                 |
+|  1.20.x   | ⚠️                 |
+|  1.19.x   | ❌                 |
+| < 1.18.x  | ❌                 |
 
 
 ``✔️ - Fully supported``
