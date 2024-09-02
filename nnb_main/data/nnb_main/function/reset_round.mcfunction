@@ -1,0 +1,1 @@
+tellraw @s "<yellow> \u26a0 | No Votes - Restarting"

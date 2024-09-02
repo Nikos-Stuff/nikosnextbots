@@ -167,7 +167,8 @@ function round_manager() {
             scoreboard players set min nn_lobby 0;
             scoreboard players set sec nn_lobby 10;
 
-
+            // No votes
+            execute unless entity @e[tag=sel] run reset_round(); 
 
             Text.tellraw(@a, "&<gray> ℹ | Map has been loaded!");
             scoreboard players set start_timer nn_lobby 0; // Stop the timer
@@ -177,8 +178,17 @@ function round_manager() {
 
 
 
-// 💀 Handle French People (fr tho handle voting stuff)
 
+
+// 🔄️ No Votes - Reset Round
+function reset_round() {
+    Text.tellraw(@s, "<yellow> ⚠ | No Votes - Restarting");
+    coreboard players set start_timer nn_lobby 0;
+    scoreboard players set phase nn_lobby 4;
+}
+
+
+// 💀 Handle French People (fr tho handle voting stuff)
 function handle_french() {
 
     // 3
