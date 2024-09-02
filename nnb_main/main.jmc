@@ -100,16 +100,19 @@ function round_manager() {
             tag @e[type=minecraft:pig,limit=1,sort=random,tag=] add map_1;
             tag @e[tag=map_1] remove map_2;
             tag @e[tag=map_1] remove map_3;
+            tellraw @a [{"text":" ℹ | Picked ","color":"gray"},{"selector":"@e[tag=map_1]","color":"yellow"}];
 
             //map_2
             tag @e[type=minecraft:pig,limit=1,sort=random,tag=] add map_2;
             tag @e[tag=map_2] remove map_1;
             tag @e[tag=map_2] remove map_3;
+            tellraw @a [{"text":" ℹ | Picked ","color":"gray"},{"selector":"@e[tag=map_2]","color":"yellow"}];
 
             //map_3
             tag @e[type=minecraft:pig,limit=1,sort=random,tag=] add map_3;
             tag @e[tag=map_3] remove map_1;
             tag @e[tag=map_3] remove map_2;
+            tellraw @a [{"text":" ℹ | Picked ","color":"gray"},{"selector":"@e[tag=map_3]","color":"yellow"}];
 
 
 
