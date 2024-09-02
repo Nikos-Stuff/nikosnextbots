@@ -115,8 +115,8 @@ function round_manager() {
             tellraw @a [{"text":" ℹ | Picked ","color":"gray"},{"selector":"@e[tag=map_3]","color":"yellow"}];
 
 
-
-            Text.tellraw(@a, "&<gray> ℹ | Maps has been picked!");
+            scoreboard players set open nn_voting_open 1; // Open the gui 
+            Text.tellraw(@a, "&<gray> ℹ | Maps has been picked! GUI has been opened.");
             scoreboard players set start_timer nn_lobby 1; // Start the timer
     }}
 
