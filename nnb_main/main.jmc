@@ -69,6 +69,8 @@ function round_manager() {
             Text.tellraw(@a, "&<gray> ℹ | Starting Phase 2");
             scoreboard players set min nn_lobby 0;
             scoreboard players set sec nn_lobby 10;
+
+
             scoreboard players set start_timer nn_lobby 1; // Start the timer
             }
     } else {
@@ -88,6 +90,7 @@ function round_manager() {
     // Start the voting phase
     if (nn_lobby:phase = 2) {
         if (nn_lobby:min < numbers:0) {
+            reset_stuff();
             scoreboard players set phase nn_lobby 3;
             Text.tellraw(@a, "&<gray> ℹ | Starting Phase 3");
             Text.tellraw(@a, "&<gray> ℹ | We will pick some maps now...");
@@ -294,6 +297,18 @@ function timer_msec() {
 }}
     
 
+
+// ✏️ Reset Stuff
+function reset_stuff() {
+        tag @e remove map_1;
+        tag @e remove map_2;
+        tag @e remove map_3;
+        tag @e remove sel;
+
+        scoreboard players set map nn_map_vote_1 0;
+        scoreboard players set map nn_map_vote_2 0;
+        scoreboard players set map nn_map_vote_3 0;
+}
 
 
 

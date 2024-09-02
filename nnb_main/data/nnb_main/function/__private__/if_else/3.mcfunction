@@ -1,3 +1,4 @@
+function nnb_main:reset_stuff
 scoreboard players set phase nn_lobby 3
 tellraw @a {"text":" \u2139 | Starting Phase 3","color":"gray","type":"text"}
 tellraw @a {"text":" \u2139 | We will pick some maps now...","color":"gray","type":"text"}
