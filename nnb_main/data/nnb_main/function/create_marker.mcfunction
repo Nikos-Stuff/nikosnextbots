@@ -1,0 +1,2 @@
+$tellraw @s {"text":" \u2139 | Generated $(Tag)","color":"gray","type":"text"}
+$give @s minecraft:armor_stand[minecraft:entity_data={Invisible:true,Invulnerable:true,NoBasePlate:true,NoGravity:true,Small:true,CustomNameVisible:false,DisabledSlots:4128768,Tags:["$(Tag)"],id:"minecraft:armor_stand"},minecraft:custom_name='{"text":"$(Tag) Marker"}'] 1

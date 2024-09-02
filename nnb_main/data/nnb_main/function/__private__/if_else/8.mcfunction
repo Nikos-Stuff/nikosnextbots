@@ -1,0 +1,2 @@
+scoreboard players remove msec nn_lobby 1
+bossbar set minecraft:game name [{"score":{"name":"min","objective":"nn_lobby"},"color":"yellow"},{"text":" : ","color":"yellow"},{"score":{"name":"sec","objective":"nn_lobby"},"color":"yellow"}]
