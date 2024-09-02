@@ -1,7 +1,8 @@
 [![Build:](https://github.com/Nikos-Stuff/nikosnextbots/actions/workflows/build_packs.yml/badge.svg?branch=main)](https://github.com/Nikos-Stuff/nikosnextbots/actions/workflows/build_packs.yml)
 
 ![Preview Image](https://mcapi.nikodaproot.pl/nnb/nnb_banner.png)
-<p align="center">Texturepack & Datapacks for our server - Niko's Nextbots - nnb.nikodaproot.pl </p>
+<h1 align="center">REWRITE IN PROGRESS</h1>
+<p align="center">Texturepack & Datapacks for our server - Niko's Nextbots - nnb.nikostuff.com </p>
 
 <p align="center">Datapacks won't work on they own. Specific world setup is required. We don't have plans to upload the whole setup stuff. (For at least now)</p>
 
@@ -18,35 +19,10 @@ Welcome to the Nico's Nextbots Texture Pack! This is the texture pack used in ou
 A basic knowledge of understanding and editing .json files is required | [Learn More](https://minecraft.wiki/w/Font).
 This used to be a part of the "VibeCraft" server. That's why the folder is named like that. Don't change the structure of this pack, even if its messy. This is planned for the v2.0 server version.
 
-### Pack Structure
-Most important folders:
+### Pack Structure / Tools
+Most important folders & tools:
 
-- [Nextbots Textures](https://github.com/Nikos-Stuff/nikosnextbots/tree/main/main/assets/vibecraft/textures/nextbots)
-
-Used for nextbot textures / animations. [Remember that you need to also implement it in the font file!](https://github.com/Nikos-Stuff/nikosnextbots/blob/main/main/assets/minecraft/font/default.json)
-You also need to use unicode characters from [here](https://unicode.bayashi.net/?page=1900). (Make sure that they're not used already)
-
-*Note: 256 x 256 .png format required. For animated bots please create a new folder and place frames inside (max 5 frames)*
-
-- [Events Textures](https://github.com/Nikos-Stuff/nikosnextbots/tree/main/main/assets/vibecraft/textures/events)
- 
-Used for full screen events like angry munci etc.
-[Remember that you need to also implement it in the font file!](https://github.com/Nikos-Stuff/nikosnextbots/blob/main/main/assets/minecraft/font/default.json)
-You also need to use unicode characters from [here](https://unicode.bayashi.net/?page=1900). (Make sure that they're not used already)
-
-*Note: 256 x 256 .png format required. Create a new folder and place the images inside (max 5 frames for animation)*
-
-- [Sounds](https://github.com/Nikos-Stuff/nikosnextbots/tree/main/main/assets/vibecraft/sounds)
-
-Please use the .ogg stereo or mono based on your need. For example:
-
-- For a sound effect that plays use stereo
-
-- For a nextbot sounds use mono
-
-After everything done. Don't forget to add your sound to [sounds.json](https://github.com/Nikos-Stuff/nikosnextbots/blob/main/main/assets/vibecraft/sounds.json)!
-
-*Note: Place your file in the correct folder. Don't make a mess!*
+(Rewrite in progress)
 
 ## Contributing
 
