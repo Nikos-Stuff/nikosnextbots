@@ -170,7 +170,7 @@ function round_manager() {
             // No votes
             execute unless entity @e[tag=sel] run reset_round(); 
 
-            Text.tellraw(@a, "&<gray> ℹ | Map has been loaded!");
+            Text.tellraw(@a, "&<gray> ℹ | Sequence executed");
             scoreboard players set start_timer nn_lobby 0; // Stop the timer
     }}
 
@@ -182,9 +182,9 @@ function round_manager() {
 
 // 🔄️ No Votes - Reset Round
 function reset_round() {
-    Text.tellraw(@a, "<yellow> ⚠ | No Votes - Restarting");
+    Text.tellraw(@a, "&<yellow> ⚠ | No Votes - Restarting");
     scoreboard players set start_timer nn_lobby 0;
-    scoreboard players set phase nn_lobby 4;
+    scoreboard players set phase nn_lobby 1;
 }
 
 
