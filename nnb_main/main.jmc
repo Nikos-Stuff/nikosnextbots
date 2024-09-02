@@ -130,6 +130,31 @@ function round_manager() {
             scoreboard players set phase nn_lobby 4;
             Text.tellraw(@a, "&<gray> ℹ | Starting Phase 4");
             Text.tellraw(@a, "&<gray> ℹ | Loading map that has won!");
+            // Select the map that has the most of votes cuz yes
+
+            execute if score map nn_map_vote_1 > map nn_map_vote_2 run tag @e[tag=map_1] add sel;
+            execute if score map nn_map_vote_1 < map nn_map_vote_2 run tag @e[tag=map_1] remove sel;
+
+            execute if score map nn_map_vote_1 > map nn_map_vote_3 run tag @e[tag=map_1] add sel;
+            execute if score map nn_map_vote_1 < map nn_map_vote_3 run tag @e[tag=map_1] remove sel;
+
+
+
+            execute if score map nn_map_vote_2 > map nn_map_vote_1 run tag @e[tag=map_2] add sel;
+            execute if score map nn_map_vote_2 < map nn_map_vote_1 run tag @e[tag=map_2] remove sel;
+
+            execute if score map nn_map_vote_2 > map nn_map_vote_3 run tag @e[tag=map_2] add sel;
+            execute if score map nn_map_vote_2 < map nn_map_vote_3 run tag @e[tag=map_2] remove sel;
+
+
+            execute if score map nn_map_vote_3 > map nn_map_vote_1 run tag @e[tag=map_3] add sel;
+            execute if score map nn_map_vote_3 < map nn_map_vote_1 run tag @e[tag=map_3] remove sel;
+
+            execute if score map nn_map_vote_3 > map nn_map_vote_2 run tag @e[tag=map_3] add sel;
+            execute if score map nn_map_vote_3 < map nn_map_vote_2 run tag @e[tag=map_3] remove sel;
+
+            tellraw @a [{"text":" ℹ | Most voted map: ","color":"gray"},{"selector":"@e[tag=sel]","color":"yellow"}];
+            
             scoreboard players set min nn_lobby 0;
             scoreboard players set sec nn_lobby 10;
 

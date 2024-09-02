@@ -1,2 +1,0 @@
-$tellraw @s {"text":" \u2139 | Generated $(Name)","color":"gray","type":"text"}
-$give @s drowned_spawn_egg[custom_name='[{"text":"Map Entry $(Name)","italic":false}]',entity_data={id:pig,CustomName:'[{"text":"$(Name)"}]',CustomNameVisible:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b}] 1
