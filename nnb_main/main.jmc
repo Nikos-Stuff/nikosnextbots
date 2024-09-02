@@ -182,8 +182,8 @@ function round_manager() {
 
 // 🔄️ No Votes - Reset Round
 function reset_round() {
-    Text.tellraw(@s, "<yellow> ⚠ | No Votes - Restarting");
-    coreboard players set start_timer nn_lobby 0;
+    Text.tellraw(@a, "<yellow> ⚠ | No Votes - Restarting");
+    scoreboard players set start_timer nn_lobby 0;
     scoreboard players set phase nn_lobby 4;
 }
 
