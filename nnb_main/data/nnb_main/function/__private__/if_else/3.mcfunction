@@ -20,3 +20,6 @@ function nnb_vote:assign
 scoreboard players set open nn_voting_open 1
 tellraw @a {"text":" \u2139 | Maps has been picked! GUI has been opened.","color":"gray","type":"text"}
 scoreboard players set start_timer nn_lobby 1
+scoreboard players enable @a nn_map_vote_1
+scoreboard players enable @a nn_map_vote_2
+scoreboard players enable @a nn_map_vote_3

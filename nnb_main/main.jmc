@@ -36,6 +36,8 @@ function root() {
     execute store result score online nn_lobby if entity @a;
     round_manager();
 
+    // Voting Manager
+    handle_french();
 
     // If start time has been called then run it
     if (nn_lobby:start_timer = 1) {timer_msec();}
@@ -119,6 +121,10 @@ function round_manager() {
             scoreboard players set open nn_voting_open 1; // Open the gui 
             Text.tellraw(@a, "&<gray> ℹ | Maps has been picked! GUI has been opened.");
             scoreboard players set start_timer nn_lobby 1; // Start the timer
+
+            scoreboard players enable @a nn_map_vote_1;
+            scoreboard players enable @a nn_map_vote_2;
+            scoreboard players enable @a nn_map_vote_3;
     }}
 
 
@@ -168,7 +174,35 @@ function round_manager() {
 
 
 
+// 💀 Handle French People (fr tho handle voting stuff)
 
+function handle_french() {
+
+    // 3
+    execute at @a if score @p nn_map_vote_3 >= 1 nn_map_vote expand {
+        scoreboard players add map nn_map_vote_3 1;
+        trigger nn_map_vote_1 set 0;
+        trigger nn_map_vote_2 set 0;
+        scoreboard players set @p nn_map_vote_3 0;
+    }
+    
+    // 2
+    execute at @a if score @p nn_map_vote_2 >= 1 nn_map_vote expand {
+        scoreboard players add map nn_map_vote_2 1;
+        trigger nn_map_vote_1 set 0;
+        trigger nn_map_vote_3 set 0;
+        scoreboard players set @p nn_map_vote_2 0;
+    }
+
+    // 1
+    execute at @a if score @p nn_map_vote_1 >= 1 nn_map_vote expand {
+        scoreboard players add map nn_map_vote_1 1;
+        trigger nn_map_vote_2 set 0;
+        trigger nn_map_vote_3 set 0;
+        scoreboard players set @p nn_map_vote_1 0;
+    }
+
+}
 
 
 
