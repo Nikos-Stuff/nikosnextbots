@@ -18,4 +18,3 @@ scoreboard players set min nn_lobby 0
 scoreboard players set sec nn_lobby 10
 execute unless entity @e[tag=sel] run function nnb_main:reset_round
 tellraw @a {"text":" \u2139 | Sequence executed","color":"gray","type":"text"}
-scoreboard players set start_timer nn_lobby 0

@@ -184,7 +184,6 @@ function round_manager() {
             execute unless entity @e[tag=sel] run reset_round(); 
 
             Text.tellraw(@a, "&<gray> ℹ | Sequence executed");
-            scoreboard players set start_timer nn_lobby 0; // Stop the timer
     }}
 
 
