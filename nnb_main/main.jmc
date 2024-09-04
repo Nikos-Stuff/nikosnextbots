@@ -187,7 +187,7 @@ function round_manager() {
     }}
 
 
-            // Load map
+            // Start Round
     if (nn_lobby:phase = 4) {
         if (nn_lobby:min < numbers:0) {
             scoreboard players set phase nn_lobby 5;
@@ -197,10 +197,17 @@ function round_manager() {
             // Since that doesn't work we need to use good old command blocks in the world - mvload @e[tag=sel];
             execute at @e[tag=load_maps] run setblock ~ ~ ~ minecraft:redstone_block;
 
+
+            // Important stuff
+            // /scoreboard players set started nn_lobby 0/1 - Starts the round
+            // /scoreboard players set disable nn_spawn 0/1 - Enables the spawner
+            // /scoreboard players set prepare nn_lobby 0/1 - Prepare phase
+
             scoreboard players set start_timer nn_lobby 0; // Stop the timer
     }}
 
 }
+
 
 
 
@@ -374,7 +381,10 @@ function reset_stuff() {
 
 
 
-
+// 🪑 Setup chair
+function tp_markers() {
+    $execute at @e[tag=$(Mapname)] run tp @e[tag=player_spawn,limit=1,sort=random] @e[tag=$(Mapname),limit=1,sort=random];
+}
 
 
 // Simple function to create marker

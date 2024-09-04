@@ -1,0 +1,1 @@
+$execute at @e[tag=$(Mapname)] run tp @e[tag=player_spawn,limit=1,sort=random] @e[tag=$(Mapname),limit=1,sort=random]
