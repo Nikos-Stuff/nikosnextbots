@@ -42,6 +42,18 @@ function root() {
     // If start time has been called then run it
     if (nn_lobby:start_timer = 1) {timer_msec();}
 
+
+
+    // Teleport manager
+
+    execute at @e[tag=nn_start_spawn] expand {
+        tp @p[distance=..5.5] @e[tag=nn_spawn,limit=1,sort=random];
+        Text.tellraw(@a, "&<gray> ℹ | Setting up player: &<@p[distance=..5.5]>");
+
+
+    }
+
+
 }
 
 
