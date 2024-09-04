@@ -194,7 +194,7 @@ function round_manager() {
             Text.tellraw(@a, "&<gray> ℹ | Starting Phase 5");
             Text.tellraw(@a, "&<gray> ℹ | Loading in stuff!");
 
-            mv load @e[tag=sel];
+            mvload @e[tag=sel];
 
             scoreboard players set start_timer nn_lobby 0; // Stop the timer
     }}
