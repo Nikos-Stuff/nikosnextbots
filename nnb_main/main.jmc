@@ -203,6 +203,9 @@ function round_manager() {
             // /scoreboard players set disable nn_spawn 0/1 - Enables the spawner
             // /scoreboard players set prepare nn_lobby 0/1 - Prepare phase
 
+            // Teleport all french people to jail cuz they're cursed
+            execute at @e[tag=nn_start_spawn] run tp @a ~ ~ ~;
+
             scoreboard players set start_timer nn_lobby 0; // Stop the timer
     }}
 
