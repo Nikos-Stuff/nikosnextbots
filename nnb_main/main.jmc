@@ -46,9 +46,10 @@ function root() {
 
     // Teleport manager
 
-    execute at @e[tag=nn_start_spawn] expand {
+    execute at @e[tag=nn_start_spawn] run execute if entity @a[distance=..5.5] expand {
+        
+        Text.tellraw(@a, "&<gray> ℹ | Setting up player: &<yellow>&<@a[distance=..5.5]>");
         tp @p[distance=..5.5] @e[tag=nn_spawn,limit=1,sort=random];
-        execute if entity @a[distance=..5.5] run Text.tellraw(@a, "&<gray> ℹ | Setting up player: &<yellow>&<@a[distance=..5.5]>");
 
 
     }
