@@ -194,7 +194,8 @@ function round_manager() {
             Text.tellraw(@a, "&<gray> ℹ | Starting Phase 5");
             Text.tellraw(@a, "&<gray> ℹ | Loading in stuff!");
 
-            mvload @e[tag=sel];
+            // Since that doesn't work we need to use good old command blocks in the world - mvload @e[tag=sel];
+            execute at @e[tag=load_maps] run setblock ~ ~ ~ minecraft:redstone_block;
 
             scoreboard players set start_timer nn_lobby 0; // Stop the timer
     }}
