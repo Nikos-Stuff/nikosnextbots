@@ -1,2 +1,3 @@
-bossbar set minecraft:game name [{"score":{"name":"min","objective":"nn_lobby"},"color":"yellow"},{"text":" : 0","color":"yellow"},{"score":{"name":"sec","objective":"nn_lobby"},"color":"yellow"}]
-scoreboard players set __if_else__ __variable__ 1
+scoreboard players add tick nn_lobbymusic 1
+execute if score tick nn_lobbymusic >= max nn_lobbymusic run function nnb_main:__private__/if_else/6
+execute if score playing nn_lobbymusic matches 0 run function nnb_main:__private__/if_else/7

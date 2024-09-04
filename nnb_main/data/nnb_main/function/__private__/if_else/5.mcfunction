@@ -1,2 +1,5 @@
-scoreboard players add track_number nn_lobbymusic 1
-scoreboard players set playing nn_lobbymusic 0
+scoreboard players set phase nn_lobby 5
+tellraw @a {"text":" \u2139 | Starting Phase 5","color":"gray","type":"text"}
+tellraw @a {"text":" \u2139 | Loading in stuff!","color":"gray","type":"text"}
+mv load @e[tag=sel]
+scoreboard players set start_timer nn_lobby 0

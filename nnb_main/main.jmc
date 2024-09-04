@@ -187,6 +187,19 @@ function round_manager() {
             scoreboard players set start_timer nn_lobby 0; // Stop the timer
     }}
 
+
+            // Load map
+    if (nn_lobby:phase = 4) {
+        if (nn_lobby:min < numbers:0) {
+            scoreboard players set phase nn_lobby 5;
+            Text.tellraw(@a, "&<gray> ℹ | Starting Phase 5");
+            Text.tellraw(@a, "&<gray> ℹ | Loading in stuff!");
+
+            mv load @e[tag=sel];
+
+            scoreboard players set start_timer nn_lobby 0; // Stop the timer
+    }}
+
 }
 
 
