@@ -29,31 +29,6 @@ root();
 function root() {
     //Manage music system
     lobby_music();
-    //Clear names
-    hide_as_names();
-    // Round Manager
-    // Count Online Players
-    execute store result score online nn_lobby if entity @a;
-    round_manager();
-
-    // Voting Manager
-    handle_french();
-
-    // If start time has been called then run it
-    if (nn_lobby:start_timer = 1) {timer_msec();}
-
-
-
-    // Teleport manager
-
-    execute at @e[tag=nn_start_spawn] run execute if entity @a[distance=..5.5] expand {
-        
-        Text.tellraw(@a, "&<gray> ℹ | Setting up player: &<yellow>&<@a[distance=..5.5]>");
-        tp @p[distance=..5.5] @e[tag=player_spawn,limit=1,sort=random];
-
-
-    }
-
 
 }
 
@@ -69,200 +44,13 @@ function root() {
 
 
 
-// -- Core Code
-
-// 🔧 Round Manager
-function round_manager() {
-
-    // Check if theres enough players to start
-    if (nn_lobby:online >= nn_lobby:req_players) {
-        // Set the phase to 2 - Pre-Voting
-        if (nn_lobby:phase = 1) {
-            scoreboard players set phase nn_lobby 2;
-            Text.tellraw(@a, "&<gray> ℹ | Starting Phase 2");
-            scoreboard players set min nn_lobby 0;
-            scoreboard players set sec nn_lobby 10;
-
-
-            scoreboard players set start_timer nn_lobby 1; // Start the timer
-            }
-    } else {
-        scoreboard players set phase nn_lobby 1;
-        bossbar set minecraft:game name
-         [{"text":"Waiting for players... "},
-         {"score":{"name":"online","objective":"nn_lobby"},"color":"yellow"},
-         {"text":" / ","color":"yellow"},{"score":{"name":"req_players","objective":"nn_lobby"},"color":"yellow"}
-         ];
-        scoreboard players set start_timer nn_lobby 0; // Stop the timer
-    }
 
 
 
-
-
-    // Start the voting phase
-    if (nn_lobby:phase = 2) {
-        if (nn_lobby:min < numbers:0) {
-            reset_stuff();
-            scoreboard players set phase nn_lobby 3;
-            Text.tellraw(@a, "&<gray> ℹ | Starting Phase 3");
-            Text.tellraw(@a, "&<gray> ℹ | We will pick some maps now...");
-            scoreboard players set min nn_lobby 0;
-            scoreboard players set sec nn_lobby 40;
-            scoreboard players set start_timer nn_lobby 0; // Stop the timer
-
-
-            // Pick random maps
-
-            //map_1
-            tag @e[type=minecraft:pig,limit=1,sort=random,tag=] add map_1;
-            tag @e[tag=map_1] remove map_2;
-            tag @e[tag=map_1] remove map_3;
-            tellraw @a [{"text":" ℹ | Picked ","color":"gray"},{"selector":"@e[tag=map_1]","color":"yellow"}];
-
-            //map_2
-            tag @e[type=minecraft:pig,limit=1,sort=random,tag=] add map_2;
-            tag @e[tag=map_2] remove map_1;
-            tag @e[tag=map_2] remove map_3;
-            tellraw @a [{"text":" ℹ | Picked ","color":"gray"},{"selector":"@e[tag=map_2]","color":"yellow"}];
-
-            //map_3
-            tag @e[type=minecraft:pig,limit=1,sort=random,tag=] add map_3;
-            tag @e[tag=map_3] remove map_1;
-            tag @e[tag=map_3] remove map_2;
-            tellraw @a [{"text":" ℹ | Picked ","color":"gray"},{"selector":"@e[tag=map_3]","color":"yellow"}];
-            function nnb_vote:assign; // Assign images + actions from nnb_voting DP
-
-
-            scoreboard players set open nn_voting_open 1; // Open the gui 
-            Text.tellraw(@a, "&<gray> ℹ | Maps has been picked! GUI has been opened.");
-            scoreboard players set start_timer nn_lobby 1; // Start the timer
-
-            scoreboard players enable @a nn_map_vote_1;
-            scoreboard players enable @a nn_map_vote_2;
-            scoreboard players enable @a nn_map_vote_3;
-    }}
-
-
-
-
-        // Load map
-    if (nn_lobby:phase = 3) {
-        if (nn_lobby:min < numbers:0) {
-            scoreboard players set phase nn_lobby 4;
-            Text.tellraw(@a, "&<gray> ℹ | Starting Phase 4");
-            Text.tellraw(@a, "&<gray> ℹ | Loading map that has won!");
-            // Select the map that has the most of votes cuz yes
-
-            execute if score map nn_map_vote_1 > map nn_map_vote_2 run tag @e[tag=map_1] add sel;
-            execute if score map nn_map_vote_1 < map nn_map_vote_2 run tag @e[tag=map_1] remove sel;
-
-            execute if score map nn_map_vote_1 > map nn_map_vote_3 run tag @e[tag=map_1] add sel;
-            execute if score map nn_map_vote_1 < map nn_map_vote_3 run tag @e[tag=map_1] remove sel;
-
-
-
-            execute if score map nn_map_vote_2 > map nn_map_vote_1 run tag @e[tag=map_2] add sel;
-            execute if score map nn_map_vote_2 < map nn_map_vote_1 run tag @e[tag=map_2] remove sel;
-
-            execute if score map nn_map_vote_2 > map nn_map_vote_3 run tag @e[tag=map_2] add sel;
-            execute if score map nn_map_vote_2 < map nn_map_vote_3 run tag @e[tag=map_2] remove sel;
-
-
-            execute if score map nn_map_vote_3 > map nn_map_vote_1 run tag @e[tag=map_3] add sel;
-            execute if score map nn_map_vote_3 < map nn_map_vote_1 run tag @e[tag=map_3] remove sel;
-
-            execute if score map nn_map_vote_3 > map nn_map_vote_2 run tag @e[tag=map_3] add sel;
-            execute if score map nn_map_vote_3 < map nn_map_vote_2 run tag @e[tag=map_3] remove sel;
-
-            tellraw @a [{"text":" ℹ | Most voted map: ","color":"gray"},{"selector":"@e[tag=sel]","color":"yellow"}];
-            
-            scoreboard players set min nn_lobby 0;
-            scoreboard players set sec nn_lobby 10;
-
-            // No votes
-            execute unless entity @e[tag=sel] run reset_round(); 
-
-            Text.tellraw(@a, "&<gray> ℹ | Sequence executed");
-    }}
-
-
-            // Start Round
-    if (nn_lobby:phase = 4) {
-        if (nn_lobby:min < numbers:0) {
-            scoreboard players set phase nn_lobby 5;
-            Text.tellraw(@a, "&<gray> ℹ | Starting Phase 5");
-            Text.tellraw(@a, "&<gray> ℹ | Loading in stuff!");
-
-            // Since that doesn't work we need to use good old command blocks in the world - mvload @e[tag=sel];
-            execute at @e[tag=load_maps] run setblock ~ ~ ~ minecraft:redstone_block;
-
-
-            // Important stuff
-            // /scoreboard players set started nn_lobby 0/1 - Starts the round
-            // /scoreboard players set disable nn_spawn 0/1 - Enables the spawner
-            // /scoreboard players set prepare nn_lobby 0/1 - Prepare phase
-
-            // Teleport all french people to jail cuz they're cursed
-            execute at @e[tag=nn_start_spawn] run tp @a ~ ~ ~;
-
-            scoreboard players set start_timer nn_lobby 0; // Stop the timer
-    }}
-
-}
-
-
-
-
-
-
-// 🔄️ No Votes - Reset Round
-function reset_round() {
-    Text.tellraw(@a, "&<yellow> ⚠ | No Votes - Restarting");
-    scoreboard players set start_timer nn_lobby 0;
-    scoreboard players set phase nn_lobby 1;
-}
-
-
-// 💀 Handle French People (fr tho handle voting stuff)
-function handle_french() {
-
-    // 3
-    execute at @a if score @p nn_map_vote_3 >= 1 nn_map_vote expand {
-        scoreboard players add map nn_map_vote_3 1;
-        trigger nn_map_vote_1 set 0;
-        trigger nn_map_vote_2 set 0;
-        tellraw @a [{"text":" ℹ | Voted to 3 : ","color":"gray"},{"selector":"@p","color":"yellow"}];
-        scoreboard players set @p nn_map_vote_3 0;
-    }
-    
-    // 2
-    execute at @a if score @p nn_map_vote_2 >= 1 nn_map_vote expand {
-        scoreboard players add map nn_map_vote_2 1;
-        trigger nn_map_vote_1 set 0;
-        trigger nn_map_vote_3 set 0;
-        tellraw @a [{"text":" ℹ | Voted to 2 : ","color":"gray"},{"selector":"@p","color":"yellow"}];
-        scoreboard players set @p nn_map_vote_2 0;
-    }
-
-    // 1
-    execute at @a if score @p nn_map_vote_1 >= 1 nn_map_vote expand {
-        scoreboard players add map nn_map_vote_1 1;
-        trigger nn_map_vote_2 set 0;
-        trigger nn_map_vote_3 set 0;
-        tellraw @a [{"text":" ℹ | Voted to 1 : ","color":"gray"},{"selector":"@p","color":"yellow"}];
-        scoreboard players set @p nn_map_vote_1 0;
-    }
-
-}
-
-
-
-
-// 🎵 Music Manager
+// lobby music manager 
 function lobby_music() {
 
-    if (nn_lobby:phase <= 3) {
+    if (nn_lobby:phase = 1) {
         scoreboard players add tick nn_lobbymusic 1;
         if (nn_lobbymusic:tick >= nn_lobbymusic:max) {scoreboard players add track_number nn_lobbymusic 1; scoreboard players set playing nn_lobbymusic 0;}
 
@@ -274,43 +62,43 @@ function lobby_music() {
             switch (nn_lobbymusic:track_number) {
                 case 1:
                     scoreboard players set max nn_lobbymusic 2180;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..10] run playsound vibecraft:bee_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run playsound vibecraft:bee_lobby master @a[distance=..1000.0] ~ ~ ~ 0.2 1;
                 case 2:
                     scoreboard players set max nn_lobbymusic 3000;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:delta_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run playsound vibecraft:delta_lobby master @a[distance=..1000.0] ~ ~ ~ 0.2 1;
                 case 3:
                     scoreboard players set max nn_lobbymusic 3160;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:sherbet_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run playsound vibecraft:sherbet_lobby master @a[distance=..1000.0] ~ ~ ~ 0.2 1;
                 case 4:
                     scoreboard players set max nn_lobbymusic 3360;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:pluggnb_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run playsound vibecraft:pluggnb_lobby master @a[distance=..1000.0] ~ ~ ~ 0.2 1;
                 case 5:
                     scoreboard players set max nn_lobbymusic 2960;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:lucid_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run playsound vibecraft:lucid_lobby master @a[distance=..1000.0] ~ ~ ~ 0.2 1;
                 case 6:
                     scoreboard players set max nn_lobbymusic 1440;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:asteries_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run playsound vibecraft:asteries_lobby master @a[distance=..1000.0] ~ ~ ~ 0.2 1;
                 case 7:
                     scoreboard players set max nn_lobbymusic 1200;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:littlebig_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run playsound vibecraft:littlebig_lobby master @a[distance=..1000.0] ~ ~ ~ 0.2 1;
                 case 8:
                     scoreboard players set max nn_lobbymusic 2020;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:thoughtbody_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run playsound vibecraft:thoughtbody_lobby master @a[distance=..1000.0] ~ ~ ~ 0.2 1;
                 case 9:
                     scoreboard players set max nn_lobbymusic 1520;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:video_game_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run playsound vibecraft:video_game_lobby master @a[distance=..1000.0] ~ ~ ~ 0.2 1;
                 case 10:
                     scoreboard players set max nn_lobbymusic 2300;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:nextbob_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run playsound vibecraft:nextbob_lobby master @a[distance=..1000.0] ~ ~ ~ 0.2 1;
                 case 11:
                     scoreboard players set max nn_lobbymusic 1280;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:chill_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run playsound vibecraft:chill_lobby master @a[distance=..1000.0] ~ ~ ~ 0.2 1;
                 case 12:
                     scoreboard players set max nn_lobbymusic 2020;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:nostalgia_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run playsound vibecraft:nostalgia_lobby master @a[distance=..1000.0] ~ ~ ~ 0.2 1;
                 case 13:
                     scoreboard players set max nn_lobbymusic 3600;
-                    execute at @e[tag=lobby_music] run execute at @a[distance=..100.0] run playsound vibecraft:seal_the_deal_lobby master @p[limit=1] ~ ~ ~ 0.2 1;
+                    execute at @e[tag=lobby_music] run playsound vibecraft:seal_the_deal_lobby master @a[distance=..1000.0] ~ ~ ~ 0.2 1;
                 default:
                     scoreboard players set track_number nn_lobbymusic 0;
                     scoreboard players set max nn_lobbymusic 10;
@@ -318,116 +106,4 @@ function lobby_music() {
         }
 
     }
-}
-
-// ⏰ Basic Timer Stuff
-
-
-
-function timer_msec() {
-    if (nn_lobby:start_timer = 1) {
-        scoreboard players remove msec nn_lobby 1;
-        if (nn_lobby:sec < numbers:10) {
-
-        // Put the extra "0" to be more cool lol
-        bossbar set minecraft:game name
-         [{"score":{"name":"min","objective":"nn_lobby"},"color":"yellow"},
-         {"text":" : 0","color":"yellow"},{"score":{"name":"sec","objective":"nn_lobby"},"color":"yellow"}
-         ];
-
-
-        } else {
-
-        // Display normal timer
-        bossbar set minecraft:game name
-         [{"score":{"name":"min","objective":"nn_lobby"},"color":"yellow"},
-         {"text":" : ","color":"yellow"},{"score":{"name":"sec","objective":"nn_lobby"},"color":"yellow"}
-         ];
-
-
-        }
-
-    }
-
-    if (nn_lobby:msec <= numbers:20) {
-        scoreboard players set msec nn_lobby 0;
-        scoreboard players remove sec nn_lobby 1;
-        timer_sec();
-    }}
-
-    function timer_sec() {
-        if (nn_lobby:sec <= numbers:0) {
-        scoreboard players set sec nn_lobby 59;
-        scoreboard players remove min nn_lobby 1;
-}}
-    
-
-
-// ✏️ Reset Stuff
-function reset_stuff() {
-        tag @e remove map_1;
-        tag @e remove map_2;
-        tag @e remove map_3;
-        tag @e remove sel;
-
-        scoreboard players set map nn_map_vote_1 0;
-        scoreboard players set map nn_map_vote_2 0;
-        scoreboard players set map nn_map_vote_3 0;
-}
-
-
-
-
-
-// -- Executable tools
-
-
-
-
-// 🪑 Setup chair
-function tp_markers() {
-    $execute at @e[tag=$(Mapname)] run tp @e[tag=player_spawn,limit=1,sort=random] @e[tag=$(Mapname),limit=1,sort=random];
-}
-
-
-// Simple function to create marker
-function create_marker() {
-    $Text.tellraw(@s, "&<gray> ℹ | Generated $(Tag)");
-    $give @s minecraft:armor_stand[minecraft:entity_data={Invisible:true,Invulnerable:true,NoBasePlate:true,NoGravity:true,Small:true,CustomNameVisible:false,DisabledSlots:4128768,Tags:["$(Tag)"],id:"minecraft:armor_stand"},minecraft:custom_name='{"text":"$(Tag) Marker"}'] 1;
-}
-
-// Simple function to create mob marker
-function create_mob() {
-    $Text.tellraw(@s, "&<gray> ℹ | Generated $(Name)");
-    $give @s drowned_spawn_egg[custom_name='[{"text":"Map Entry $(Name)","italic":false}]',entity_data={id:pig,CustomName:'[{"text":"$(Name)"}]',CustomNameVisible:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b}] 1;
-}
-
-
-
-
-function hide_as_names() {
-    
-    execute at @a if score @p nn_asplaced >= 1 nn_asplaced expand {
-      execute as @e[type=armor_stand] run data modify entity @s CustomNameVisible set value 0b;
-      Text.tellraw(@a, "&<yellow> ⚠ | Optimizing Stuff...");
-      scoreboard players set @p nn_asplaced 0;
-    }
-}
-
-
-
-
-
-                    // $Text.tellraw(@s, "<grey> ℹ | $(text)");
-
-                    // $Text.tellraw(@s, "<yellow> ⚠ | $(text)");
-
-                    // $Text.tellraw(@s, "<red> 🛑 | $(text)");
-
-                    // $Text.tellraw(@s, "<dark_grey> ❔ | $(text)");
-
-
-// Discord Broadcast
-function dc_bcast() {
-    $discord bcast $(Msg);
 }
