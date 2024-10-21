@@ -12,7 +12,7 @@
 
 ## Description
 
-Welcome to the Nico's Nextbots Texture Pack! This is the texture pack used in our server. Any edits in the master branch will be applied in our server. In that way, we can add new bots and features easier + with the help of community.
+Welcome to the Niko's Nextbots Texture Pack! This is the texture pack used in our server. Any edits in the master branch will be applied in our server. In that way, we can add new bots and features easier + with the help of community.
 
 ## Before we start....
 
