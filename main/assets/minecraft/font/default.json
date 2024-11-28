@@ -1632,7 +1632,15 @@
         ""
       ]
     },
-	
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/accurex.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
 	
 	
 	

@@ -663,6 +663,15 @@
         "vibecraft:nextbots/pool_noodle/pool_noodle"]
     },
 	
+	"accurex": {
+      "sounds": [
+        "vibecraft:nextbots/accurex/accurex"]
+    },
+	"accurex_j": {
+      "sounds": [
+        "vibecraft:nextbots/accurex/accurex_j"]
+    },
+	
 	
 	
 	
