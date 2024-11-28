@@ -1203,7 +1203,7 @@ tag @a[tag=pool_noodle_z] add n_nextbot
 #> ------------------ accurex | id 59
 
 #> Detect and assign possession
-execute at @e[type=minecraft:zombie,tag=accurex_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 58
+execute at @e[type=minecraft:zombie,tag=accurex_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 59
 execute at @e[type=minecraft:zombie,tag=accurex_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
 execute at @e[type=minecraft:zombie,tag=accurex_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
 execute at @a[scores={nn_possesion=59}] run tag @p add nextbot
