@@ -1,12 +1,6 @@
 {
-  "blend": {
-    "func": "add",
-    "srcrgb": "srcalpha",
-    "dstrgb": "1-srcalpha"
-  },
-  "vertex": "rendertype_lines",
-  "fragment": "rendertype_lines",
-  "attributes": ["Position", "Color", "Normal"],
+  "vertex": "minecraft:core/rendertype_lines",
+  "fragment": "minecraft:core/rendertype_lines",
   "samplers": [],
   "uniforms": [
     { "name": "ModelViewMat", "type": "matrix4x4", "count": 16, "values": [1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0] },
@@ -18,6 +12,6 @@
     { "name": "FogEnd", "type": "float", "count": 1, "values": [1.0] },
     { "name": "FogColor", "type": "float", "count": 4, "values": [0.0, 0.0, 0.0, 0.0] },
     { "name": "FogShape", "type": "int", "count": 1, "values": [0] },
-    { "name": "GameTime", "type": "float", "count": 1, "values": [0.0] }
+    { "name": "GameTime", "type": "float", "count": 1, "values": [1.0] }
   ]
 }

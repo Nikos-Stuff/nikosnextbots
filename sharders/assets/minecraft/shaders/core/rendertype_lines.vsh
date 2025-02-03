@@ -32,7 +32,8 @@ const mat4 VIEW_SCALE = mat4(
     0.0, 0.0, 0.0, 1.0
 );
 
-out vec4 pos1, pos2;
+out vec4 pos1;
+out vec4 pos2;
 flat out vec4 pos3;
 
 void main() {
@@ -51,11 +52,11 @@ void main() {
   vec2 lineScreenDirection = normalize((ndc2.xy - ndc1.xy) * ScreenSize);
 
   /* -- modified for custom outlines -- */
-  float lineWidthMultiplier = 1.0;
+  float newLineWidth = LineWidth;
   CustomOutlinesLineType = 0;
   if( rougheq( Color, vec4(0., 0., 0., 0.4) ) ) {
     // block selection outline
-    lineWidthMultiplier = vertexDistance > 7 ? 1.0 : block_LINE_THICKNESS;
+    newLineWidth = vertexDistance > 7 ? clamp(float(block_LINE_THICKNESS), 0.0, 1.0) : block_LINE_THICKNESS;
     CustomOutlinesLineType = 1;
   }
   else if( 
@@ -65,12 +66,22 @@ void main() {
     ( hitbox_APPLY_TO_ALL_LINES && rougheq( Color, vec4(1.,1.,0.,1.) ) ) // yellow lines
   ) {
     // entity hitbox (+ other white lines)
-    lineWidthMultiplier = vertexDistance > 7 ? 1.0 : hitbox_LINE_THICKNESS;
+    newLineWidth = vertexDistance > 7 ? clamp(float(hitbox_LINE_THICKNESS), 0.0, 1.0) : hitbox_LINE_THICKNESS;
     CustomOutlinesLineType = 2;
   }
-  vec2 lineOffset = vec2(-lineScreenDirection.y, lineScreenDirection.x) * LineWidth * lineWidthMultiplier / ScreenSize;
+  else if( rougheq( Color, vec4(0.3412, 1.0, 0.8824, 1.0) ) ) {
+    // high contrast block selection (inner)
+    newLineWidth = vertexDistance > 7 ? clamp(float(hc_block_LINE_THICKNESS), 0.0, 1.0) : hc_block_LINE_THICKNESS;
+    CustomOutlinesLineType = 3;
+  }
+  else if( rougheq( Color, vec4(0., 0., 0., 1.) ) && LineWidth <= 7.01 && LineWidth >= 6.99 ) {
+    // high contrast block selection (outer)
+    newLineWidth = vertexDistance > 7 ? clamp(float(hc_block_outer_LINE_THICKNESS), 0.0, 1.0) : hc_block_outer_LINE_THICKNESS;
+    CustomOutlinesLineType = 4;
+  }
+  vec2 lineOffset = vec2(-lineScreenDirection.y, lineScreenDirection.x) * newLineWidth / ScreenSize;
 
-  if(block_ANIMATE_ALONG_LINES || hitbox_ANIMATE_ALONG_LINES){
+  if(block_ANIMATE_ALONG_LINES || hitbox_ANIMATE_ALONG_LINES || hc_block_ANIMATE_ALONG_LINES || hc_block_outer_ANIMATE_ALONG_LINES) {
     CustomOutlinesGradient = float(id == 0 || id == 1);
   }
   /* -- -- */
@@ -86,6 +97,10 @@ void main() {
   } else {
     vertexPos = (ndc1 - vec3(lineOffset, 0.0)) * linePosStart.w;
     gl_Position = vec4(vertexPos, linePosStart.w);
+  }
+
+  if( (CustomOutlinesLineType == 1 && block_IGNORES_DEPTH) || (CustomOutlinesLineType == 3 && hc_block_IGNORES_DEPTH) || (CustomOutlinesLineType == 4 && hc_block_outer_IGNORES_DEPTH) ) {
+    gl_Position.z *= 0.01;
   }
 
   vertexColor = Color;

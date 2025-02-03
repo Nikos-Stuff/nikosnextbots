@@ -20,11 +20,16 @@ uniform float GameTime;
 flat in int CustomOutlinesLineType;
 in float CustomOutlinesGradient;
 in vec3 vertexPos;
-in vec4 pos1, pos2;
+in vec4 pos1;
+in vec4 pos2;
 flat in vec4 pos3;
 /* -- -- */
 
 out vec4 fragColor;
+
+#define MIX_GRADIENT(colourArray, smoothMix, gradientAnim) mix(i == 0 ? colourArray[colourArray.length()-1] : gradient, colourArray[i], smoothMix ? smoothstep(_step, _step2, gradientAnim) : step(_step, gradientAnim))
+#define GRADIENT_MIX(animAlongLines) animAlongLines ? CustomOutlinesGradient * lineLength : fragDistance / 2.0
+#define GRADIENT_ANIMATION(animAlongLines, gradientMix, animWithDistance, animSpeed, animDirection, colourPeriod) fract( ( ( animAlongLines ? gradientMix : gradientMix * int(animWithDistance) ) + GameTime * animSpeed * animDirection ) / colourPeriod )
 
 void main() {
   vec4 color = vertexColor * ColorModulator;
@@ -36,49 +41,105 @@ void main() {
   vec4 gradient = color;
 
   // block selection
-  if (CustomOutlinesLineType == 1){
-    if(block_COLOURS.length() <= 1){
+  if (CustomOutlinesLineType == 1) {
+    if(block_COLOURS.length() <= 1) {
       gradient = block_COLOURS[0];
     }
     else{
-      float gradientrender_GRADIENT_MIX = block_ANIMATE_ALONG_LINES ? CustomOutlinesGradient * lineLength * 2.0 : fragDistance;
-      gradientrender_GRADIENT_MIX /= 2.;
-      float gradientrender_GRADIENT_ANIM = fract( ( ( block_ANIMATE_ALONG_LINES ? gradientrender_GRADIENT_MIX : gradientrender_GRADIENT_MIX * int(block_ANIMATE_WITH_DISTANCE) ) + GameTime * block_ANIM_SPEED * (-block_ANIM_DIRECTION) ) / block_COLOUR_PERIOD );
-      
+      float gradientrender_GRADIENT_MIX = GRADIENT_MIX(block_ANIMATE_ALONG_LINES);
+      float gradientrender_GRADIENT_ANIM = GRADIENT_ANIMATION(
+        block_ANIMATE_ALONG_LINES,
+        gradientrender_GRADIENT_MIX,
+        block_ANIMATE_WITH_DISTANCE,
+        block_ANIM_SPEED,
+        block_ANIM_DIRECTION,
+        block_COLOUR_PERIOD
+      );
+
       float len = float(block_COLOURS.length());
       for(int i = 0; i < len; i++){
-        float _step = float(i)/len;
-        float _step2 = (float(i)+1.)/len;
+        float _step = block_SMOOTH_MIX ? i/len : (i+0.5)/len;
+        float _step2 = block_SMOOTH_MIX ? (i+1.)/len : (i-0.5)/len;
 
-        gradient = mix(
-          i == 0 ? block_COLOURS[block_COLOURS.length()-1] : gradient,
-          block_COLOURS[i],
-          block_SMOOTH_MIX ? smoothstep(_step, _step2, gradientrender_GRADIENT_ANIM) : step(_step, gradientrender_GRADIENT_ANIM)
-        );
+        gradient = MIX_GRADIENT(block_COLOURS, block_SMOOTH_MIX, gradientrender_GRADIENT_ANIM);
       }
     }
   }
   
   // entity hitbox
-  else if (CustomOutlinesLineType == 2){
-    if(hitbox_COLOURS.length() <= 1){
+  else if (CustomOutlinesLineType == 2) {
+    if(hitbox_COLOURS.length() <= 1) {
       gradient = hitbox_COLOURS[0];
     }
     else{
-      float gradientrender_GRADIENT_MIX = hitbox_ANIMATE_ALONG_LINES ? CustomOutlinesGradient * lineLength * 2.0 : fragDistance;
-      gradientrender_GRADIENT_MIX /= 2.;
-      float gradientrender_GRADIENT_ANIM = fract( ( ( hitbox_ANIMATE_ALONG_LINES ? gradientrender_GRADIENT_MIX : gradientrender_GRADIENT_MIX * int(hitbox_ANIMATE_WITH_DISTANCE) ) + GameTime * hitbox_ANIM_SPEED * (-hitbox_ANIM_DIRECTION) ) / hitbox_COLOUR_PERIOD );
-      
+      float gradientrender_GRADIENT_MIX = GRADIENT_MIX(hitbox_ANIMATE_ALONG_LINES);
+      float gradientrender_GRADIENT_ANIM = GRADIENT_ANIMATION(
+        hitbox_ANIMATE_ALONG_LINES,
+        gradientrender_GRADIENT_MIX,
+        hitbox_ANIMATE_WITH_DISTANCE,
+        hitbox_ANIM_SPEED,
+        hitbox_ANIM_DIRECTION,
+        hitbox_COLOUR_PERIOD
+      );
+
       float len = float(hitbox_COLOURS.length());
       for(int i = 0; i < len; i++){
-        float _step = float(i)/len;
-        float _step2 = (float(i)+1.)/len;
+        float _step = hitbox_SMOOTH_MIX ? i/len : (i+0.5)/len;
+        float _step2 = hitbox_SMOOTH_MIX ? (i+1.)/len : (i-0.5)/len;
 
-        gradient = mix(
-          i == 0 ? hitbox_COLOURS[hitbox_COLOURS.length()-1] : gradient,
-          hitbox_COLOURS[i],
-          hitbox_SMOOTH_MIX ? smoothstep(_step, _step2, gradientrender_GRADIENT_ANIM) : step(_step, gradientrender_GRADIENT_ANIM)
-        );
+        gradient = MIX_GRADIENT(hitbox_COLOURS, hitbox_SMOOTH_MIX, gradientrender_GRADIENT_ANIM);
+      }
+    }
+  }
+  
+  // high contrast block outline (inner)
+  else if (CustomOutlinesLineType == 3) {
+    if(hc_block_COLOURS.length() <= 1) {
+      gradient = hc_block_COLOURS[0];
+    }
+    else{
+      float gradientrender_GRADIENT_MIX = GRADIENT_MIX(hc_block_ANIMATE_ALONG_LINES);
+      float gradientrender_GRADIENT_ANIM = GRADIENT_ANIMATION(
+        hc_block_ANIMATE_ALONG_LINES,
+        gradientrender_GRADIENT_MIX,
+        hc_block_ANIMATE_WITH_DISTANCE,
+        hc_block_ANIM_SPEED,
+        hc_block_ANIM_DIRECTION,
+        hc_block_COLOUR_PERIOD
+      );
+
+      float len = float(hc_block_COLOURS.length());
+      for(int i = 0; i < len; i++){
+        float _step = hc_block_SMOOTH_MIX ? i/len : (i+0.5)/len;
+        float _step2 = hc_block_SMOOTH_MIX ? (i+1.)/len : (i-0.5)/len;
+
+        gradient = MIX_GRADIENT(hc_block_COLOURS, hc_block_SMOOTH_MIX, gradientrender_GRADIENT_ANIM);
+      }
+    }
+  }
+  
+  // high contrast block outline (outer)
+  else if (CustomOutlinesLineType == 4) {
+    if(hc_block_outer_COLOURS.length() <= 1) {
+      gradient = hc_block_outer_COLOURS[0];
+    }
+    else{
+      float gradientrender_GRADIENT_MIX = GRADIENT_MIX(hc_block_outer_ANIMATE_ALONG_LINES);
+      float gradientrender_GRADIENT_ANIM = GRADIENT_ANIMATION(
+        hc_block_outer_ANIMATE_ALONG_LINES,
+        gradientrender_GRADIENT_MIX,
+        hc_block_outer_ANIMATE_WITH_DISTANCE,
+        hc_block_outer_ANIM_SPEED,
+        hc_block_outer_ANIM_DIRECTION,
+        hc_block_outer_COLOUR_PERIOD
+      );
+
+      float len = float(hc_block_outer_COLOURS.length());
+      for(int i = 0; i < len; i++){
+        float _step = hc_block_outer_SMOOTH_MIX ? i/len : (i+0.5)/len;
+        float _step2 = hc_block_outer_SMOOTH_MIX ? (i+1.)/len : (i-0.5)/len;
+
+        gradient = MIX_GRADIENT(hc_block_outer_COLOURS, hc_block_outer_SMOOTH_MIX, gradientrender_GRADIENT_ANIM);
       }
     }
   }
