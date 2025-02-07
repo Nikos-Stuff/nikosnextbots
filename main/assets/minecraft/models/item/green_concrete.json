@@ -4,14 +4,14 @@
       "property": "custom_model_data",
       "fallback": {
           "type": "model",
-          "model": "block/green_concrete"
+          "model": "item/green_concrete"
       },
       "entries": [
           {
               "threshold": 1,
               "model": {
                   "type": "model",
-                  "model": "item/buygui/yes"
+                  "model": "minecraft:item/buygui/yes"
               }
           }
       ]
