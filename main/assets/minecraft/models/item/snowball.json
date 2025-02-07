@@ -4,28 +4,28 @@
       "property": "custom_model_data",
       "fallback": {
           "type": "model",
-          "model": "item/snowball"
+          "model": "minecraft:item/snowball"
       },
       "entries": [
           {
               "threshold": 0,
               "model": {
                   "type": "model",
-                  "model": "item/single_snowball"
+                  "model": "minecraft:item/single_snowball"
               }
           },
           {
             "threshold": 1,
             "model": {
                 "type": "model",
-                "model": "item/possessor/possessor"
+                "model": "minecraft:item/possessor/possessor"
             }
           },
           {
             "threshold": 2,
             "model": {
                 "type": "model",
-                "model": "item/pile_snowball"
+                "model": "minecraft:item/pile_snowball"
             }
           }
       ]
