@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "item/snowballs/single_snowball",
-		"particle": "item/snowballs/single_snowball"
+		"0": "minecraft:item/snowballs/single_snowball",
+		"particle": "minecraft:item/snowballs/single_snowball"
 	},
 	"elements": [
 		{

@@ -3,8 +3,8 @@
   "parent": "new_possessor",
   "texture_size": [32, 32],
   "textures": {
-    "0": "item/possessor/possessor",
-    "particle": "item/possessor/possessor"
+    "0": "minecraft:item/possessor/possessor",
+    "particle": "minecraft:item/possessor/possessor"
   },
   "elements": [
     {
