@@ -14,7 +14,7 @@
                 "model": "minecraft:item/single_snowball"
             }
         },
-  {
+        {
             "threshold": 1,
             "model": {
                 "type": "model",

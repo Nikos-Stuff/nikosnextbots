@@ -1,9 +1,8 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "Snowball",
 	"textures": {
-		"0": "block/texture",
-		"particle": "block/texture"
+		"0": "item/snowballs/single_snowball",
+		"particle": "item/snowballs/single_snowball"
 	},
 	"elements": [
 		{
