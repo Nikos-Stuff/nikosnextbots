@@ -1,14 +1,19 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "item/splash_potion"
-  },
-  "overrides": [
-    {
-      "predicate": {
-        "custom_model_data": 1
+  "model": {
+      "type": "range_dispatch",
+      "property": "custom_model_data",
+      "fallback": {
+          "type": "model",
+          "model": "item/splash_potion"
       },
-      "model": "item/zombegone/zombegone"
-    }
-  ]
+      "entries": [
+          {
+              "threshold": 1,
+              "model": {
+                  "type": "model",
+                  "model": "item/zombegone/zombegone"
+              }
+          }
+      ]
+  }
 }

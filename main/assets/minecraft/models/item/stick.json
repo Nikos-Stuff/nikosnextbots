@@ -1,50 +1,61 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "item/stick"
-  },
-  "overrides": [
-    {
-      "predicate": {
-        "custom_model_data": 1
+  "model": {
+      "type": "range_dispatch",
+      "property": "custom_model_data",
+      "fallback": {
+          "type": "model",
+          "model": "item/stick"
       },
-      "model": "item/dragon/dragon_anim"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 2
-      },
-      "model": "item/toob/toob_anim"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 3
-      },
-      "model": "item/icosahedron/icosahedron_anim"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 4
-      },
-      "model": "item/lolguy/lolguy_anim"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 5
-      },
-      "model": "item/mrl/mrl_anim"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 6
-      },
-      "model": "item/anim8or/anim8or_anim"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 7
-      },
-      "model": "item/pool_noodle/pool_noodle_anim"
-    }
-  ]
+      "entries": [
+          {
+              "threshold": 1,
+              "model": {
+                  "type": "model",
+                  "model": "item/dragon/dragon_anim"
+              }
+          },
+          {
+            "threshold": 2,
+            "model": {
+                "type": "model",
+                "model": "item/toob/toob_anim"
+            }
+          },
+          {
+            "threshold": 3,
+            "model": {
+                "type": "model",
+                "model": "item/icosahedron/icosahedron_anim"
+            }
+          },
+          {
+            "threshold": 4,
+            "model": {
+                "type": "model",
+                "model": "item/lolguy/lolguy_anim"
+            }
+          },
+          {
+            "threshold": 5,
+            "model": {
+                "type": "model",
+                "model": "item/mrl/mrl_anim"
+            }
+          },
+          {
+            "threshold": 6,
+            "model": {
+                "type": "model",
+                "model": "item/anim8or/anim8or_anim"
+            }
+          },
+          {
+            "threshold": 7,
+            "model": {
+                "type": "model",
+                "model": "item/pool_noodle/pool_noodle_anim"
+            }
+          }
+      ]
+  }
 }

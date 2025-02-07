@@ -1,26 +1,33 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "item/snowball"
-  },
-  "overrides": [
-    {
-      "predicate": {
-        "custom_model_data": 0
+  "model": {
+      "type": "range_dispatch",
+      "property": "custom_model_data",
+      "fallback": {
+          "type": "model",
+          "model": "item/snowball"
       },
-      "model": "item/single_snowball"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 1
-      },
-      "model": "item/possessor/possessor"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 2
-      },
-      "model": "item/pile_snowball"
-    }
-  ]
+      "entries": [
+          {
+              "threshold": 0,
+              "model": {
+                  "type": "model",
+                  "model": "item/single_snowball"
+              }
+          },
+          {
+            "threshold": 1,
+            "model": {
+                "type": "model",
+                "model": "item/possessor/possessor"
+            }
+          },
+          {
+            "threshold": 2,
+            "model": {
+                "type": "model",
+                "model": "item/pile_snowball"
+            }
+          }
+      ]
+  }
 }

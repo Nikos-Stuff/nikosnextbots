@@ -1,20 +1,26 @@
 {
-  "parent": "minecraft:block/purple_concrete",
-  "textures": {
-    "layer0": "block/purple_concrete"
-  },
-  "overrides": [
-    {
-      "predicate": {
-        "custom_model_data": 1
+  "model": {
+      "type": "range_dispatch",
+      "property": "custom_model_data",
+      "fallback": {
+          "type": "model",
+          "model": "block/purple_concrete"
       },
-      "model": "item/server_icons/openworld_icon"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 2
-      },
-      "model": "item/event_icon/events_icon"
-    }
-  ]
+      "entries": [
+          {
+              "threshold": 1,
+              "model": {
+                  "type": "model",
+                  "model": "item/server_icons/openworld_icon"
+              }
+          },
+          {
+            "threshold": 2,
+            "model": {
+                "type": "model",
+                "model": "item/server_icons/events_icon"
+            }
+          }
+      ]
+  }
 }

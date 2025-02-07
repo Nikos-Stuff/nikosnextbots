@@ -1,14 +1,19 @@
 {
-  "parent": "minecraft:block/red_concrete",
-  "textures": {
-    "layer0": "block/red_concrete"
-  },
-  "overrides": [
-    {
-      "predicate": {
-        "custom_model_data": 1
+  "model": {
+      "type": "range_dispatch",
+      "property": "custom_model_data",
+      "fallback": {
+          "type": "model",
+          "model": "block/red_concrete"
       },
-      "model": "item/buygui/no"
-    }
-  ]
+      "entries": [
+          {
+              "threshold": 1,
+              "model": {
+                  "type": "model",
+                  "model": "item/buygui/no"
+              }
+          }
+      ]
+  }
 }
