@@ -1,6 +1,6 @@
 {
-  "vertex": "rendertype_armor_cutout_no_cull",
-  "fragment": "rendertype_armor_cutout_no_cull",
+  "vertex": "minecraft:core/rendertype_entity_translucent",
+  "fragment": "minecraft:core/rendertype_entity_translucent",
   "blend": {"func":"add","srcrgb":"srcalpha","dstrgb":"1-srcalpha"},
   "attributes": ["Position", "Color", "UV0", "UV1", "UV2", "Normal"],
   "samplers": [
