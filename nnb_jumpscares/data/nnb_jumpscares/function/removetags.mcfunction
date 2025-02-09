@@ -118,3 +118,7 @@ tag @a[tag=trespasser_d] remove trespasser_d
 tag @a[tag=anim8or_d] remove anim8or_d
 
 tag @a[tag=pool_noodle_d] remove pool_noodle_d
+
+tag @a[tag=accurex_d] remove accurex_d
+
+tag @a[tag=egg_d] remove egg_d
