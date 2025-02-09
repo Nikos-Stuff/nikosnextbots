@@ -1641,6 +1641,15 @@
         ""
       ]
     },
+	{
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/egg.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
 	
 	
 	

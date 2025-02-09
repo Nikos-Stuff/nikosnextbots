@@ -671,6 +671,16 @@
       "sounds": [
         "vibecraft:nextbots/accurex/accurex_j"]
     },
+
+	
+	"egg": {
+      "sounds": [
+        "vibecraft:nextbots/egg/egg"]
+    },
+	"egg_j": {
+      "sounds": [
+        "vibecraft:nextbots/egg/egg_j"]
+    },
 	
 	
 	
