@@ -1,21 +1,24 @@
 {
     "display": {
-        "title": "Nikos Nextbots Core Scripts",
-        "description": "",
-        "icon": {
-            "id": "minecraft:lime_concrete",
-            "count": 1,
-            "components": {
-              "minecraft:custom_model_data": 1
-            }
-          },
-        "show_toast": false,
-        "announce_to_chat": false
+      "icon": {
+        "id": "minecraft:lime_concrete",
+        "components": {
+          "minecraft:custom_model_data": {
+            "floats": [
+              1
+            ]
+          }
+        }
+      },
+      "title": "Nikos Nextbots Core Scripts",
+      "description": "",
+      "show_toast": false,
+      "announce_to_chat": false
     },
     "parent": "global:root",
     "criteria": {
-        "trigger": {
-            "trigger": "minecraft:tick"
-        }
+      "trigger": {
+        "trigger": "minecraft:tick"
+      }
     }
-}
+  }
