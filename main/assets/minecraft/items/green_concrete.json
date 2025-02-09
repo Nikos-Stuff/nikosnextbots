@@ -4,7 +4,7 @@
       "property": "custom_model_data",
       "fallback": {
           "type": "model",
-          "model": "item/green_concrete"
+          "model": "block/green_concrete"
       },
       "entries": [
           {
