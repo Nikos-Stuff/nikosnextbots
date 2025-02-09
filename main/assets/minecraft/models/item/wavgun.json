@@ -1763,19 +1763,5 @@
 		119,
 		120,
 		121
-	],
-
-    "model": {
-        "type": "range_dispatch",
-        "property": "custom_model_data",
-        "entries": [
-            {
-                "threshold": 1,
-                "model": {
-                    "type": "model",
-                    "model": "item/wavgun_skins/shotgun"
-                }
-            }
-        ]
-    }
+	]
 }
