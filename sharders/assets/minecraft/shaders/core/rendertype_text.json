@@ -1,6 +1,6 @@
 {
-  "vertex": "minecraft:rendertype_text",
-  "fragment": "minecraft:rendertype_text",
+  "vertex": "rendertype_text",
+  "fragment": "rendertype_text",
   "samplers": [
     { "name": "Sampler0" },
     { "name": "Sampler2" }

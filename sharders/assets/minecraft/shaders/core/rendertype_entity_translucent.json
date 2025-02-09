@@ -1,6 +1,6 @@
 {
-  "vertex": "minecraft:rendertype_entity_translucent",
-  "fragment": "minecraft:rendertype_entity_translucent",
+  "vertex": "rendertype_entity_translucent",
+  "fragment": "rendertype_entity_translucent",
   "samplers": [
     { "name": "Sampler0" },
     { "name": "Sampler1" },
