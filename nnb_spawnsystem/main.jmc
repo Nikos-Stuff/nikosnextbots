@@ -315,10 +315,10 @@ function setup_bots() {
     $execute unless entity @e[tag=$(bot_name)] run execute unless entity @e[tag=$(bot_name)_z] run scoreboard players set spawn nn_nextbot_spawn $(id);
 
     // Delay the teleportation stuff
-    if (nn_spawn:ticks < 3) {
+    //if (nn_spawn:ticks < 3) {
         tp_bots() with storage nnb_spawnsystem:temp;
 
-}}}
+}}//}
 
 // TP Stuff
 function tp_bots() {
