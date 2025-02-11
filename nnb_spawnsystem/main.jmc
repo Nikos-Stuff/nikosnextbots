@@ -301,6 +301,10 @@ if (nn_spawn:ticks < 10) {
 
 // Universal spawn bot stuff
 function setup_bots() {
+    if (nn_spawn:exec_cooldown = 0) {
+    // anit-duplicator
+    scoreboard players set exec_cooldown nn_spawn 1;
+
     // Prevent spawning w.i.p.
     if (nn_spawn:spawn = 29) {
         scoreboard players set spawn nn_spawn 0;
@@ -314,7 +318,7 @@ function setup_bots() {
     if (nn_spawn:ticks < 3) {
         tp_bots() with storage nnb_spawnsystem:temp;
 
-}}
+}}}
 
 // TP Stuff
 function tp_bots() {
@@ -325,6 +329,8 @@ function tp_bots() {
         
     data modify storage nnb_spawnsystem:temp bot_name set value "EMPTY_SKIPPED";
     $scoreboard players set ticks nn_spawn $(limit);
+    // Reset anit-duplicator
+    scoreboard players set exec_cooldown nn_spawn 0;
 }
 
 
