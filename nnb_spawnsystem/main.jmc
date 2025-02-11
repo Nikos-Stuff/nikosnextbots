@@ -308,15 +308,11 @@ function setup_bots() {
     // Clear bugged bots
     clear_bugged();
     // Spawn stuff
-    if (nn_spawn:exec_cooldown = 0) {
-        scoreboard players set exec_cooldown nn_spawn 1;
-        $execute unless entity @e[tag=$(bot_name)] run execute unless entity @e[tag=$(bot_name)_z] run scoreboard players set spawn nn_nextbot_spawn $(id);
-    }
+    $execute unless entity @e[tag=$(bot_name)] run execute unless entity @e[tag=$(bot_name)_z] run scoreboard players set spawn nn_nextbot_spawn $(id);
 
     // Delay the teleportation stuff
     if (nn_spawn:ticks < 3) {
         tp_bots() with storage nnb_spawnsystem:temp;
-        scoreboard players set exec_cooldown nn_spawn 0;
 
 }}
 
