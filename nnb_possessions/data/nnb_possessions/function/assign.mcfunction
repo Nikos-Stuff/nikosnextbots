@@ -1238,3 +1238,24 @@ execute at @a[tag=egg_z] run tp @e[tag=egg] ~ ~2 ~
 
 #> Screen effects tag
 tag @a[tag=egg_z] add b_nextbot
+
+
+
+
+#> ------------------ unpleasant | id 61
+
+#> Detect and assign possession
+execute at @e[type=minecraft:zombie,tag=unpleasant_z] if entity @e[type=minecraft:snowball,distance=..2.2] run execute at @a[distance=..5.5,sort=nearest,tag=!nextbot,limit=1] run scoreboard players set @p nn_possesion 61
+execute at @e[type=minecraft:zombie,tag=unpleasant_z] if entity @e[type=minecraft:snowball,distance=..2.2] run tag @e[type=zombie,limit=1,distance=..1.1] add controled
+execute at @e[type=minecraft:zombie,tag=unpleasant_z] if entity @e[type=minecraft:snowball,distance=..2.2] run kill @e[tag=controled,distance=..1.1,limit=1]
+execute at @a[scores={nn_possesion=61}] run tag @p add nextbot
+
+#> Reset on timeout
+execute if entity @a[scores={nn_possesion=61},tag=nextbot_timeout] run function nnb_possessions:61/unpleasant_end
+
+#> Teleport sprite and assign tags
+execute if entity @a[scores={nn_possesion=61},tag=!nextbot_timeout] run tag @a[scores={nn_possesion=61},tag=!nextbot_timeout] add unpleasant_z
+execute at @a[tag=unpleasant_z] run tp @e[tag=unpleasant] ~ ~2 ~
+
+#> Screen effects tag
+tag @a[tag=unpleasant_z] add b_nextbot

@@ -158,4 +158,6 @@ scoreboard players add @a[tag=accurex_d] nn_jumpscare 1
 
 scoreboard players add @a[tag=egg_d] nn_jumpscare 1
 
+scoreboard players add @a[tag=unpleasant_d] nn_jumpscare 1
+
 # Remember to add it to templates too!
