@@ -1650,6 +1650,15 @@
         ""
       ]
     },
+    {
+      "type": "bitmap",
+      "file": "vibecraft:nextbots/unpleasant.png",
+      "ascent": -12,
+      "height": 26,
+      "chars": [
+        ""
+      ]
+    },
 	
 	
 	

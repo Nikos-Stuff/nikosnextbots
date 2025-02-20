@@ -681,6 +681,15 @@
       "sounds": [
         "vibecraft:nextbots/egg/egg_j"]
     },
+
+  "unpleasant": {
+      "sounds": [
+        "vibecraft:nextbots/unpleasant/unpleasant"]
+    },
+	"unpleasant_j": {
+      "sounds": [
+        "vibecraft:nextbots/unpleasant/unpleasant_j"]
+    },
 	
 	
 	
