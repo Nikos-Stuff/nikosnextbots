@@ -1,6 +1,4 @@
-[![Build:](https://github.com/Nikos-Stuff/nikosnextbots/actions/workflows/build_packs.yml/badge.svg?branch=main)](https://github.com/Nikos-Stuff/nikosnextbots/actions/workflows/build_packs.yml)
-
-![Preview Image](https://mcapi.nikodaproot.pl/nnb/nnb_banner.png)
+Kinda discontinued - Might receive a final update tho
 <p align="center">Texturepack & Datapacks for our server - Niko's Nextbots - nnb.nikostuff.com </p>
 
 <p align="center">Datapacks won't work on they own. Specific world setup is required. We don't have plans to upload the whole setup stuff. (For at least now)</p>
