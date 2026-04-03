@@ -235,6 +235,10 @@
     "sounds": [
       "vibecraft:lobby/seal_the_deal"]
 	},
+  "asdf_lobby": {
+    "sounds": [
+      "vibecraft:lobby/asdf"]
+	},
   "meem": {
     "sounds": [
       "vibecraft:nextbots/meem/meem"]
