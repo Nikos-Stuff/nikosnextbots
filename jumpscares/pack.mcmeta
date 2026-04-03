@@ -1,7 +1,8 @@
 {
    "pack": {
       "pack_format": 75.0,
-	  "supported_formats": [75.0, 75.0],
+	  "min_format": 75.0,
+      "max_format": 75.0,
       "description": "Jumpscares"
    }
    
