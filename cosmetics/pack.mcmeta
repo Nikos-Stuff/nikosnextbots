@@ -1,6 +1,7 @@
 {
   "pack": {
-    "pack_format": 46,
+    "pack_format": 75.0,
+	"supported_formats": [75.0, 75.0],
     "description": "Cosmetics"
   }
 }
