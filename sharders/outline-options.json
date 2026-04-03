@@ -1,0 +1,79 @@
+{
+    "formatVersion": 10,
+    "customName": "Custom Outlines",
+    "settingGroups": {
+        "block-outline": {
+            "anim-speed": 300,
+            "colour-period": 0.5,
+            "reverse-animation-direction": false,
+            "smoothness": 0,
+            "anim-with-distance": true,
+            "anim-along-lines": true,
+            "line-width": 1,
+            "colours": [
+                "#ae3df9ff",
+                "#f93dacff"
+            ],
+            "ignores-depth": true
+        },
+        "entity-hitbox": {
+            "anim-speed": 700,
+            "colour-period": 3,
+            "reverse-animation-direction": false,
+            "smoothness": 0.5,
+            "anim-with-distance": false,
+            "anim-along-lines": true,
+            "line-width": 5,
+            "colours": [
+                "#f93d3dff",
+                "#f9bb3dff",
+                "#79f93dff",
+                "#3df9e1ff",
+                "#3d73f9ff",
+                "#ae3df9ff",
+                "#f93dacff"
+            ],
+            "apply-to-all-hitbox-lines": false
+        },
+        "accesible-block-outline": {
+            "anim-speed": 500,
+            "colour-period": 2,
+            "reverse-animation-direction": false,
+            "smoothness": 0.5,
+            "anim-with-distance": true,
+            "anim-along-lines": false,
+            "line-width": 4,
+            "colours": [
+                "#f93d3dff",
+                "#f9bb3dff",
+                "#79f93dff",
+                "#3df9e1ff",
+                "#3d73f9ff",
+                "#ae3df9ff",
+                "#f93dacff"
+            ],
+            "ignores-depth": false,
+            "anim-speed_secondary": 500,
+            "colour-period_secondary": 2,
+            "reverse-animation-direction_secondary": false,
+            "smoothness_secondary": 0,
+            "anim-with-distance_secondary": true,
+            "anim-along-lines_secondary": false,
+            "line-width_secondary": 10,
+            "colours_secondary": [
+                "#541212ff",
+                "#4c3811ff",
+                "#244c12ff",
+                "#0e413bff",
+                "#152752ff",
+                "#431363ff",
+                "#59143cff"
+            ],
+            "ignores-depth_secondary": false
+        },
+        "icon-config": {
+            "source": 3,
+            "source-data": ""
+        }
+    }
+}
