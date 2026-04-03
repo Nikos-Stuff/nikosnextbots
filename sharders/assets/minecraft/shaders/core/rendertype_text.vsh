@@ -7,8 +7,6 @@ precision highp float;
 
 
 
-
-
 #define hue(v)  ((.6+.6*cos(6.*(v)+vec4(0, 23, 21, 1)))+vec4(0., 0., 0., 1.) )
 
 #define finalize() { \
@@ -35,103 +33,116 @@ out float vertexDistance;
 out vec4 vertexColor;
 out vec2 texCoord0;
 
-void f_67127145(inout vec4 vertex) {
+float safeGameTime() {
+    float gameTime=GameTime;
+    
+    if(gameTime <= 0) {
+        gameTime=.5;
+    }
+    return gameTime;
+}
+
+float scaledTime() {
+    return safeGameTime()*12000.;
+}
+
+void f_55467d14(inout vec4 vertex) {
     gl_Position=ProjMat*ModelViewMat*vertex;
 }
 
-void f_7091b92d() {
+void f_4c6acaec() {
     vertexColor=Color*texelFetch(Sampler2, UV2 / 16, 0);
 }
 
 
-void f_367de76f(inout vec4 vertex) {
-    f_67127145(vertex);
+void f_8a64076f(inout vec4 vertex) {
+    f_55467d14(vertex);
     if(Position.z==0. && gl_Position.x > .95) {
         vertexColor=vec4(0);
     }else{
-        f_7091b92d();
+        f_4c6acaec();
     }
     finalize();
 }
 
 
 
-void f_d85bd67c() {
-    vertexColor=hue(gl_Position.x+GameTime*1000.)*texelFetch(Sampler2, UV2 / 16, 0);
+void f_c145b0fa() {
+    vertexColor=hue(gl_Position.x+safeGameTime()*1000.)*texelFetch(Sampler2, UV2 / 16, 0);
 }
 
-void f_2db987ef() {
-    gl_Position.y+=sin(GameTime*12000.+(gl_Position.x*6)) / 150.;
+void f_39eb5540() {
+    gl_Position.y+=sin(scaledTime()+(gl_Position.x*6)) / 150.;
 }
 
-void f_9a38f3d0(inout vec4 vertex) {
-    f_67127145(vertex);
-    f_d85bd67c();
+void f_25c48493(inout vec4 vertex) {
+    f_55467d14(vertex);
+    f_c145b0fa();
     finalize();
 }
 
-void f_7ab285bb(inout vec4 vertex) {
-    f_67127145(vertex);
-    f_7091b92d();
-    f_2db987ef();
+void f_fb1a5ad9(inout vec4 vertex) {
+    f_55467d14(vertex);
+    f_4c6acaec();
+    f_39eb5540();
     finalize();
 }
 
-void f_b803f38d(inout vec4 vertex) {
-    f_67127145(vertex);
-    f_2db987ef();
-    f_d85bd67c();
+void f_bffc83e7(inout vec4 vertex) {
+    f_55467d14(vertex);
+    f_39eb5540();
+    f_c145b0fa();
     finalize();
 }
 
-void f_612b1cee(inout vec4 vertex) {
-    f_7091b92d();
+void f_b00bbb78(inout vec4 vertex) {
+    f_4c6acaec();
     float vertexId=mod(gl_VertexID, 4.);
     if(vertex.z <= 0.) {
         if(vertexId==3. || vertexId==0.) {
-            vertex.y+=cos(GameTime*12000. / 4)*.1;
-            vertex.y+=max(cos(GameTime*12000. / 4)*.1, 0.);
+            vertex.y+=cos(scaledTime() / 4)*.1;
+            vertex.y+=max(cos(scaledTime() / 4)*.1, 0.);
         }
     }else{
         if(vertexId==3. || vertexId==0.) {
-            vertex.y-=cos(GameTime*12000. / 4)*3;
-            vertex.y-=max(cos(GameTime*12000. / 4)*4, 0.);
+            vertex.y-=cos(scaledTime() / 4)*3;
+            vertex.y-=max(cos(scaledTime() / 4)*4, 0.);
         }
     }
-    f_67127145(vertex);
+    f_55467d14(vertex);
     finalize();
 }
 
-void f_354a5631(inout vec4 vertex) {
+void f_17f1fef0(inout vec4 vertex) {
     float vertexId=mod(gl_VertexID, 4.);
     if(vertex.z <= 0.) {
         if(vertexId==3. || vertexId==0.) {
-            vertex.y+=cos(GameTime*12000. / 4)*.1;
-            vertex.y+=max(cos(GameTime*12000. / 4)*.1, 0.);
+            vertex.y+=cos(scaledTime() / 4)*.1;
+            vertex.y+=max(cos(scaledTime() / 4)*.1, 0.);
         }
     }else{
         if(vertexId==3. || vertexId==0.) {
-            vertex.y-=cos(GameTime*12000. / 4)*3;
-            vertex.y-=max(cos(GameTime*12000. / 4)*4, 0.);
+            vertex.y-=cos(scaledTime() / 4)*3;
+            vertex.y-=max(cos(scaledTime() / 4)*4, 0.);
         }
     }
-    f_d85bd67c();
-    f_67127145(vertex);
+    f_c145b0fa();
+    f_55467d14(vertex);
     finalize();
 }
 
-void f_804860cb(inout vec4 vertex, float speed) {
-    f_67127145(vertex);
-    float blink=abs(sin(GameTime*12000.*speed));
+void f_4671344d(inout vec4 vertex, float speed) {
+    f_55467d14(vertex);
+    float blink=abs(sin(scaledTime()*speed));
     vertexColor=Color*blink*texelFetch(Sampler2, UV2 / 16, 0);
     finalize();
 }
 
 
 
-void f_a9e6ed6d(inout vec4 vertex) {
-    f_67127145(vertex);
-    f_7091b92d();
+void f_90513c5f(inout vec4 vertex) {
+    f_55467d14(vertex);
+    f_4c6acaec();
     vertexColor=vec4(1, 1, 1, vertexColor.a); 
     finalize();
 }
@@ -145,7 +156,7 @@ void main() {
     
     if(iColor==ivec3(255, 85, 85))
     {
-        f_367de76f(vertex);
+        f_8a64076f(vertex);
         return;
     }
     
@@ -157,7 +168,7 @@ void main() {
         if(iColor==ivec3(19, 23, 9))
         {
             gl_Position=vec4(2, 2, 2, 1);
-            f_7091b92d();
+            f_4c6acaec();
             finalize();
             return;
         }
@@ -168,40 +179,40 @@ void main() {
         if(iColor==ivec3(57, 63, 63)) {
             
             
-            f_67127145(vertex);
-            f_7091b92d();
+            f_55467d14(vertex);
+            f_4c6acaec();
             finalize();
             return;
         }
 
         
         if(iColor==ivec3(57, 63, 62)) {
-            f_7ab285bb(vertex);
+            f_fb1a5ad9(vertex);
             return;
         }
 
         
         if(iColor==ivec3(57, 62, 63)) {
             
-            f_7ab285bb(vertex);
+            f_fb1a5ad9(vertex);
             return;
         }
 
         
         if(iColor==ivec3(57, 62, 62)) {
-            f_612b1cee(vertex);
+            f_b00bbb78(vertex);
             return;
         }
 
         
         if(iColor==ivec3(57, 61, 63)) {
-            f_612b1cee(vertex);
+            f_b00bbb78(vertex);
             return;
         }
 
         
         if(iColor==ivec3(57, 61, 62)) {
-            f_804860cb(vertex, .5);
+            f_4671344d(vertex, .5);
             return;
         }
 
@@ -214,7 +225,7 @@ void main() {
     
     if(iColor==ivec3(78, 92, 36))
     {
-        f_a9e6ed6d(vertex);
+        f_90513c5f(vertex);
         return;
     }
     
@@ -224,42 +235,42 @@ void main() {
     
     if(iColor==ivec3(230, 255, 254))
     {
-        f_9a38f3d0(vertex);
+        f_25c48493(vertex);
         return;
     }
 
     
     if(iColor==ivec3(230, 255, 250))
     {
-        f_7ab285bb(vertex);
+        f_fb1a5ad9(vertex);
         return;
     }
 
     
     if(iColor==ivec3(230, 251, 254))
     {
-        f_b803f38d(vertex);
+        f_bffc83e7(vertex);
         return;
     }
 
     
     if(iColor==ivec3(230, 251, 250))
     {
-        f_612b1cee(vertex);
+        f_b00bbb78(vertex);
         return;
     }
 
     
     if(iColor==ivec3(230, 247, 254))
     {
-        f_354a5631(vertex);
+        f_17f1fef0(vertex);
         return;
     }
 
     
     if(iColor==ivec3(230, 247, 250))
     {
-        f_804860cb(vertex, .5);
+        f_4671344d(vertex, .5);
         return;
     }
 
@@ -271,41 +282,41 @@ void main() {
     
     if(iColor==ivec3(255, 255, 254))
     {
-        f_9a38f3d0(vertex);
+        f_25c48493(vertex);
         return;
     }
 
     
     if(iColor==ivec3(255, 255, 253))
     {
-        f_7ab285bb(vertex);
+        f_fb1a5ad9(vertex);
         return;
     }
 
     
     if(iColor==ivec3(255, 255, 25))
     {
-        f_b803f38d(vertex);
+        f_bffc83e7(vertex);
         return;
     }
 
     
     if(iColor==ivec3(255, 255, 251))
     {
-        f_612b1cee(vertex);
+        f_b00bbb78(vertex);
         return;
     }
 
     
     if(iColor==ivec3(255, 254, 254))
     {
-        f_354a5631(vertex);
+        f_17f1fef0(vertex);
         return;
     }
     
 
     
-    f_67127145(vertex);
-    f_7091b92d();
+    f_55467d14(vertex);
+    f_4c6acaec();
     finalize();
 }
