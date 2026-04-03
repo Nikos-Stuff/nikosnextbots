@@ -1,0 +1,1 @@
+{"parent":"_iainternal:item/player_model/body_cube","elements":[{"shade":false,"from":[-4,-6,-2],"to":[4,6,2],"faces":{"south":{"uv":[6.75,5,8.75,8],"texture":"#0","tintindex":0},"up":{"uv":[7,7.75,9,8.75],"texture":"#0","tintindex":1}}}]}

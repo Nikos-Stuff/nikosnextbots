@@ -1,0 +1,1 @@
+{"parent":"_iainternal:item/player_model/head_cube","elements":[{"shade":false,"from":[-4,-4,-4],"to":[4,4,4],"faces":{"south":{"uv":[6.25,7.75,8.25,9.75],"texture":"#0","tintindex":0},"down":{"uv":[9.5,9.75,7.5,7.75],"texture":"#0","tintindex":1}}}]}
